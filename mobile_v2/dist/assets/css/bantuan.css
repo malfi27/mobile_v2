@@ -53,7 +53,7 @@ Styling
 }
 
 #mainContent .bantuanContent {
-  padding: 2rem 0;
+  padding: 1.7rem 0;
 }
 
 #mainContent .bantuanContent .headBantuanContent {
@@ -91,4 +91,19 @@ Styling
   color: #28a745;
   font-weight: 600;
   text-decoration: none;
+}
+
+#mainContent .bantuanContent .step {
+  margin-bottom: 1.5rem;
+  font-size: 14px;
+}
+
+#mainContent .bantuanContent .step .stepImages {
+  width: 100%;
+}
+
+#mainContent .bantuanContent .step .headBagian {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: .7rem;
 }
