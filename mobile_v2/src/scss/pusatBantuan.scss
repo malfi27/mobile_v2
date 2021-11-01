@@ -1,0 +1,127 @@
+/*------------
+Font
+------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@font-face {
+    font-family: steelfish;
+    src: url(../font/stelfish.ttf);
+}
+
+/*------------
+Resset Css
+------------*/
+*,::after,::before,h1,h2,p {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+/*------------
+Variables
+------------*/
+$dashboard-background :linear-gradient(107.54deg, #3E563E 21.25%, #96BA7D 83.68%);
+$box-shadow : 0px 4px 13px rgba(0, 0, 0, 0.25);
+$menu-color : #3E563E;
+$font-color : rgba(62, 60, 60, 1);
+$font-white : #fff;
+/*------------
+Styling
+------------*/
+body {
+    background-color: #f7f7f7;
+}
+#mainHeader {
+    background-image: url('/mobile_v2/dist/assets/images/test.png');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 242px;
+}
+
+
+#mainContent {
+    position: relative;
+    padding: 0 1rem;
+
+    .infoSectionPage {
+        display: flex;
+        align-items: center;
+        .text {
+            flex: 2;
+            h1 {
+                font-size: 14px;
+                color: $font-white;
+                font-weight: 500;
+            }
+            .logat {
+                font-weight: 600;
+                margin-top: .3rem;
+            }
+        }
+        .iconPusatBantuan {
+            flex: 1;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .pusatBantuanMenu {
+        margin-top: 3.8rem;
+        .menu {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-decoration: none;
+            padding: 1rem 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+            .iconAndName {
+                display: flex;
+                align-items: center;
+                svg {
+                    width: 100%;
+                    max-width: 20px;
+                }
+                .nameMenu {
+                    margin-left: .5rem;
+                    color: $font-color;
+                    font-weight: 400;
+                    font-size: 12px;
+                }
+            }
+            .arrows {
+                svg {
+                    min-height: 10px;
+                }
+            }
+        }
+        .btnLogout {
+            margin-top: 2rem;
+            color: #e90101;
+            font-weight: 400;
+            padding: .5rem 1rem;
+            width: 100%;
+            border-radius: 20px;
+            background: transparent;
+            border: 2px solid #e90101;
+        }
+    }
+}
+
+
+@media screen and (min-width : 0px) {
+    #mainContent {
+        top: -140px;
+    }
+}
+@media screen and (min-width : 375px) {
+    #mainContent {
+        top: -150px;
+    }
+}
+@media screen and (min-width : 425px) {
+    #mainContent {
+        top: -170px;
+    }
+}

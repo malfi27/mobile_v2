@@ -1,0 +1,176 @@
+/*------------
+Font
+------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@font-face {
+    font-family: steelfish;
+    src: url(../font/stelfish.ttf);
+}
+
+/*------------
+Resset Css
+------------*/
+*,::after,::before,h1,h2,p {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+/*------------
+Variables
+------------*/
+$dashboard-background :linear-gradient(107.54deg, #3E563E 21.25%, #96BA7D 83.68%);
+$box-shadow : 0px 4px 13px rgba(0, 0, 0, 0.25);
+$menu-color : #3E563E;
+$font-color : rgba(62, 60, 60, 1);
+$font-white : #fff;
+/*------------
+Styling
+------------*/
+body {
+    background-color: #f7f7f7;
+}
+
+#mainContent {
+    padding-bottom: 5rem;
+    .inboxWrapper {
+        padding: 2rem 1rem;
+
+        .headInbox {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+            .form-check {
+                width: 100%;
+                flex: 1;
+                font-size: 14px;
+                display: flex;
+                align-items: center;
+
+                .form-check-input {
+                    height: 16px;
+                    width: 16px;
+                }
+
+                .form-check-label {
+                    padding-left: .5rem;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: -4px;
+                }
+            }
+            .actionUser {
+                display: flex;
+                align-items: flex-end;
+                width: 100%;
+                flex: 2;
+                justify-content: flex-end;
+                .btnAction {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-decoration: none;
+                    font-weight: 500;
+                    .icon {
+                        svg {
+                            min-height: 18px;
+                        }
+                    }
+                    .nameAction {
+                        font-size: 10px;
+                        text-align: center;
+                    }
+                }
+
+                .btnDelete {
+                    color: rgba(238, 76, 76, 1);
+                }
+                .btnTandai {
+                    color: rgba(40, 167, 69, 1);
+                    margin-left: 1rem;
+                }
+            }
+        }
+        .bodyInbox {
+            .inbox {
+                text-decoration: none;
+                display: flex;
+                align-items: flex-start;
+                background: #fff;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                padding: 1rem;
+                border-radius: 8px;
+                margin: .7rem 0;
+                border: 1px solid rgb(227, 227, 227);
+                .inboxContent {
+                    .firstLine {
+                        display: flex;
+                        align-items: flex-end;
+                        justify-content: space-between;
+                        .from {
+                            color: #111;
+                            font-weight: 600;
+                            font-size: 18px;
+                            display: flex;
+                            align-items: center;
+                        }
+                        .new {
+                            &::before {
+                                content: '';
+                                display: inline-block;
+                                height: 8px;
+                                width: 8px;
+                                background: #284E78;
+                                border-radius: 10px;
+                                margin-right: .3rem;
+                            }
+                        }
+                        .time {
+                            color: #111;
+                            font-size: 12px;
+                        }
+                    }
+                    .label {
+                        margin-top: .4rem;
+                        color: #111;
+                        font-size: 14px;
+                    }
+                    .message {
+                        margin-top: .7rem;
+                        font-size: 12px;
+                        color: #aaa;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+    .detailInboxWrapper {
+        padding: 2rem 1rem;
+        .headInbox {
+            margin-bottom: 1.5rem;
+            .label {
+                font-size: 18px;
+                font-weight: 600;
+                margin-bottom: 1rem;
+            }
+            .date {
+                color: #797979;
+                font-size: 12px;
+                font-weight: 600;
+            }
+        }
+        .bodyInbox {
+            .pesan {
+                font-size: 14px;
+            }
+            .paragraf {
+                margin-bottom: .8rem;
+            }
+        }
+    }
+}

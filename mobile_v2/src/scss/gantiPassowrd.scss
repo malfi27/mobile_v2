@@ -1,0 +1,86 @@
+/*------------
+Font
+------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@font-face {
+    src: url(../font/stelfish.ttf);
+}
+
+/*------------
+Resset Css
+------------*/
+*,::after,::before,h1,h2,p {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+/*------------
+Variables
+------------*/
+$dashboard-background :linear-gradient(107.54deg, #3E563E 21.25%, #96BA7D 83.68%);
+$box-shadow : 0px 4px 13px rgba(0, 0, 0, 0.25);
+$menu-color : #3E563E;
+$font-color : rgba(62, 60, 60, 1);
+$font-white : #fff;
+/*------------
+Styling
+------------*/
+body {
+    background-color: #fff;
+}
+
+#headerBack {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 1rem;
+    a {
+        svg {
+            min-width: 16px;
+        }
+    }
+    .namePage {
+        margin-left: .7rem;
+        font-size: 16px;
+        font-weight: 500;
+        color: rgba(0, 0, 0, 1);
+    }
+}
+
+#mainContent {
+    padding: 1rem;
+    .editDataForm {
+        form {
+            .input-control {
+                margin: .5rem 0;
+                position: relative;
+                label {
+                    font-size: 12px;
+                }
+                .form-control {
+                    border: none;
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+                    font-size: 14px;
+                    padding: .3rem 0;
+                    border-radius: 0;
+                    padding-top: .1rem;
+                    position: relative;
+                    
+                    &:focus {
+                        box-shadow: none;
+                    }
+                }
+            }
+            .btnSimpan {
+                margin-top: 1.5rem;
+                width: 100%;
+                background: #368736;
+                border-radius: 20px;
+                color: $font-white;
+                font-weight: 400;
+            }
+        }
+    }
+}

@@ -1,0 +1,94 @@
+/*------------
+Font
+------------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: steelfish;
+  src: url(../font/stelfish.ttf);
+}
+
+/*------------
+Resset Css
+------------*/
+*, ::after, ::before, h1, h2, p {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+}
+
+/*------------
+Variables
+------------*/
+/*------------
+Styling
+------------*/
+#mainContent {
+  position: relative;
+  padding: 0 1rem;
+}
+
+#mainContent .bantuanMenu {
+  padding: 2rem 0;
+}
+
+#mainContent .bantuanMenu .menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+}
+
+#mainContent .bantuanMenu .menu .nameMenu {
+  color: #3e3c3c;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+#mainContent .bantuanMenu .menu .arrows svg {
+  min-height: 10px;
+}
+
+#mainContent .bantuanContent {
+  padding: 2rem 0;
+}
+
+#mainContent .bantuanContent .headBantuanContent {
+  font-size: 14px;
+  margin-bottom: 1rem;
+}
+
+#mainContent .bantuanContent .headBantuanContent .titleBantuan {
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: .5rem;
+}
+
+#mainContent .bantuanContent .bodyBantuanContent {
+  font-size: 14px;
+}
+
+#mainContent .bantuanContent .bodyBantuanContent .headBagian {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: .8rem;
+}
+
+#mainContent .bantuanContent .bodyBantuanContent .moreSpecificNotice {
+  margin-bottom: 1rem;
+}
+
+#mainContent .bantuanContent .bodyBantuanContent .needMoreTextBantuan h1 {
+  margin-bottom: .5rem;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+#mainContent .bantuanContent .bodyBantuanContent .needMoreTextBantuan a {
+  color: #28a745;
+  font-weight: 600;
+  text-decoration: none;
+}

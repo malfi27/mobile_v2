@@ -1,0 +1,81 @@
+/*------------
+Font
+------------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@font-face {
+  src: url(../font/stelfish.ttf);
+}
+
+/*------------
+Resset Css
+------------*/
+*, ::after, ::before, h1, h2, p {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+}
+
+/*------------
+Variables
+------------*/
+/*------------
+Styling
+------------*/
+body {
+  background-color: #fff;
+}
+
+#headerBack {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 1rem;
+}
+
+#headerBack a svg {
+  min-width: 16px;
+}
+
+#headerBack .namePage {
+  margin-left: .7rem;
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+}
+
+#mainContent {
+  padding: 1rem;
+}
+
+#mainContent .editDataForm form .input-control {
+  margin: .5rem 0;
+  position: relative;
+}
+
+#mainContent .editDataForm form .input-control label {
+  font-size: 12px;
+}
+
+#mainContent .editDataForm form .input-control .form-control {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+  font-size: 14px;
+  padding: .3rem 0;
+  border-radius: 0;
+  padding-top: .1rem;
+  position: relative;
+}
+
+#mainContent .editDataForm form .input-control .form-control:focus {
+  box-shadow: none;
+}
+
+#mainContent .editDataForm form .btnSimpan {
+  margin-top: 1.5rem;
+  width: 100%;
+  background: #368736;
+  border-radius: 20px;
+  color: #fff;
+  font-weight: 400;
+}

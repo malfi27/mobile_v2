@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubah Profil</title>
+    <!--Bootstrap Asset-->
+    <link rel="stylesheet" href="./assets/vendors/bootstrap/css/bootstrap.min.css">
+    <!--Component-->
+    <link rel="stylesheet" href="./assets/component/navbar.css">
+    <link rel="stylesheet" href="./assets/component/menu.css">
+    <link rel="stylesheet" href="./assets/component/app.css">
+    <!--unicons-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!--Style Css-->
+    <link rel="stylesheet" href="./assets/css/ubahprofil.css">
+</head>
+<body>
+    <section id="headerBack">
+        <a href="#">
+            <svg  viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.46967 5.46967C0.176777 5.76256 0.176777 6.23744 0.46967 6.53033L5.24264 11.3033C5.53553 11.5962 6.01041 11.5962 6.3033 11.3033C6.59619 11.0104 6.59619 10.5355 6.3033 10.2426L2.06066 6L6.3033 1.75736C6.59619 1.46447 6.59619 0.989592 6.3033 0.696699C6.01041 0.403805 5.53553 0.403805 5.24264 0.696699L0.46967 5.46967ZM13 5.25L1 5.25L1 6.75L13 6.75L13 5.25Z" fill="black"/>
+            </svg>
+        </a>
+        <h1 class="namePage">Ubah Profil</h1>
+    </section>
+    
+    <section id="mainContent">
+        <div class="changeProfil">
+            <div class="imagesProfil">
+                <img src="./assets/images/profileUser.png" alt="">
+            </div>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btnGantiFoto" data-bs-toggle="modal" data-bs-target="#changeImagesProfil">
+                Ganti foto
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="changeImagesProfil" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="changeImagesProfilLabel" aria-hidden="true">
+                <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="changeImagesProfilLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Understood</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="editDataForm">
+            <form action="">
+                <div class="input-control">
+                    <label for="#pangkat">Pangkat</label>
+                    <input class="form-control" type="text" id="#pangkat">
+                </div>
+                <div class="input-control">
+                    <label for="#nama">Nama</label>
+                    <input class="form-control" type="text" id="#nama">
+                </div>
+                <div class="input-control">
+                    <label for="#nrp">NRP</label>
+                    <input class="form-control" type="number" id="#nrp">
+                </div>
+                <div class="input-control">
+                    <label for="#email">Email</label>
+                    <input class="form-control" type="email" id="#email">
+                </div>
+                <div class="input-control">
+                    <label for="#notlpn">No Telepon</label>
+                    <input class="form-control" type="number" id="#notlpn">
+                </div>
+                <div class="input-control">
+                    <label for="#npwp">NPWP</label>
+                    <input class="form-control" type="number" id="#npwp">
+                </div>
+                <div class="input-control">
+                    <label for="#tanggalLahir">Tanggal Lahir</label>
+                    <input class="form-control" type="date" id="#tanggalLahir">
+                </div>
+                <div class="input-control">
+                    <label for="#satker">Satker</label>
+                    <input class="form-control" type="text" id="#satker">
+                </div>
+                <div class="input-control">
+                    <label for="#corp">Corp</label>
+                    <input class="form-control" type="text" id="#corp">
+                </div>
+                <div class="input-control">
+                    <label for="#kesatuan">Kesatuan</label>
+                    <input class="form-control" type="text" id="#kesatuan">
+                </div>
+                <div class="input-control">
+                    <label for="#kotama">Kotama</label>
+                    <input class="form-control" type="text" id="#kotama">
+                </div>
+                <button class="btn btnSimpan">Simpan</button>
+            </form>
+        </div>
+        
+    </section>
+
+
+    <!--jQuery-->
+    <script src="./assets/vendors/jquery/jquery.min.js"></script>
+    <!--Bootstrap Asset-->
+    <script src="./assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!--Ion Icon-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
