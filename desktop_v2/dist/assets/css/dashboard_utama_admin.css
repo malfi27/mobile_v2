@@ -1,0 +1,137 @@
+/*------------
+GOOGLE FONT
+------------*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@font-face {
+  font-family: 'Roboto', sans-serif;
+}
+
+/*------------
+Resset Css
+------------*/
+*, ::after, ::before, h1, h2, p {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  outline: none;
+}
+
+#mainContent {
+  padding: 3rem;
+}
+
+#mainContent .informationSection .rekapPersonilInformation {
+  display: flex;
+}
+
+#mainContent .informationSection .rekapPersonilInformation .rekapDoughnutChart {
+  border-right: 1px solid #3E3C3C;
+  width: 30%;
+}
+
+#mainContent .informationSection .rekapPersonilInformation .rekapDoughnutChart .headerText {
+  font-weight: 700;
+}
+
+#mainContent .informationSection .rekapPersonilInformation .rekapDoughnutChart .wrapperChart {
+  width: 100%;
+  margin: 3rem 0;
+}
+
+#mainContent .informationSection .rekapPersonilInformation .rekapDoughnutChart .wrapperChart .chart {
+  width: 100%;
+}
+
+#mainContent .informationSection .rekapPersonilInformation .rekapDoughnutChart .informationChart .personil {
+  display: flex;
+  align-items: center;
+}
+
+#mainContent .informationSection .rekapPersonilInformation .rekapDoughnutChart .informationChart .personil .icon {
+  margin-right: .5rem;
+}
+
+#mainContent .informationSection .rekapPersonilInformation .rekapDoughnutChart .informationChart .personil .icon img {
+  width: 100%;
+}
+
+#mainContent .informationSection .rekapPersonilInformation .rekapDoughnutChart .informationChart .personil .value h3 {
+  font-weight: 500;
+}
+
+#mainContent .informationSection .rekapPersonilInformation .rekapDoughnutChart .informationChart .personil .value h2 {
+  font-weight: 700;
+}
+
+#mainContent .informationSection .rekapPersonilInformation .rekapLineChart {
+  width: 70%;
+  padding: 0 2rem;
+}
+
+#mainContent .informationSection .rekapPersonilInformation .rekapLineChart .headerText {
+  font-weight: 700;
+}
+
+#mainContent .informationSection .rekapPersonilInformation .rekapLineChart .wrapperChart {
+  width: 100%;
+  display: flex;
+  margin-top: 3rem;
+}
+
+@media screen and (min-width: 0px) {
+  #mainContent .informationSection .rekapPersonilInformation {
+    padding: 2rem 1rem;
+  }
+  #mainContent .informationSection .rekapPersonilInformation .rekapDoughnutChart {
+    padding: 0 1rem;
+  }
+  #mainContent .informationSection .rekapPersonilInformation .rekapDoughnutChart .headerText {
+    font-size: 24px;
+  }
+  #mainContent .informationSection .rekapPersonilInformation .rekapDoughnutChart .informationChart .personil {
+    margin: 1rem 0;
+  }
+  #mainContent .informationSection .rekapPersonilInformation .rekapDoughnutChart .informationChart .personil .icon {
+    margin-right: .5rem;
+  }
+  #mainContent .informationSection .rekapPersonilInformation .rekapDoughnutChart .informationChart .personil .icon img {
+    max-width: 28px;
+  }
+  #mainContent .informationSection .rekapPersonilInformation .rekapDoughnutChart .informationChart .personil .value h3 {
+    font-size: 16px;
+  }
+  #mainContent .informationSection .rekapPersonilInformation .rekapDoughnutChart .informationChart .personil .value h2 {
+    font-size: 18px;
+  }
+  #mainContent .informationSection .rekapPersonilInformation .rekapLineChart .headerText {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #mainContent .informationSection .rekapPersonilInformation {
+    padding: 3rem 1rem;
+  }
+  #mainContent .informationSection .rekapPersonilInformation .rekapDoughnutChart .headerText {
+    font-size: 26px;
+  }
+  #mainContent .informationSection .rekapPersonilInformation .rekapDoughnutChart .informationChart .personil {
+    margin: 1rem 0;
+  }
+  #mainContent .informationSection .rekapPersonilInformation .rekapDoughnutChart .informationChart .personil .icon {
+    margin-right: .5rem;
+  }
+  #mainContent .informationSection .rekapPersonilInformation .rekapDoughnutChart .informationChart .personil .icon img {
+    max-width: 28px;
+  }
+  #mainContent .informationSection .rekapPersonilInformation .rekapDoughnutChart .informationChart .personil .value h3 {
+    font-size: 18px;
+  }
+  #mainContent .informationSection .rekapPersonilInformation .rekapDoughnutChart .informationChart .personil .value h2 {
+    font-size: 22px;
+  }
+  #mainContent .informationSection .rekapPersonilInformation .rekapLineChart .headerText {
+    font-size: 26px;
+  }
+}

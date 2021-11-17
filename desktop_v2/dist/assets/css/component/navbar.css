@@ -1,0 +1,238 @@
+/*------------
+GOOGLE FONT
+------------*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@font-face {
+  font-family: 'Roboto', sans-serif;
+}
+
+/*------------
+Resset Css
+------------*/
+*, ::after, ::before, h1, h2, p {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  outline: none;
+}
+
+#mainHeader .navbars {
+  background: linear-gradient(125.6deg, #3B533B 11.29%, #97BB7D 108.94%);
+  width: 100%;
+  padding: 1rem;
+}
+
+#mainHeader .navbarUtama .navbarWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+#mainHeader .navbarUtama .navbarWrapper .backMenu {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+#mainHeader .navbarUtama .navbarWrapper .backMenu .backButton {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 18px;
+  width: min-content;
+}
+
+#mainHeader .navbarUtama .navbarWrapper .backMenu .backButton ion-icon {
+  margin-right: .5rem;
+}
+
+#mainHeader .navbarUtama .navbarWrapper .brandLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 2;
+}
+
+#mainHeader .navbarUtama .navbarWrapper .brandLogo .logo {
+  margin: 0 .3rem;
+}
+
+#mainHeader .navbarUtama .navbarWrapper .brandLogo .logo img {
+  width: 100%;
+}
+
+#mainHeader .navbarUtama .navbarWrapper .userControl {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#mainHeader .navbarUtama .navbarWrapper .userControl .notification {
+  margin: 0 .7rem;
+}
+
+#mainHeader .navbarUtama .navbarWrapper .userControl .notification button {
+  background: none;
+  border: none;
+}
+
+#mainHeader .navbarUtama .navbarWrapper .userControl .notification button img {
+  max-width: 28px;
+}
+
+#mainHeader .navbarUtama .navbarWrapper .userControl .notification .dropdown-menu {
+  padding: 1rem 0;
+  border: 0;
+  box-shadow: 0px 11px 11px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  top: 10px !important;
+}
+
+#mainHeader .navbarUtama .navbarWrapper .userControl .notification .dropdown-menu li {
+  margin: 1rem 0;
+}
+
+#mainHeader .navbarUtama .navbarWrapper .userControl .notification .dropdown-menu li .dropdown-item {
+  display: flex;
+  align-items: center;
+}
+
+#mainHeader .navbarUtama .navbarWrapper .userControl .notification .dropdown-menu li .dropdown-item .iconMassage {
+  background: #f0f7ff;
+  display: flex;
+  align-items: center;
+  padding: .5rem .5rem;
+  border-radius: 6px;
+}
+
+#mainHeader .navbarUtama .navbarWrapper .userControl .notification .dropdown-menu li .dropdown-item .iconMassage ion-icon {
+  margin: 0;
+  font-size: 22px;
+  color: #7e97ae;
+}
+
+#mainHeader .navbarUtama .navbarWrapper .userControl .notification .dropdown-menu li .dropdown-item .wrapperMessage {
+  margin-left: .7rem;
+}
+
+#mainHeader .navbarUtama .navbarWrapper .userControl .notification .dropdown-menu li .dropdown-item .wrapperMessage .messageName {
+  margin-bottom: .5rem;
+}
+
+#mainHeader .navbarUtama .navbarWrapper .userControl .notification .dropdown-menu li .dropdown-item .wrapperMessage .messageName h1 {
+  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+#mainHeader .navbarUtama .navbarWrapper .userControl .notification .dropdown-menu li .dropdown-item .wrapperMessage .messageContent p {
+  font-family: 'Roboto', sans-serif;
+  white-space: pre-wrap;
+  color: #4a5157;
+}
+
+#mainHeader .navbarUtama .navbarWrapper .userControl .notification .dropdown-menu li .dropdown-item .messageTime {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#mainHeader .navbarUtama .navbarWrapper .userControl .notification .dropdown-menu li .dropdown-item .messageTime span {
+  font-size: 12px;
+}
+
+#mainHeader .navbarUtama .navbarWrapper .userControl .profil {
+  margin: 0 .7rem;
+}
+
+#mainHeader .navbarUtama .navbarWrapper .userControl .profil button {
+  background: none;
+  border: none;
+}
+
+#mainHeader .navbarUtama .navbarWrapper .userControl .profil button img {
+  border-radius: 50%;
+  max-width: 34px;
+}
+
+#mainHeader .navbarUtama .navbarWrapper .userControl .profil .dropdown-menu {
+  box-shadow: 0px 11px 11px rgba(0, 0, 0, 0.1);
+  top: 10px !important;
+}
+
+#mainHeader .navbarUtama .navbarWrapper .userControl .profil .dropdown-menu li .dropdown-item {
+  display: flex;
+  align-items: center;
+  transition: .3s;
+  color: #333;
+}
+
+#mainHeader .navbarUtama .navbarWrapper .userControl .profil .dropdown-menu li .dropdown-item ion-icon {
+  margin-right: .3rem;
+}
+
+#mainHeader .navbarUtama .navbarWrapper .userControl .profil .dropdown-menu li .dropdown-item:hover {
+  color: #3C543C;
+  transition: .3s;
+}
+
+#mainHeader .navbarUtama .navbarWrapper .userControl .more {
+  margin: 0 .7rem;
+}
+
+#mainHeader .navbarUtama .navbarWrapper .userControl .more button {
+  background: none;
+  border: none;
+}
+
+#mainHeader .navbarUtama .navbarWrapper .userControl .more button img {
+  max-width: 6px;
+}
+
+#mainHeader .navbarUtama .navbarWrapper .userControl .more .dropdown-menu {
+  box-shadow: 0px 11px 11px rgba(0, 0, 0, 0.1);
+  top: 10px !important;
+}
+
+#mainHeader .navbarUtama .navbarWrapper .userControl .more .dropdown-menu li .dropdown-item {
+  display: flex;
+  align-items: center;
+  transition: .3s;
+  color: #333;
+}
+
+#mainHeader .navbarUtama .navbarWrapper .userControl .more .dropdown-menu li .dropdown-item ion-icon {
+  margin-right: .3rem;
+}
+
+#mainHeader .navbarUtama .navbarWrapper .userControl .more .dropdown-menu li .dropdown-item:hover {
+  color: #3C543C;
+  transition: .3s;
+}
+
+@media screen and (min-width: 0px) {
+  #mainHeader .navbarUtama .navbarWrapper .brandLogo .logo img {
+    max-width: 70px;
+  }
+  #mainHeader .navbarUtama .navbarWrapper .brandLogo .brandBTN img {
+    min-width: 100px;
+  }
+  #mainHeader .navbarUtama .navbarWrapper .userControl .notification .dropdown-menu li .dropdown-item .wrapperMessage .messageName h1 {
+    font-size: 18px;
+  }
+  #mainHeader .navbarUtama .navbarWrapper .userControl .notification .dropdown-menu li .dropdown-item .wrapperMessage .messageContent p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #mainHeader .navbarUtama .navbarWrapper .brandLogo .logo img {
+    max-width: 80px;
+  }
+  #mainHeader .navbarUtama .navbarWrapper .brandLogo .brandBTN img {
+    min-width: 110px;
+  }
+}

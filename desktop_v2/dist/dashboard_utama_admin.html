@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Utama Admin</title>
+
+    <!--Bootstrap Assets-->
+    <link rel="stylesheet" href="./assets/vendors/bootstrap/css/bootstrap.min.css">
+
+    <!--Component CSS-->
+    <link rel="stylesheet" href="./assets/css/component/navbar.css">
+    <link rel="stylesheet" href="./assets/css/component/menuAdmin_v2.css">
+    <link rel="stylesheet" href="./assets/css/component/cards.css">
+
+    <!--Styling Pages-->
+    <link rel="stylesheet" href="./assets/css/dashboard_utama_admin.css">
+</head>
+<body>
+    <div id="mainHeader">
+        <!--Navbar Utama-->
+        <nav class="navbars navbarUtama">
+            <div class="navbarWrapper">
+                <div class="backMenu">
+                    <!-- <a href="#" class="backButton">
+                        <ion-icon name="arrow-back-outline"></ion-icon>
+                        Kembali
+                    </a> -->
+                </div>
+                <div class="brandLogo">
+                    <div class="logo brandBTN">
+                        <img src="./assets/images/BTN_BRAND.png" alt="">
+                    </div>
+                    <div class="logo">
+                        <img src="./assets/images/KARTIKAEKA_BRAND.png" alt="">
+                    </div>
+                    <div class="logo">
+                        <img src="./assets/images/ETTPAD_BRAND.png" alt="">
+                    </div>
+                </div>
+
+                <div class="userControl">
+                    <div class="notification">
+                        
+                        <button class="btnNotification" type="button" id="notification" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="./assets/images/notificationIcon.png" alt="">
+                        </button>
+    
+                        <ul class="dropdown-menu" aria-labelledby="notification">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="iconMassage">
+                                        <ion-icon name="chatbubble-ellipses"></ion-icon>
+                                    </div>
+                                    <div class="wrapperMessage">
+                                        <div class="messageName">
+                                            <h1>Selamat Datang Di SISFOBETA 4.0</h1>
+                                        </div>
+                                        <div class="messageContent">
+                                            <p>aplikasi yang terintegrasi untuk memudahkan prajurit di seluruh Indonesia dimanapun dan kapanpun untuk mendapatkan informasi iuran twp, baltab , dan kpr secara online dan up to date</p>
+                                        </div>
+                                    </div>
+                                    <div class="messageTime">
+                                    <span>19.30</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="iconMassage">
+                                        <ion-icon name="chatbubble-ellipses"></ion-icon>
+                                    </div>
+                                    <div class="wrapperMessage">
+                                        <div class="messageName">
+                                            <h1>Selamat Datang Di SISFOBETA 4.0</h1>
+                                        </div>
+                                        <div class="messageContent">
+                                            <p>aplikasi yang terintegrasi untuk memudahkan prajurit di seluruh Indonesia dimanapun dan kapanpun untuk mendapatkan informasi iuran twp, baltab , dan kpr secara online dan up to date</p>
+                                        </div>
+                                    </div>
+                                    <div class="messageTime">
+                                    <span>19.30</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="profil">
+                        <button class=dropdown-toggle" type="button" id="profilMenu" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="./assets/images/defaultProfile.png" alt="">
+                        </button>
+
+                        <ul class="dropdown-menu" aria-labelledby="profilMenu">
+                          <li><a class="dropdown-item" href="#">
+                            <ion-icon name="person"></ion-icon>  
+                            Profil</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="more">
+                        <button class=dropdown-toggle" type="button" id="moreMenu" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="./assets/images/moreIcon.png" alt="">
+                        </button>
+
+                        <ul class="dropdown-menu" aria-labelledby="moreMenu">
+                          <li><a class="dropdown-item" href="#">
+                            <ion-icon name="person"></ion-icon>  
+                            more</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--End Navbar-->
+
+        <!--Menu Admin-->
+        <section class="menuAdmin">
+            <a href="#" class="menu">
+                e-TPP
+            </a>
+            <a href="#" class="menu">
+                e-KPR
+            </a>
+            <a href="#" class="menu">
+                e-BALTAB
+            </a>
+            <a href="#" class="menu">
+                e-TWP
+            </a>
+            <a href="#" class="menu">
+                Master
+            </a>
+            <a href="#" class="menu">
+                Konten Managemen
+            </a>
+            <a href="#" class="menu">
+                Kelola User
+            </a>
+            <a href="#" class="menu">
+                Pusat Bantuan Managemen
+            </a>
+        </section>
+        <!--End Menu Admin-->
+    </div>
+
+    <div id="mainContent">
+        <div class="informationSection">
+
+            <div class="rekapPersonilInformation cards">
+                <div class="rekapDoughnutChart">
+                    <h1 class="headerText">Rekap / <span class="month">Agustus</span> <span class="years">2021</span></h1>
+                    <div class="wrapperChart">
+                        <canvas class="chart" id="personilActivation"></canvas>
+                    </div>
+                    <div class="informationChart">
+                        <div class="personil actif">
+                            <div class="icon">
+                                <img src="./assets/images/aktifIcon.png" alt="">
+                            </div>
+                            <div class="value">
+                                <h3>Personil Aktif</h3>
+                                <h2 class="valueActive">400.000</h2>
+                            </div>
+                        </div>
+                        <div class="personil pensiun">
+                            <div class="icon">
+                                <img src="./assets/images/pensiunIcon.png" alt="">
+                            </div>
+                            <div class="value">
+                                <h3>Personil Pensiun</h3>
+                                <h2 class="valueActive">400.000</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rekapLineChart">
+                    <h1 class="headerText">Rekap Data Pertahun</h1>
+                    <div class="wrapperChart">
+                        <canvas class="chart" id="rekapPertahunPersonil"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="adminInformation">
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--Jquery Assets-->
+    <script src="./assets/vendors/jquery/jquery.min.js"></script>
+    <!--Bootstrap Javascript-->
+    <script src="./assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!--Chart JS-->
+    <script src="./assets/vendors/chartjs/Chart.js"></script>
+    <!--Ionicon-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+    <script>
+
+        //Personil Chart
+            const labelsPersonil = [
+                'Personil Aktif',
+                'Personil Pensiun',
+            ];
+            const dataPersonil = {
+
+            labels: labelsPersonil,
+            datasets: [{
+                label: 'My First dataset',
+                backgroundColor: ['#435C41','#A2A846'],
+                borderColor: 'rgb(255, 255, 255)',
+                data: [10,80],
+            }]
+            };
+            const configPersonil = {
+                type: 'doughnut',
+                data: dataPersonil,
+                options: {
+                    legend: {
+                        display: false
+                    },
+                }
+            };
+            const personilChart = new Chart(
+                document.getElementById('personilActivation'),
+                configPersonil
+            );
+
+
+        //Personil Chart Pertahun
+            const labels = [
+            'Nov',
+            'Des',
+            'Jan',
+            'Feb',
+            'Mar',
+            'Apr',
+            'May',
+            'Jun',
+            'Jul',
+            'Ags',
+            'Sep',
+            ];
+            const dataPersonilTahunan = {
+            labels: labels,
+                datasets: [
+                    {
+                        label: 'My First dataset',
+                        backgroundColor: 'rgb(60, 84, 60 ,0.4)',
+                        borderColor: 'rgb(60, 84, 60)',
+                        data: [250, 300, 600,200, 200, 300, 250,250,350,250,100],
+                        borderWidth : 6,
+                    },
+                    {
+                        label: 'My First dataset',
+                        backgroundColor: 'rgb(162, 168, 70, 0.4)',
+                        borderColor: 'rgb(162, 168, 70)',
+                        data: [450, 800, 500,400, 300, 200, 250,300,250,350,200],
+                        borderWidth : 6,
+                    },
+                ]
+            };
+            const configPersonilTahunan = {
+            type: 'line',
+            data: dataPersonilTahunan,
+            options: {
+                legend: {
+                        display: false
+                },
+            }
+            };
+            const pertahunPersonilChart = new Chart(
+                document.getElementById('rekapPertahunPersonil'),
+                configPersonilTahunan
+            );
+    </script>
+</body>
+</html>

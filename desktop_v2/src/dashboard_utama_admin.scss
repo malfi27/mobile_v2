@@ -1,0 +1,154 @@
+/*------------
+GOOGLE FONT
+------------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@font-face {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*------------
+Resset Css
+------------*/
+*,::after,::before,h1,h2,p {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+
+#mainContent {
+    padding: 3rem;
+
+    .informationSection {
+        .rekapPersonilInformation {
+            display: flex;
+            .rekapDoughnutChart {
+                border-right: 1px solid #3E3C3C;
+                width: 30%;
+                .headerText {
+                    font-weight: 700;
+                }
+                .wrapperChart {
+                    width: 100%;
+                    margin: 3rem 0;
+                    .chart {
+                        width: 100%;
+                    }
+                }
+                .informationChart {
+                    .personil {
+                        display: flex;
+                        align-items: center;
+                        .icon {
+                            margin-right: .5rem;
+                            img {
+                                width: 100%;
+                            }
+                        }
+                        .value {
+                            h3 {
+                                font-weight: 500; 
+                            }
+                            h2 {
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+            }
+            .rekapLineChart {
+                width: 70%;
+                padding: 0 2rem;
+                .headerText {
+                    font-weight: 700;
+                }
+                .wrapperChart {
+                    width: 100%;
+                    display: flex;
+                    margin-top: 3rem;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width : 0px) {
+    #mainContent {
+        .informationSection {
+            .rekapPersonilInformation {
+                padding: 2rem 1rem;
+                .rekapDoughnutChart {
+                    padding: 0 1rem;
+                    .headerText {
+                        font-size: 24px;
+                    }
+                    .informationChart {
+                        .personil {
+                            margin: 1rem 0;
+                            .icon {
+                                margin-right: .5rem;
+                                img {
+                                    max-width: 28px;
+                                }
+                            }
+                            .value {
+                                h3 {
+                                    font-size: 16px;
+                                }
+                                h2 {
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .rekapLineChart {
+                    .headerText {
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width : 1200px) {
+    #mainContent {
+        .informationSection {
+            .rekapPersonilInformation {
+                padding: 3rem 1rem;
+                .rekapDoughnutChart {
+                    .headerText {
+                        font-size: 26px;
+                    }
+                    .informationChart {
+                        .personil {
+                            margin: 1rem 0;
+                            .icon {
+                                margin-right: .5rem;
+                                img {
+                                    max-width: 28px;
+                                }
+                            }
+                            .value {
+                                h3 {
+                                    font-size: 18px;
+                                }
+                                h2 {
+                                    font-size: 22px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .rekapLineChart {
+                    .headerText {
+                        font-size: 26px;
+                    }
+                }
+            }
+        }
+    }
+}
