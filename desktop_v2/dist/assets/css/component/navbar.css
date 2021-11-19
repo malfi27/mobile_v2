@@ -215,7 +215,7 @@ Resset Css
 
 @media screen and (min-width: 0px) {
   #mainHeader .navbarUtama .navbarWrapper .brandLogo .logo img {
-    max-width: 70px;
+    max-width: 60px;
   }
   #mainHeader .navbarUtama .navbarWrapper .brandLogo .brandBTN img {
     min-width: 100px;
@@ -230,9 +230,9 @@ Resset Css
 
 @media screen and (min-width: 1024px) {
   #mainHeader .navbarUtama .navbarWrapper .brandLogo .logo img {
-    max-width: 80px;
+    max-width: 65px;
   }
   #mainHeader .navbarUtama .navbarWrapper .brandLogo .brandBTN img {
-    min-width: 110px;
+    min-width: 100px;
   }
 }
