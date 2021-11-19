@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Utama Admin</title>
+
+    <!--Bootstrap Assets-->
+    <link rel="stylesheet" href="../assets/vendors/bootstrap/css/bootstrap.min.css">
+
+    <!--Component CSS-->
+    <link rel="stylesheet" href="../assets/css/component/navbar.css">
+    <link rel="stylesheet" href="../assets/css/component/menuAdmin_v2.css">
+    <link rel="stylesheet" href="../assets/css/component/cards.css">
+
+    <!--Data Table-->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+
+    <!--Styling Pages-->
+    <link rel="stylesheet" href="../assets/css/userManagemen.css">
+
+</head>
+<body>
+    <div id="mainHeader">
+        <!--Navbar Utama-->
+        <nav class="navbars navbarUtama">
+            <div class="navbarWrapper">
+                <div class="backMenu">
+                    <!-- <a href="#" class="backButton">
+                        <ion-icon name="arrow-back-outline"></ion-icon>
+                        Kembali
+                    </a> -->
+                </div>
+                <div class="brandLogo">
+                    <div class="logo brandBTN">
+                        <img src="../assets/images/BTN_BRAND.png" alt="">
+                    </div>
+                    <div class="logo">
+                        <img src="../assets/images/KARTIKAEKA_BRAND.png" alt="">
+                    </div>
+                    <div class="logo">
+                        <img src="../assets/images/ETTPAD_BRAND.png" alt="">
+                    </div>
+                </div>
+
+                <div class="userControl">
+                    <div class="notification">
+                        
+                        <button class="btnNotification" type="button" id="notification" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="../assets/images/notificationIcon.png" alt="">
+                        </button>
+    
+                        <ul class="dropdown-menu" aria-labelledby="notification">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="iconMassage">
+                                        <ion-icon name="chatbubble-ellipses"></ion-icon>
+                                    </div>
+                                    <div class="wrapperMessage">
+                                        <div class="messageName">
+                                            <h1>Selamat Datang Di SISFOBETA 4.0</h1>
+                                        </div>
+                                        <div class="messageContent">
+                                            <p>aplikasi yang terintegrasi untuk memudahkan prajurit di seluruh Indonesia dimanapun dan kapanpun untuk mendapatkan informasi iuran twp, baltab , dan kpr secara online dan up to date</p>
+                                        </div>
+                                    </div>
+                                    <div class="messageTime">
+                                    <span>19.30</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="iconMassage">
+                                        <ion-icon name="chatbubble-ellipses"></ion-icon>
+                                    </div>
+                                    <div class="wrapperMessage">
+                                        <div class="messageName">
+                                            <h1>Selamat Datang Di SISFOBETA 4.0</h1>
+                                        </div>
+                                        <div class="messageContent">
+                                            <p>aplikasi yang terintegrasi untuk memudahkan prajurit di seluruh Indonesia dimanapun dan kapanpun untuk mendapatkan informasi iuran twp, baltab , dan kpr secara online dan up to date</p>
+                                        </div>
+                                    </div>
+                                    <div class="messageTime">
+                                    <span>19.30</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="profil">
+                        <button class="dropdown-toggle" type="button" id="profilMenu" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="./assets/images/defaultProfile.png" alt="">
+                        </button>
+
+                        <ul class="dropdown-menu" aria-labelledby="profilMenu">
+                          <li><a class="dropdown-item" href="#">
+                            <ion-icon name="person"></ion-icon>  
+                            Profil</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="more">
+                        <button class=dropdown-toggle" type="button" id="moreMenu" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="../assets/images/moreIcon.png" alt="">
+                        </button>
+
+                        <ul class="dropdown-menu" aria-labelledby="moreMenu">
+                          <li><a class="dropdown-item" href="#">
+                            <ion-icon name="person"></ion-icon>  
+                            more</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--End Navbar-->
+
+        <!--Menu Admin-->
+        <section class="menuAdmin">
+            <a href="./dataUser.html" class="menu ">
+                List Data User
+            </a>
+            <a href="#" class="menu">
+                Kelola Role
+            </a>
+            <a href="#" class="menu aktif">
+                Verifikasi User Baru
+            </a>
+        </section>
+        <!--End Menu Admin-->
+    </div>
+
+    <!-- Main Content -->
+    <div id="mainContent">
+        
+        <h2>List Data User</h2>
+
+        <!-- Table Js -->
+        <div class="wrapperTable mt-5">
+
+            <table id="tableUser" class="table" style="width:100%">
+
+              <thead class="headTable">
+                  <tr>
+                    <th class="table-text">No</th>
+                    <th class="table-text">Nama / NRP</th>
+                    <th class="table-text">Pangkat</th>
+                    <th class="table-text">Email</th>
+                    <th class="table-text">Action</th>
+                  </tr>
+              </thead>
+              <tbody class="bodyTable">
+
+
+                  <tr>
+                    <td>1</td>
+                    <td>
+                        <p style="font-weight: 600;">Arkan Haryo</p>
+                        <p>1302842471</p>
+                    </td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>
+                        
+                        <button class="btn hijau"><i>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.78732 16C5.29166 16 4.81915 15.7784 4.49476 15.3906L0.409728 10.5037C-0.201989 9.77171 -0.119296 8.67007 0.594554 8.04282C1.30809 7.41488 2.38241 7.49967 2.99485 8.23202L5.66543 11.4266L14.1058 0.990358C15.4123 -0.886189 16.7798 0.152963 15.4675 2.03753L7.17216 15.269C6.86784 15.7057 6.38475 15.9745 5.86224 15.9982C5.83701 15.9993 5.81219 16 5.78732 16Z" fill="white"/>
+                            </svg> 
+                                
+                        </i> Terima</button>
+                        
+                    </td>
+                  </tr>
+
+              </tbody>
+          </table>
+        
+        </div>
+        <!-- End Table Js -->
+
+    </div>
+    <!-- End Main Content -->
+
+
+
+    <!--Jquery Assets-->
+    <script src="../assets/vendors/jquery/jquery.min.js"></script>
+    <!--Bootstrap Javascript-->
+    <script src="../assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!--Chart JS-->
+    <script src="../assets/vendors/chartjs/Chart.js"></script>
+    <!--Ionicon-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- Table Js -->
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+
+    <script>
+        $(document).ready( function () {
+            $('#tableUser').DataTable({
+                scrollX : true,
+                "columns": [
+                    { "width": "10%" },
+                    { "width": "30%" },
+                    { "width": "20%" },
+                    { "width": "30%" },
+                    { "width": "10%" },
+                ],
+            });
+        } );
+    </script>
+
+    
+</body>
+</html>

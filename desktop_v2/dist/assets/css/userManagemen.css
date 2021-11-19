@@ -1,0 +1,44 @@
+/*------------
+GOOGLE FONT
+------------*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@font-face {
+  font-family: 'Roboto', sans-serif;
+}
+
+/*------------
+Resset Css
+------------*/
+*, ::after, ::before, h1, h2, p {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  outline: none;
+}
+
+#mainContent {
+  padding: 3rem;
+}
+
+#mainContent .wrapperTable .table .headTable{
+    background-color: #3C543C;
+    color: white;
+}
+
+.dataTables_filter label{
+    margin-bottom: .5rem;
+}
+
+.btnTambahUser{
+    background: #3C543C;
+    color: white;
+    padding: .5rem 1rem;
+    margin-bottom: .5rem;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover{
+    color: white !important;
+    background: none;
+    background-color: #3C543C !important;
+}
