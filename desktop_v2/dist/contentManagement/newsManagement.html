@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelola User | List Data User</title>
+
+    <!--Bootstrap Assets-->
+    <link rel="stylesheet" href="../assets/vendors/bootstrap/css/bootstrap.min.css">
+
+    <!--Component CSS-->
+    <link rel="stylesheet" href="../assets/css/component/navbar.css">
+    <link rel="stylesheet" href="../assets/css/component/menuAdmin_v2.css">
+    <link rel="stylesheet" href="../assets/css/component/cards.css">
+
+    <!--Data Table-->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+
+    <!--Styling Pages-->
+    <link rel="stylesheet" href="../assets/css/userManagemen.css">
+
+</head>
+<body>
+    <div id="mainHeader">
+        <!--Navbar Utama-->
+        <nav class="navbars navbarUtama">
+            <div class="navbarWrapper">
+                <div class="backMenu">
+                    <!-- <a href="#" class="backButton">
+                        <ion-icon name="arrow-back-outline"></ion-icon>
+                        Kembali
+                    </a> -->
+                </div>
+                <div class="brandLogo">
+                    <div class="logo brandBTN">
+                        <img src="../assets/images/BTN_BRAND.png" alt="">
+                    </div>
+                    <div class="logo">
+                        <img src="../assets/images/KARTIKAEKA_BRAND.png" alt="">
+                    </div>
+                    <div class="logo">
+                        <img src="../assets/images/ETTPAD_BRAND.png" alt="">
+                    </div>
+                </div>
+
+                <div class="userControl">
+                    <div class="notification">
+                        
+                        <button class="btnNotification" type="button" id="notification" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="../assets/images/notificationIcon.png" alt="">
+                        </button>
+    
+                        <ul class="dropdown-menu" aria-labelledby="notification">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="iconMassage">
+                                        <ion-icon name="chatbubble-ellipses"></ion-icon>
+                                    </div>
+                                    <div class="wrapperMessage">
+                                        <div class="messageName">
+                                            <h1>Selamat Datang Di SISFOBETA 4.0</h1>
+                                        </div>
+                                        <div class="messageContent">
+                                            <p>aplikasi yang terintegrasi untuk memudahkan prajurit di seluruh Indonesia dimanapun dan kapanpun untuk mendapatkan informasi iuran twp, baltab , dan kpr secara online dan up to date</p>
+                                        </div>
+                                    </div>
+                                    <div class="messageTime">
+                                    <span>19.30</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="iconMassage">
+                                        <ion-icon name="chatbubble-ellipses"></ion-icon>
+                                    </div>
+                                    <div class="wrapperMessage">
+                                        <div class="messageName">
+                                            <h1>Selamat Datang Di SISFOBETA 4.0</h1>
+                                        </div>
+                                        <div class="messageContent">
+                                            <p>aplikasi yang terintegrasi untuk memudahkan prajurit di seluruh Indonesia dimanapun dan kapanpun untuk mendapatkan informasi iuran twp, baltab , dan kpr secara online dan up to date</p>
+                                        </div>
+                                    </div>
+                                    <div class="messageTime">
+                                    <span>19.30</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="profil">
+                        <button class="dropdown-toggle" type="button" id="profilMenu" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="./assets/images/defaultProfile.png" alt="">
+                        </button>
+
+                        <ul class="dropdown-menu" aria-labelledby="profilMenu">
+                          <li><a class="dropdown-item" href="#">
+                            <ion-icon name="person"></ion-icon>  
+                            Profil</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="more">
+                        <button class=dropdown-toggle" type="button" id="moreMenu" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="../assets/images/moreIcon.png" alt="">
+                        </button>
+
+                        <ul class="dropdown-menu" aria-labelledby="moreMenu">
+                          <li><a class="dropdown-item" href="#">
+                            <ion-icon name="person"></ion-icon>  
+                            more</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--End Navbar-->
+
+        <!--Menu Admin-->
+        <section class="menuAdmin">
+            <a href="#" class="menu aktif">
+                Kelola Berita
+            </a>
+            <a href="./notifManagement.html" class="menu">
+                Kelola Notifikasi
+            </a>
+            <a href="#" class="menu">
+                Kelola Promosi
+            </a>
+        </section>
+        <!--End Menu Admin-->
+    </div>
+
+    <!-- Main Content -->
+    <div id="mainContent">
+        
+        <h2>Kelola Berita</h2>
+
+        <!-- Table Js -->
+        <div class="wrapperTable mt-5">
+
+            <table id="tableUser" class="table" style="width:100%">
+
+              <thead class="headTable">
+                  <tr>
+                    <th class="table-text">No</th>
+                    <th class="table-text">Judul</th>
+                    <th class="table-text">Gambar</th>
+                    <th class="table-text">Action</th>
+                  </tr>
+              </thead>
+              <tbody class="bodyTable">
+
+
+                  <tr>
+                    <td>1</td>
+                    <td>Jenderal Andika Perkasa Dilantik Presiden Menjadi Panglima TNI</td>
+                    <td>
+                        -
+                    </td>
+                    <td>
+                        <div class="dropdown">
+                            <a href="#" class="" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <svg width="6" height="26" viewBox="0 0 6 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.92463 15.8881C1.3092 15.8881 -0.000359058 14.5947 -0.000359058 12.9992C-0.000359058 11.4037 1.3092 10.1104 2.92463 10.1104C4.54005 10.1104 5.84961 11.4037 5.84961 12.9992C5.84961 14.5947 4.54005 15.8881 2.92463 15.8881Z" fill="black"/>
+                                    <path d="M2.92463 5.77775C1.3092 5.77775 -0.000359058 4.48435 -0.000359058 2.88887C-0.000359058 1.29339 1.3092 0 2.92463 0C4.54005 0 5.84961 1.29339 5.84961 2.88887C5.84961 4.48435 4.54005 5.77775 2.92463 5.77775Z" fill="black"/>
+                                    <path d="M2.92463 25.9994C1.3092 25.9994 -0.000359058 24.706 -0.000359058 23.1106C-0.000359058 21.5151 1.3092 20.2217 2.92463 20.2217C4.54005 20.2217 5.84961 21.5151 5.84961 23.1106C5.84961 24.706 4.54005 25.9994 2.92463 25.9994Z" fill="black"/>
+                                    </svg>
+                                    
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                              <li><a class="dropdown-item" href="#">Hapus</a></li>
+                              <li><a class="dropdown-item" href="./editNews.html">Edit</a></li>
+                              <li><a class="dropdown-item" href="./detailNews.html">Lihat Detail</a></li>
+                            </ul>
+
+                          </div>
+                        
+                    </td>
+                  </tr>
+
+              </tbody>
+          </table>
+        
+        </div>
+        <!-- End Table Js -->
+
+    </div>
+    <!-- End Main Content -->
+
+
+
+    <!--Jquery Assets-->
+    <script src="../assets/vendors/jquery/jquery.min.js"></script>
+    <!--Bootstrap Javascript-->
+    <script src="../assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!--Chart JS-->
+    <script src="../assets/vendors/chartjs/Chart.js"></script>
+    <!--Ionicon-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- Table Js -->
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+
+    <script>
+        $(document).ready( function () {
+            $('#tableUser').DataTable({
+                scrollX : true,
+                "columns": [
+                    { "width": "10%" },
+                    { "width": "35%" },
+                    { "width": "25%" },
+                    { "width": "10%" },
+                ],
+            });
+        } );
+    </script>
+
+    <script>
+        $(document).ready( function () {
+            $('#tableUser_length').html(`
+
+            <a class="btn hijau" href="./AddNews.html">
+                Tambah Berita
+            </a>
+
+            `)
+        });
+    </script>
+    
+</body>
+</html>
