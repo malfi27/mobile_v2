@@ -12,13 +12,15 @@
             margin: 0;
             padding: 0;
         }
-        .wrapperLoading {
+        .wrapperPreloader {
             height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
+            background: #fff;
+            width: 100%;
         }
-        .dot-typing {
+        #loader {
             position: relative;
             left: -9999px;
             width: 10px;
@@ -53,8 +55,8 @@
     </style>
 </head>
 <body>
-    <div class="wrapperLoading">
-        <div class="dot-typing"></div>
+    <div class="wrapperPreloader">
+        <div id="loader"></div>
     </div>
 </body>
 </html>
