@@ -192,6 +192,10 @@ Resset Css
   border: none;
 }
 
+#mainHeader .navbarUtama .navbarWrapper .userControl .more button::after {
+  display: none;
+}
+
 #mainHeader .navbarUtama .navbarWrapper .userControl .more button img {
   max-width: 6px;
 }
