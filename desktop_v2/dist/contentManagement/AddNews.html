@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelola User | List Data User</title>
+
+    <!--Bootstrap Assets-->
+    <link rel="stylesheet" href="../assets/vendors/bootstrap/css/bootstrap.min.css">
+
+    <!--Component CSS-->
+    <link rel="stylesheet" href="../assets/css/component/navbar.css">
+    <link rel="stylesheet" href="../assets/css/component/menuAdmin_v2.css">
+    <link rel="stylesheet" href="../assets/css/component/cards.css">
+
+    <!--Data Table-->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+
+    <!--Styling Pages-->
+    <link rel="stylesheet" href="../assets/css/userManagemen.css">
+
+</head>
+<body>
+    <div id="mainHeader">
+        <!--Navbar Utama-->
+        <nav class="navbars navbarUtama">
+            <div class="navbarWrapper">
+                <div class="backMenu">
+                    <!-- <a href="#" class="backButton">
+                        <ion-icon name="arrow-back-outline"></ion-icon>
+                        Kembali
+                    </a> -->
+                </div>
+                <div class="brandLogo">
+                    <div class="logo brandBTN">
+                        <img src="../assets/images/BTN_BRAND.png" alt="">
+                    </div>
+                    <div class="logo">
+                        <img src="../assets/images/KARTIKAEKA_BRAND.png" alt="">
+                    </div>
+                    <div class="logo">
+                        <img src="../assets/images/ETTPAD_BRAND.png" alt="">
+                    </div>
+                </div>
+
+                <div class="userControl">
+                    <div class="notification">
+                        
+                        <button class="btnNotification" type="button" id="notification" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="../assets/images/notificationIcon.png" alt="">
+                        </button>
+    
+                        <ul class="dropdown-menu" aria-labelledby="notification">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="iconMassage">
+                                        <ion-icon name="chatbubble-ellipses"></ion-icon>
+                                    </div>
+                                    <div class="wrapperMessage">
+                                        <div class="messageName">
+                                            <h1>Selamat Datang Di SISFOBETA 4.0</h1>
+                                        </div>
+                                        <div class="messageContent">
+                                            <p>aplikasi yang terintegrasi untuk memudahkan prajurit di seluruh Indonesia dimanapun dan kapanpun untuk mendapatkan informasi iuran twp, baltab , dan kpr secara online dan up to date</p>
+                                        </div>
+                                    </div>
+                                    <div class="messageTime">
+                                    <span>19.30</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="iconMassage">
+                                        <ion-icon name="chatbubble-ellipses"></ion-icon>
+                                    </div>
+                                    <div class="wrapperMessage">
+                                        <div class="messageName">
+                                            <h1>Selamat Datang Di SISFOBETA 4.0</h1>
+                                        </div>
+                                        <div class="messageContent">
+                                            <p>aplikasi yang terintegrasi untuk memudahkan prajurit di seluruh Indonesia dimanapun dan kapanpun untuk mendapatkan informasi iuran twp, baltab , dan kpr secara online dan up to date</p>
+                                        </div>
+                                    </div>
+                                    <div class="messageTime">
+                                    <span>19.30</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="profil">
+                        <button class="dropdown-toggle" type="button" id="profilMenu" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="./assets/images/defaultProfile.png" alt="">
+                        </button>
+
+                        <ul class="dropdown-menu" aria-labelledby="profilMenu">
+                          <li><a class="dropdown-item" href="#">
+                            <ion-icon name="person"></ion-icon>  
+                            Profil</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="more">
+                        <button class=dropdown-toggle" type="button" id="moreMenu" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="../assets/images/moreIcon.png" alt="">
+                        </button>
+
+                        <ul class="dropdown-menu" aria-labelledby="moreMenu">
+                          <li><a class="dropdown-item" href="#">
+                            <ion-icon name="person"></ion-icon>  
+                            more</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--End Navbar-->
+
+    </div>
+
+    <!-- Main Content -->
+    <div id="mainContent">
+
+        <!-- Menu Back -->
+        <div>
+            <a href="./newsManagement.html" class="text-decoration-none text-black d-flex mb-5" style="font-size: 22px;">
+                <i>
+                    <svg width="25" height="20" viewBox="0 0 25 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.4931 5.88004H4.67054L9.74278 2.13058C9.98664 1.94867 10.1509 1.6742 10.1997 1.36722C10.2485 1.06025 10.1778 0.745774 10.0031 0.492621C9.82836 0.239467 9.56385 0.0682484 9.26744 0.0164348C8.97103 -0.0353788 8.66686 0.0364314 8.42149 0.216151L0.462558 6.09947L0.459567 6.1027C0.316557 6.21433 0.200591 6.35884 0.120832 6.52482C0.0410723 6.69081 -0.000293981 6.87371 1.57267e-06 7.05909C0.000297127 7.24446 0.0422464 7.42723 0.122534 7.59294C0.202822 7.75865 0.319249 7.90276 0.462615 8.0139L8.42155 13.8972C8.66692 14.0769 8.97109 14.1487 9.2675 14.0969C9.56391 14.0451 9.82842 13.8739 10.0031 13.6207C10.1779 13.3676 10.2486 13.0531 10.1998 12.7461C10.151 12.4392 9.9867 12.1647 9.74284 11.9828L4.67131 8.23337H12.4931C15.2061 8.23653 17.8071 9.35328 19.7255 11.3386C21.6439 13.3239 22.723 16.0157 22.726 18.8233C22.726 19.1354 22.8458 19.4347 23.059 19.6554C23.2723 19.876 23.5615 20 23.863 20C24.1646 20 24.4538 19.876 24.667 19.6554C24.8802 19.4347 25 19.1354 25 18.8233C24.9963 15.3918 23.6774 12.1018 21.3327 9.67533C18.988 7.24883 15.809 5.88392 12.4931 5.88004V5.88004Z" fill="black"/>
+                    </svg>                        
+                </i>
+                <p class="ms-2">Kembali</p>
+            </a>
+        </div>
+
+        <h2 class="mb-5">Tambah Berita</h2>
+
+        <div class="wrapperForm">
+            <form action="">
+                    <div class="row">
+                      <div class="col-12 col-md-6">
+                        <img src="../assets/images/consulting-advisory-assistance-suggestion-guidance-concept 2.png" alt="img" class="w-100" style="max-height: 450px;">
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <p>Gambar</p>
+                        <div class="mb-3">
+                            <input class="form-control" type="file" id="formFile">
+                        </div>
+                        <p>Judul</p>
+                        <div class="mb-3">             
+                            <input type="text" class="form-control" id="" aria-describedby="judul">
+                        </div>  
+                        <p>Konten</p>
+                        <div class="form-floating mb-4">
+                            <textarea class="form-control" placeholder="Masukan Konten" id="editor"></textarea>
+                        </div>
+                        <button class="btn hijau float-end">Tambah</button>
+                      </div>
+                    </div>               
+            </form>
+        </div>
+
+
+
+
+    </div>
+    <!-- End Main Content -->
+
+
+
+    <!--Jquery Assets-->
+    <script src="../assets/vendors/jquery/jquery.min.js"></script>
+    <!--Bootstrap Javascript-->
+    <script src="../assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!--Chart JS-->
+    <script src="../assets/vendors/chartjs/Chart.js"></script>
+    <!--Ionicon-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- Table Js -->
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <!-- ckeditor -->
+    <script src="https://cdn.ckeditor.com/ckeditor5/31.0.0/classic/ckeditor.js"></script>
+    <script>
+        ClassicEditor
+            .create( document.querySelector( '#editor' ) )
+            .catch( error => {
+                console.error( error );
+            } );
+    </script>
+    
+
+    
+</body>
+</html>
