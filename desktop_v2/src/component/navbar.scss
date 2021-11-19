@@ -132,6 +132,9 @@ Resset Css
                     button {
                         background: none;
                         border: none;
+                        &::after {
+                            display: none;
+                        }
                         img {
                             border-radius: 50%;
                             max-width: 34px;

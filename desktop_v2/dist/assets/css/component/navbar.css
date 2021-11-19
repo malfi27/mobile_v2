@@ -153,6 +153,10 @@ Resset Css
   border: none;
 }
 
+#mainHeader .navbarUtama .navbarWrapper .userControl .profil button::after {
+  display: none;
+}
+
 #mainHeader .navbarUtama .navbarWrapper .userControl .profil button img {
   border-radius: 50%;
   max-width: 34px;
