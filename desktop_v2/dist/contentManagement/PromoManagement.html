@@ -17,6 +17,9 @@
     <!--Data Table-->
     <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
 
+    <!-- Dropify -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/css/dropify.min.css" integrity="sha512-EZSUkJWTjzDlspOoPSpUFR0o0Xy7jdzW//6qhUkoZ9c4StFkVsp9fbbd0O06p9ELS3H486m4wmrCELjza4JEog==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!--Styling Pages-->
     <link rel="stylesheet" href="../assets/css/userManagemen.css">
 
@@ -126,10 +129,10 @@
             <a href="./newsManagement.html" class="menu">
                 Kelola Berita
             </a>
-            <a href="#" class="menu aktif">
+            <a href="./notifManagement.html" class="menu">
                 Kelola Notifikasi
             </a>
-            <a href="./PromoManagement.html" class="menu">
+            <a href="#" class="menu aktif">
                 Kelola Promosi
             </a>
         </section>
@@ -139,7 +142,7 @@
     <!-- Main Content -->
     <div id="mainContent">
         
-        <h2>Kelola Notifikasi</h2>
+        <h2>Kelola Promosi</h2>
 
         <!-- Table Js -->
         <div class="wrapperTable mt-5">
@@ -149,9 +152,8 @@
               <thead class="headTable">
                   <tr>
                     <th class="table-text">No</th>
-                    <th class="table-text">Judul</th>
-                    <th class="table-text">Kepada</th>
-                    <th class="table-text">Deskripsi</th>
+                    <th class="table-text">Gambar</th>
+                    <th class="table-text">Keterangan</th>
                     <th class="table-text">Action</th>
                   </tr>
               </thead>
@@ -160,18 +162,14 @@
 
                   <tr>
                     <td>1</td>
-                    <td>Hore pengajuan kamu di terima !!!</td>
+                    <td><img src="../assets/images/Permata_Mutiara_Maja-web 1.png" style="width: 40%; height: 20%;"></td>
+                    <td>Promo Bulan juni</td>
                     <td>
-                        <p>1302842471</p>
-                    </td>
-                    <td>KPR dengan id 271823 telah disetujui, pembayran pertama mulai dari 2021-11-14</td>
-                    <td>
-                        <button class="btn hijau"><i>
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M15.9186 0.655058C15.8473 0.592589 15.746 0.578095 15.6601 0.61794L0.138394 7.82975C0.0548304 7.86859 0.00101877 7.95197 1.42847e-05 8.04409C-0.0009902 8.13622 0.0510517 8.22074 0.133802 8.26135L4.52641 10.4171C4.60696 10.4566 4.70301 10.4477 4.77495 10.3939L9.04578 7.20186L5.693 10.6506C5.64517 10.6998 5.62077 10.7672 5.62604 10.8356L5.95986 15.1831C5.96727 15.2794 6.03185 15.3618 6.12364 15.3919C6.14818 15.4 6.17338 15.4039 6.1983 15.4039C6.26666 15.4039 6.33314 15.3746 6.3794 15.321L8.71085 12.6193L11.593 13.9964C11.6556 14.0263 11.728 14.0276 11.7916 13.9999C11.8551 13.9722 11.9035 13.9184 11.9243 13.8523L15.989 0.906514C16.0174 0.81611 15.9897 0.717527 15.9186 0.655058Z" fill="white"/>
-                            </svg>                                
-                                
-                        </i> Kirim</button>
+                        
+                        <form action="">
+                            <button class="btn btn-danger px-3">Hapus</button>
+                        </form>
+
                     </td>
                   </tr>
 
@@ -180,6 +178,31 @@
         
         </div>
         <!-- End Table Js -->
+
+        
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            
+                            <p>Masukan Gambar</p>
+                            <input type="file" class="dropify" data-default-file="url_of_your_file" />
+                            
+                            <p class="mt-3">Keterangan</p>
+                            <input type="text" class="form-control mb-3" id="exampleInputEmail1" aria-describedby="ket">
+    
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn hijau">Simpan</button>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
 
     </div>
     <!-- End Main Content -->
@@ -197,16 +220,14 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <!-- Table Js -->
     <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
-
     <script>
         $(document).ready( function () {
             $('#tableUser').DataTable({
                 scrollX : true,
                 "columns": [
                     { "width": "5%" },
+                    { "width": "60%" },
                     { "width": "25%" },
-                    { "width": "20%" },
-                    { "width": "40%" },
                     { "width": "10%" },
                 ],
             });
@@ -217,51 +238,19 @@
         $(document).ready( function () {
             $('#tableUser_length').html(`
 
-            <button type="button" class="btn btnTambahUser" data-bs-toggle="modal" data-bs-target="#tambahUser">
-                Tambah Notif
-            </button>
-
-            <!-- Modal -->
-            <div class="modal fade" id="tambahUser" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Tambah Akun</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    
-                    <div class="container">
-                        <form action="">
-                                <p>Judul</p>
-                                <div class="mb-3">
-                                    <input type="text" class="form-control" id="" aria-describedby="judul">
-                                </div>
-                                <p>Nama Penerima</p>
-                                <div class="mb-3">
-                                    <input type="text" class="form-control" id="" aria-describedby="nama">
-                                </div>
-                                <p>NRP Penerima</p>
-                                <div class="mb-3">
-                                    <input type="text" class="form-control" id="" aria-describedby="nrp">
-                                </div> 
-                                <p>Deskripsi</p>
-                                <div class="form-floating mb-3">
-                                    <textarea class="form-control" placeholder="Masukan Deskripsi" id="floatingTextarea"></textarea>
-                                </div>      
-                        </form>
-                    </div>
-
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn hijau">Simpan</button>
-                </div>
-                </div>
-            </div>
-            </div>
+            <!-- Button trigger modal -->
+                <button type="button" class="btn hijau" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Tambah Promo
+                </button>
 
             `)
         });
+    </script>
+
+    <!-- Dropify -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/js/dropify.min.js" integrity="sha512-8QFTrG0oeOiyWo/VM9Y8kgxdlCryqhIxVeRpWSezdRRAvarxVtwLnGroJgnVW9/XBRduxO/z1GblzPrMQoeuew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('.dropify').dropify();
     </script>
     
 </body>
