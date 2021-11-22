@@ -1,0 +1,107 @@
+#mainContent {
+    padding: 3rem 0;
+  }
+
+#mainContent .wrapperTable .table .headTable{
+    background-color: #3C543C;
+    color: white;
+}
+.wrapperTable .table .bodyTable .biru{
+    background-color: #ECF2F3;
+}
+
+.wrapperPersonal{
+    width: 100%;
+    max-height: 450px;
+    box-shadow: 1px 1px 3px 1px #888888;
+    border-radius: 20px;
+
+}
+.wrapperPersonal .contentPersonal{
+    padding: 2rem 1.5rem 0 1.5rem;
+}
+.wrapperPersonal .contentPersonal .text-1{
+    font-size: 20px;
+    color: #3E3C3C;
+}
+.wrapperPersonal .contentPersonal .text-2{
+    font-size: 22px;
+    font-weight: 500;
+    color: #3E3C3C;
+}
+.wrapperPersonal .contentWallet{
+    padding: 2rem 4rem;
+}
+.wrapperPersonal .contentWallet .textt-1{
+    font-size: 20px;
+}
+.wrapperPersonal .contentWallet .textt-2{
+    font-size: 22px;
+}
+
+.wrapperKPR .fasilitas{
+    margin-top: 3rem;
+}
+.wrapperKPR .cardKPR .card-body .fasilitas .kanan{
+    margin-right: 2rem;
+}
+
+@media screen and (max-width:770px) {
+    .wrapperTable .table .headTable .table-text{
+        font-size: 14px;
+    }
+    .wrapperTable .table .bodyTable td p{
+        font-size: 14px;
+    }
+
+    .wrapperPersonal .contentPersonal{
+        padding: 2rem .5rem 0 .5rem;
+    }
+    .wrapperPersonal .contentPersonal .profil{
+        max-width: 120px;
+        max-height: 120px;
+    }
+    .wrapperPersonal .contentPersonal .text-1{
+        font-size: 16px;
+    }
+    .wrapperPersonal .contentPersonal .text-2{
+        font-size: 18px;
+    }
+    .wrapperPersonal .contentWallet{
+        padding: 2rem .5rem 1.5rem .5rem;
+    }
+    .wrapperPersonal .contentWallet .textt-1{
+        font-size: 16px;
+    }
+    .wrapperPersonal .contentWallet .textt-2{
+        font-size: 16px;
+    }
+    .wrapperKPR .cardKPR{
+        max-width: 550px;
+    }
+    .wrapperKPR .cardKPR .card-body .card-title{
+        font-size: 16px;
+    }
+    .wrapperKPR .cardKPR .card-body .card-text{
+        font-size: 14px;
+    }
+    .wrapperKPR .fasilitas{
+        margin-top: 1rem;
+    }
+    .wrapperKPR .cardKPR .card-body .fasilitas .kanan{
+        margin-right: 1rem;
+        font-size: 14px;
+    }
+    .wrapperKPR .angsuran{
+        max-height: 250px;
+    }
+    .wrapperKPR .angsuran p{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:1080px){
+    .wrapperKPR .angsuran{
+        height: 280px;
+    }
+}
