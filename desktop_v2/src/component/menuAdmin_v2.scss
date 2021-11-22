@@ -49,5 +49,9 @@ Resset Css
             color: #fff;
             transition:  .5s;
         }
+
+        &.active {
+            background: #3C543C;
+        }
     }
 }

@@ -17,8 +17,20 @@ Resset Css
   outline: none;
 }
 
+.nameProduct {
+  color: #3E3C3C;
+  font-weight: 700;
+  line-height: 37.5px;
+  margin-bottom: 1rem;
+  font-size: 28px;
+}
+
 #mainContent {
   padding: 3rem;
+}
+
+#mainContent .informationSection {
+  display: flex;
 }
 
 #mainContent .informationSection .rekapPersonilInformation {
@@ -31,7 +43,7 @@ Resset Css
 }
 
 #mainContent .informationSection .rekapPersonilInformation .rekapDoughnutChart .headerText {
-  font-weight: 700;
+  font-weight: 500;
 }
 
 #mainContent .informationSection .rekapPersonilInformation .rekapDoughnutChart .wrapperChart {
@@ -70,24 +82,98 @@ Resset Css
 }
 
 #mainContent .informationSection .rekapPersonilInformation .rekapLineChart .headerText {
-  font-weight: 700;
+  font-weight: 500;
 }
 
 #mainContent .informationSection .rekapPersonilInformation .rekapLineChart .wrapperChart {
   width: 100%;
-  display: flex;
   margin-top: 3rem;
 }
 
+#mainContent .informationSection .adminInformation .infoCard {
+  margin: 1rem 0;
+  color: #fff;
+  border-radius: 10px;
+  width: 100%;
+  box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
+}
+
+#mainContent .informationSection .adminInformation .infoCard:nth-child(1) {
+  background-color: #284E78;
+}
+
+#mainContent .informationSection .adminInformation .infoCard:nth-child(2) {
+  background-color: rgba(25, 135, 84, 0.8);
+}
+
+#mainContent .informationSection .adminInformation .infoCard:nth-child(3) {
+  background-color: rgba(220, 53, 69, 0.8);
+}
+
+#mainContent .informationSection .adminInformation .infoCard:nth-child(4) {
+  background-color: #7334FF;
+}
+
+#mainContent .informationSection .adminInformation .infoCard .labelCard {
+  margin-bottom: .8rem;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+#mainContent .informationSection .adminInformation .infoCard .wrapperValue {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+#mainContent .informationSection .adminInformation .infoCard .wrapperValue .icon img {
+  width: 100%;
+  max-width: 74px;
+}
+
+#mainContent .productSection .productLine .baltabProduct .wrapperCardBaltab {
+  display: flex;
+}
+
+#mainContent .productSection .productLine .baltabProduct .wrapperCardBaltab .cards {
+  width: 100%;
+  text-align: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+#mainContent .productSection .productLine .baltabProduct .wrapperCardBaltab .cards h1 {
+  font-weight: 700;
+}
+
+#mainContent .productSection .productLine .baltabProduct .wrapperCardBaltab .cards h1 .valuePengajuan {
+  color: #DC3545;
+}
+
+#mainContent .productSection .productLine .baltabProduct .wrapperCardBaltab .cards p {
+  color: #3E3C3C;
+  font-weight: 400;
+}
+
+#mainContent .productSection .productLine .baltabProduct .wrapperCardBaltab .cards .chartIcon svg {
+  width: 100%;
+}
+
 @media screen and (min-width: 0px) {
+  #mainContent .informationSection {
+    flex-direction: column;
+    margin: 1.5rem 0;
+  }
   #mainContent .informationSection .rekapPersonilInformation {
     padding: 2rem 1rem;
+    margin-bottom: 1.5rem;
   }
   #mainContent .informationSection .rekapPersonilInformation .rekapDoughnutChart {
     padding: 0 1rem;
   }
   #mainContent .informationSection .rekapPersonilInformation .rekapDoughnutChart .headerText {
-    font-size: 24px;
+    font-size: 22px;
   }
   #mainContent .informationSection .rekapPersonilInformation .rekapDoughnutChart .informationChart .personil {
     margin: 1rem 0;
@@ -105,16 +191,53 @@ Resset Css
     font-size: 18px;
   }
   #mainContent .informationSection .rekapPersonilInformation .rekapLineChart .headerText {
+    font-size: 22px;
+  }
+  #mainContent .informationSection .adminInformation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #mainContent .informationSection .adminInformation .infoCard {
+    width: 46.9%;
+    margin: .5rem;
+    padding: 2rem 1rem;
+  }
+  #mainContent .informationSection .adminInformation .infoCard .wrapperValue {
+    font-size: 16px;
+  }
+  #mainContent .productSection .productLine .baltabProduct .wrapperCardBaltab .cards:not(:last-child) {
+    margin-right: 1.5rem;
+  }
+  #mainContent .productSection .productLine .baltabProduct .wrapperCardBaltab .cards .icon {
+    padding: 1.5rem 1.3rem;
+  }
+  #mainContent .productSection .productLine .baltabProduct .wrapperCardBaltab .cards h1 {
     font-size: 24px;
+    padding: 0 1.3rem;
+  }
+  #mainContent .productSection .productLine .baltabProduct .wrapperCardBaltab .cards p {
+    margin-bottom: 1.5rem;
+    font-size: 14px;
+    padding: .4rem 1.3rem;
+  }
+  #mainContent .productSection .productLine .baltabProduct .wrapperCardBaltab .cards .chartIcon svg {
+    width: 100%;
   }
 }
 
 @media screen and (min-width: 1200px) {
+  #mainContent .informationSection {
+    flex-direction: row;
+    align-items: flex-start;
+  }
   #mainContent .informationSection .rekapPersonilInformation {
     padding: 3rem 1rem;
+    width: 70%;
+    margin-bottom: 0;
   }
   #mainContent .informationSection .rekapPersonilInformation .rekapDoughnutChart .headerText {
-    font-size: 26px;
+    font-size: 24px;
   }
   #mainContent .informationSection .rekapPersonilInformation .rekapDoughnutChart .informationChart .personil {
     margin: 1rem 0;
@@ -132,6 +255,29 @@ Resset Css
     font-size: 22px;
   }
   #mainContent .informationSection .rekapPersonilInformation .rekapLineChart .headerText {
-    font-size: 26px;
+    font-size: 24px;
+  }
+  #mainContent .informationSection .adminInformation {
+    width: 30%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 0 1.5rem;
+  }
+  #mainContent .informationSection .adminInformation .infoCard {
+    width: 100%;
+    margin: 0;
+    padding: 1.3rem 1rem;
+  }
+  #mainContent .informationSection .adminInformation .infoCard:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+  #mainContent .productSection .productLine .baltabProduct .wrapperCardBaltab .cards:not(:last-child) {
+    margin-right: 2rem;
+  }
+  #mainContent .productSection .productLine .baltabProduct .wrapperCardBaltab .cards h1 {
+    font-size: 28px;
+  }
+  #mainContent .productSection .productLine .baltabProduct .wrapperCardBaltab .cards p {
+    font-size: 16px;
   }
 }

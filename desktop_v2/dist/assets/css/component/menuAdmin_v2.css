@@ -53,18 +53,6 @@ Resset Css
   transition: .5s;
 }
 
-.aktif{
-  background: #3C543C !important;
-  color: #fff !important;
-}
-
-.modal-header{
+.menuAdmin .menu.active {
   background: #3C543C;
-  color: white;
-}
-
-.hijau{
-  background: #3C543C;
-  color: white;
-  padding: .4rem 1.2rem;
 }
