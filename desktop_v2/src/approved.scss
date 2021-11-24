@@ -1,0 +1,143 @@
+/*------------
+GOOGLE FONT
+------------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@font-face {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*------------
+Resset Css
+------------*/
+*,::after,::before,h1,h2,h3,h4,h5,h6,p {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+
+#mainContent {
+    padding: 3rem 2rem;
+
+    .wrapperTableV2 {
+        .table {
+            thead {
+                tr {
+                    th {
+                        color: #fff;
+                        background-color: #3C543C;
+                        padding: .7rem 2rem;
+                        &:first-child {
+                            border-radius: 15px 0px 0px 0px;
+                        }
+                        &:last-child {
+                            border-radius: 0px 15px 0px 0px;
+                        }
+                    }
+                }
+            }
+
+            tbody {
+                tr {
+                    &:nth-child(even) {
+                        background-color: #ECF2F3;
+                    }
+                    td {
+                        border-bottom: none;
+                        border: 1px solid #dee2e6;
+                        font-size: 16px;
+
+                        &:last-child {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+
+                        .actionBtn {
+                            background: rgba($color: #3C543C, $alpha: .9);
+                            color: #fff;
+                            font-size: 14px;
+
+                            &:hover {
+                                background: rgba($color: #3C543C, $alpha: 1);
+                            }
+                        }
+
+                        .modal {
+                            .modal-header {
+                                .modal-title {
+                                    color: #44526e;
+                                }
+                            }
+                            .modal-body {
+                                display: flex;
+                                .dataLama {
+                                    width: 50%;
+                                    
+                                }
+                                .dataBaru {
+                                    width: 50%;
+                                }
+
+                                .dataContainer {
+                                    .labelInfo {
+                                        color:#44526e;
+                                        font-size: 22px;
+                                        font-weight: 600;
+                                        margin-bottom: 1rem;
+                                    }
+                                    .dataWrapper {
+                                        margin: 1.5rem 0;
+                                        .label {
+                                            font-size: 18px;
+                                            color: #44526e;
+                                            font-weight: 700;
+                                            margin-bottom: .2rem;
+                                        }
+                                        .data {
+                                            font-size: 14px;
+                                            font-weight: 500;
+                                        }
+                                        .lama {
+                                            position: relative;
+                                            &::after {
+                                                content: '>>';
+                                                color: #3C543C;
+                                                display: block;
+                                                position: absolute;
+                                                top: 0;
+                                                right: 15%;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .modal-footer {
+                                .btn {
+                                    border: none;
+                                    font-size: 14px;
+                                }
+                                .btn-danger {
+                                    background: rgba($color: #fb160a, $alpha: .7);
+
+                                    &:hover {
+                                        background: rgba($color: #fb160a, $alpha: 1);
+                                    }
+                                }
+                                .btnApproved {
+                                    background: rgba($color: #3C543C, $alpha: .9);
+                                    color: #fff;
+                                    &:hover {
+                                        background: rgba($color: #3C543C, $alpha: 1);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
