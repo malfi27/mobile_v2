@@ -45,6 +45,14 @@ Resset Css
   font-size: 16px;
 }
 
+#mainContent .wrapperTableV2 .table tbody tr td:nth-child(1) {
+  padding: .5rem 2rem;
+}
+
+#mainContent .wrapperTableV2 .table tbody tr td:nth-child(2) {
+  padding: .5rem 2rem;
+}
+
 #mainContent .wrapperTableV2 .table tbody tr td:last-child {
   display: flex;
   align-items: center;
