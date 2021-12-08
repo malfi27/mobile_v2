@@ -1,0 +1,141 @@
+/*------------
+Font
+------------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: steelfish;
+  src: url(../font/stelfish.ttf);
+}
+
+/*------------
+Resset Css
+------------*/
+*, ::after, ::before, h1, h2, p {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+}
+
+/*------------
+Variables
+------------*/
+/*------------
+Styling
+------------*/
+.mainContent {
+  padding-top: 2rem;
+}
+
+.cards {
+  background: #fff;
+  padding: 1rem;
+  margin: 1rem 0;
+  -webkit-box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+}
+
+.content {
+  margin: 1.5rem 0;
+}
+
+.nameContent {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.wrapperTable {
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  margin: 1rem 0;
+}
+
+.wrapperTable .fold-table {
+  width: 100%;
+  border-radius: 6px;
+  background: #fff;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.wrapperTable .fold-table:nth-child(even) {
+  background: #ECF2F3;
+}
+
+.wrapperTable .fold-table tbody {
+  font-size: 12px;
+}
+
+.wrapperTable .fold-table tbody .view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.wrapperTable .fold-table tbody .view .iconArow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.wrapperTable .fold-table tbody .view .iconArow ion-icon {
+  color: #284E78;
+  font-size: 20px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.wrapperTable .fold-table tbody .view td {
+  padding: .5rem;
+  width: 100%;
+}
+
+.wrapperTable .fold-table tbody .view td:nth-child(2) {
+  font-weight: 600;
+}
+
+.wrapperTable .fold-table tbody .view.open .iconArow ion-icon {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.wrapperTable .fold-table tbody tr.fold {
+  display: none;
+}
+
+.wrapperTable .fold-table tbody tr.fold.open {
+  display: table-row;
+}
+
+.wrapperTable .fold-table tbody tr.fold .fold-wrapperContent .fold-content {
+  padding-left: 2.3rem;
+}
+
+.wrapperTable .fold-table tbody tr.fold .fold-wrapperContent .fold-content table {
+  width: 100%;
+}
+
+.wrapperTable .fold-table tbody tr.fold .fold-wrapperContent .fold-content table tbody tr td {
+  padding: .5rem;
+  width: 30%;
+}
+
+.wrapperTable .fold-table tbody tr.fold .fold-wrapperContent .fold-content table tbody tr td:nth-child(1) {
+  font-weight: 600;
+}
+/*# sourceMappingURL=app.css.map */
