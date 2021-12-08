@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard Utama Admin</title>
 
     <!--Bootstrap Assets-->
-    <link
-      rel="stylesheet"
-      href="./assets/vendors/bootstrap/css/bootstrap.min.css"
-    />
+    <link rel="stylesheet" href="./assets/vendors/bootstrap/css/bootstrap.min.css" />
 
     <!--Component CSS-->
     <link rel="stylesheet" href="./assets/css/component/navbar.css" />
@@ -19,858 +17,646 @@
     <link rel="stylesheet" href="./assets//css/dashboard_kpr.css" />
 
     <!--Data Table-->
-    <link
-      rel="stylesheet"
-      href="https://cdn.datatables.net/1.11.2/css/dataTables.bootstrap5.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.datatables.net/fixedheader/3.2.0/css/fixedHeader.dataTables.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.2/css/dataTables.bootstrap5.min.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.2.0/css/fixedHeader.dataTables.min.css" />
 
     <!--Styling Pages-->
-    <link rel="stylesheet" href="./assets/css/dashboard_utama_admin.css" />
-  </head>
-  <body>
+    <link rel="stylesheet" href="./assets/css/dashboard_kpr.css">
+</head>
+
+<body>
     <div id="mainHeader">
-      <!--Navbar Utama-->
-      <nav class="navbars navbarUtama">
-        <div class="navbarWrapper">
-          <div class="backMenu">
-            <!-- <a href="#" class="backButton">
+        <!--Navbar Utama-->
+        <nav class="navbars navbarUtama">
+            <div class="navbarWrapper">
+                <div class="backMenu">
+                    <!-- <a href="#" class="backButton">
                         <ion-icon name="arrow-back-outline"></ion-icon>
                         Kembali
                     </a> -->
-          </div>
-          <div class="brandLogo">
-            <div class="logo brandBTN">
-              <img src="./assets/images/BTN_BRAND.png" alt="" />
-            </div>
-            <div class="logo">
-              <img src="./assets/images/KARTIKAEKA_BRAND.png" alt="" />
-            </div>
-            <div class="logo">
-              <img src="./assets/images/ETTPAD_BRAND.png" alt="" />
-            </div>
-          </div>
+                </div>
+                <div class="brandLogo">
+                    <div class="logo brandBTN">
+                        <img src="./assets/images/BTN_BRAND.png" alt="" />
+                    </div>
+                    <div class="logo">
+                        <img src="./assets/images/KARTIKAEKA_BRAND.png" alt="" />
+                    </div>
+                    <div class="logo">
+                        <img src="./assets/images/ETTPAD_BRAND.png" alt="" />
+                    </div>
+                </div>
 
-          <div class="userControl">
-            <div class="notification">
-              <button
-                class="btnNotification"
-                type="button"
-                id="notification"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <img src="./assets/images/notificationIcon.png" alt="" />
-              </button>
+                <div class="userControl">
+                    <div class="notification">
+                        <button class="btnNotification" type="button" id="notification" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="./assets/images/notificationIcon.png" alt="" />
+                        </button>
 
-              <ul class="dropdown-menu" aria-labelledby="notification">
-                <li>
-                  <a class="dropdown-item" href="#">
-                    <div class="iconMassage">
-                      <ion-icon name="chatbubble-ellipses"></ion-icon>
+                        <ul class="dropdown-menu" aria-labelledby="notification">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="iconMassage">
+                                        <ion-icon name="chatbubble-ellipses"></ion-icon>
+                                    </div>
+                                    <div class="wrapperMessage">
+                                        <div class="messageName">
+                                            <h1>Selamat Datang Di SISFOBETA 4.0</h1>
+                                        </div>
+                                        <div class="messageContent">
+                                            <p>
+                                                aplikasi yang terintegrasi untuk memudahkan prajurit
+                                                di seluruh Indonesia dimanapun dan kapanpun untuk
+                                                mendapatkan informasi iuran twp, baltab , dan kpr
+                                                secara online dan up to date
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="messageTime">
+                                        <span>19.30</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="iconMassage">
+                                        <ion-icon name="chatbubble-ellipses"></ion-icon>
+                                    </div>
+                                    <div class="wrapperMessage">
+                                        <div class="messageName">
+                                            <h1>Selamat Datang Di SISFOBETA 4.0</h1>
+                                        </div>
+                                        <div class="messageContent">
+                                            <p>
+                                                aplikasi yang terintegrasi untuk memudahkan prajurit
+                                                di seluruh Indonesia dimanapun dan kapanpun untuk
+                                                mendapatkan informasi iuran twp, baltab , dan kpr
+                                                secara online dan up to date
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="messageTime">
+                                        <span>19.30</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="wrapperMessage">
-                      <div class="messageName">
-                        <h1>Selamat Datang Di SISFOBETA 4.0</h1>
-                      </div>
-                      <div class="messageContent">
-                        <p>
-                          aplikasi yang terintegrasi untuk memudahkan prajurit
-                          di seluruh Indonesia dimanapun dan kapanpun untuk
-                          mendapatkan informasi iuran twp, baltab , dan kpr
-                          secara online dan up to date
-                        </p>
-                      </div>
-                    </div>
-                    <div class="messageTime">
-                      <span>19.30</span>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    <div class="iconMassage">
-                      <ion-icon name="chatbubble-ellipses"></ion-icon>
-                    </div>
-                    <div class="wrapperMessage">
-                      <div class="messageName">
-                        <h1>Selamat Datang Di SISFOBETA 4.0</h1>
-                      </div>
-                      <div class="messageContent">
-                        <p>
-                          aplikasi yang terintegrasi untuk memudahkan prajurit
-                          di seluruh Indonesia dimanapun dan kapanpun untuk
-                          mendapatkan informasi iuran twp, baltab , dan kpr
-                          secara online dan up to date
-                        </p>
-                      </div>
-                    </div>
-                    <div class="messageTime">
-                      <span>19.30</span>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-            </div>
 
-            <div class="profil">
-              <button
-                class="dropdown-toggle"
-                type="button"
-                id="profilMenu"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <img src="./assets/images/defaultProfile.png" alt="" />
-              </button>
+                    <div class="profil">
+                        <button class="dropdown-toggle" type="button" id="profilMenu" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="./assets/images/defaultProfile.png" alt="" />
+                        </button>
 
-              <ul class="dropdown-menu" aria-labelledby="profilMenu">
-                <li>
-                  <a class="dropdown-item" href="#">
-                    <ion-icon name="person"></ion-icon>
-                    Profil</a
-                  >
-                </li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-              </ul>
-            </div>
+                        <ul class="dropdown-menu" aria-labelledby="profilMenu">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <ion-icon name="person"></ion-icon>
+                                    Profil
+                                </a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                        </ul>
+                    </div>
 
-            <div class="more">
-              <button
-                class="dropdown-toggle"
-                type="button"
-                id="moreMenu"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <img src="./assets/images/moreIcon.png" alt="" />
-              </button>
+                    <div class="more">
+                        <button class="dropdown-toggle" type="button" id="moreMenu" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="./assets/images/moreIcon.png" alt="" />
+                        </button>
 
-              <ul class="dropdown-menu" aria-labelledby="moreMenu">
-                <li>
-                  <a class="dropdown-item" href="#">
-                    <ion-icon name="person"></ion-icon>
-                    more</a
-                  >
-                </li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-              </ul>
+                        <ul class="dropdown-menu" aria-labelledby="moreMenu">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <ion-icon name="person"></ion-icon>
+                                    more
+                                </a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </nav>
-      <!--End Navbar-->
+        </nav>
+        <!--End Navbar-->
 
-      <!--Menu Admin-->
-      <section class="menuAdmin">
-        <a href="#" class="menu"> Dashboard </a>
-        <a href="#" class="menu"> Data KPR </a>
-        <a href="#" class="menu"> Pengajuan </a>
-        <a href="#" class="menu"> Simulasi KPR </a>
-        <a href="#" class="menu"> Lokasi </a>
-       
-      </section>
-      <!--End Menu Admin-->
-    </div>
-    <!-- Rekap Data Perbulan -->
-    <div class="content m-auto">
-      <div class="row">
-        <!-- rekap bulanan -->
-        <div class="rekap mt-4 mb-4 p-5 col-lg-8 col-sm-12">
-          <div class="row">
-            <div class="col-md-4 col-sm-12">
-              <div class="rekap-bulanan">
-                <h1 class="mb-4">Rekap Data Bulanan</h1>
-                <div class="rekap-data-perbulan">
-                  <div class="wrapperChart">
-                    <canvas
-                      class="chart chartjs-render-monitor"
-                      id="RekapDataBulanan"
-                      width="160"
-                      height="151"
-                      style="display: block; height: 121px; width: 222px"
-                    ></canvas>
-                  </div>
-                  <div class="total-pokok mb-3 p-1 mt-4">
-                    <p>Total Pokok (IDR)</p>
-                    <strong>Rp 308.260.458.101</strong>
-                  </div>
-                  <div class="total-bunga mb-3 p-1">
-                    <p>Total bunga (IDR)</p>
-                    <strong>Rp 308.260.458.101</strong>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-8 col-sm-12">
-              <div class="fluid">
-                <h1 class="mb-4">Rekap Data Pertahun</h1>
-                <div class="wrapperChart">
-                  <canvas
-                    class="chart chartjs-render-monitor"
-                    id="rekapDataTahunan"
-                    width="600"
-                    height="400"
-                    style="display: block; height: 100%; width: 100%"
-                  ></canvas>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- end rekap bulanan -->
-        <!-- Debitur -->
-        <div class="debitur col-lg-4 col-sm-12 mt-1 p-5">
-          <div
-            class="wrapper-debitur d-flex justify-content-between p-3 mb-4"
-            style="background-color: #284e78"
-          >
-            <div class="debitur-baru">
-              <h3 class="text-light">Debitur Baru</h3>
-              <h5 class="mt-3 text-light">9 Orang</h5>
-              <p class="mt-3 text-light">Agustus 2021</p>
-            </div>
-            <div class="icon d-flex align-items-center">
-              <img src="./assets/images/group 4.svg" alt="" />
-            </div>
-          </div>
-          <div
-            class="wrapper-debitur d-flex justify-content-between p-3 mb-4"
-            style="background-color: #198754"
-          >
-            <div class="debitur-baru">
-              <h3 class="text-light">Debitur Baru</h3>
-              <h5 class="mt-3 text-light">9 Orang</h5>
-              <p class="mt-3 text-light">Agustus 2021</p>
-            </div>
-            <div class="icon d-flex align-items-center">
-              <img src="./assets/images/group 4.svg" alt="" />
-            </div>
-          </div>
-          <div
-            class="
-              wrapper-debitur
-              w-100
-              d-flex
-              justify-content-between
-              p-3
-              mb-4
-            "
-            style="background-color: #dc3545"
-          >
-            <div class="debitur-baru">
-              <h3 class="text-light">Debitur Baru</h3>
-              <h5 class="mt-3 text-light">9 Orang</h5>
-              <p class="mt-3 text-light">Agustus 2021</p>
-            </div>
-            <div class="icon d-flex align-items-center">
-              <img src="./assets/images/group 4.svg" alt="" />
-            </div>
-          </div>
-          <div
-            class="
-              wrapper-debitur
-              w-100
-              d-flex
-              justify-content-between
-              p-3
-              mb-4
-            "
-            style="background-color: #284e78"
-          >
-            <div class="debitur-baru">
-              <h3 class="text-light">Debitur Baru</h3>
-              <h5 class="mt-3 text-light">9 Orang</h5>
-              <p class="mt-3 text-light">Agustus 2021</p>
-            </div>
-            <div class="icon d-flex align-items-center">
-              <img src="./assets/images/group 4.svg" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end Debitur -->
-      <div class="rekapDataBRI">
-        <h1 class="mb-3 h3">Rekap Data MassDebet BRI</h1>
-        <div class="row" >
-          <!-- RekapDebet -->
-          <div class="col-lg-6 col-sm-6" style="margin: 0 auto;">
-            <div class="row m-auto">
-              <!-- total tunggakan -->
-              <div class="col-lg-4 col-sm-12 mb-3">
-                <div class="card p-2" style="width: 14rem">
-                  <canvas
-                    class="chart chartjs-render-monitor"
-                    id="RekapDataTunggakanBRI"
-                    width="360"
-                    height="151"
-                    style="display: block; height: 20%; width: 222px"
-                  ></canvas>
-                  <div class="card-body">
-                    <h5 class="mt-5 card-text d-flex justify-content-center">
-                      Rp 128.971.493.253
-                    </h5>
-                    <p class="card-text mt-5 d-flex justify-content-center">
-                      Total Tunggakan (IDR)
-                      <span class="ms-2"
-                        ><img src="./assets/images/arrow-up.svg" alt=""
-                      /></span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <!-- total debitur -->
-              <div class="total-debitur col-lg-4 col-sm-12 mb-3">
-                <div class="card p-2" style="width: 14rem">
-                  <img
-                    class="m-auto"
-                    src="./assets/images/User.svg"
-                    style="width: 5vw"
-                    alt=""
-                  />
-                  <div class="card-body">
-                    <h2 class="mt-5 card-text d-flex justify-content-center">
-                      10.564
-                    </h2>
-                    <p
-                      class="card-text mt-5 mb-3 d-flex justify-content-center"
-                    >
-                      Total Debitur (IDR)
-                    </p>
-                    <img
-                      src="./assets/images/Grafik.svg"
-                      style="object-fit: cover; width: 100%"
-                      alt=""
-                    />
-                  </div>
-                </div>
-              </div>
-              <!-- total pinjaman -->
-              <div class="col-lg-4 col-sm-12 mb-3">
-                <div class="card p-2" style="width: 14rem">
-                  <canvas
-                    class="chart chartjs-render-monitor"
-                    id="RekapDataPinjamannBRI"
-                    width="360"
-                    height="151"
-                    style="display: block; height: 20%; width: 222px"
-                  ></canvas>
-                  <div class="card-body">
-                    <h5 class="card-text mt-5 d-flex justify-content-center">
-                      Rp 128.971.493.253
-                    </h5>
-                    <p class="card-text mt-5 d-flex justify-content-center">
-                      Total Tunggakan (IDR)
-                      <span class="ms-2"
-                        ><img src="./assets/images/arrow-up.svg" alt=""
-                      /></span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="row">
-              <div class="total-debitur col-lg-6 col-sm-6 mb-3">
-                  <!-- penerimaan BRI -->
-                <div
-                  class="total-debitur-card mb-2 card p-1 d-flex flex-row"
-                  style="width: 22rem; height: 8rem"
-                >
-                  <div class="card-body mb-5 d-flex flex-row">
-                    <div class="rekap-penerimaan" style="height: 20px;">
-                      <h5 class="card-text text-success mb-3">
-                        Rekap Penerimaan (IDR)
-                      </h5>
-                      <h4>Rp 308.260.458.101</h4>
-                      <p class="h6 mt-2">Total Pokok (IDR)</p>
-                    </div>
-                    <div class="wrapperChart">
-                      <canvas
-                        class="
-                          chart
-                          chartjs-render-monitor
-                          d-flex
-                          align-items-center
-                          mt-4
-                        "
-                        id="RekapDataPenerimaanBRI"
-                        width="221"
-                        height="112"
-                        style="display: block; height: 56px; width: 113px;"
-                      ></canvas>
-                    </div>
-                  </div>
-                </div>
-                <!-- Rekap piutang BRI -->
-               <div
-                  class="total-debitur-card mb-2 card p-1 d-flex flex-row"
-                  style="width: 22rem; height: 8rem"
-                >
-                  <div class="card-body mb-5 d-flex flex-row">
-                    <div class="rekap-piutang">
-                      <h5 class="card-text text-danger mb-2">
-                        Rekap Piutang (IDR)
-                      </h5>
-                      <h4 >Rp 308.260.458.101</h4>
-                      <p class=" mt-2">Total Pokok (IDR)</p>
-                    </div>
-                     <div class="wrapperChart">
-                      <canvas
-                        class="
-                          chart
-                          chartjs-render-monitor
-                          d-flex
-                          align-items-center
-                          mt-4
-                        "
-                        id="RekapDataPiutangBRI"
-                        width="221"
-                        height="112"
-                        style="display: block; height: 56px; width: 113px;"
-                      ></canvas>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Rekap Bunga penerimaan Piutang -->
-
-           
-              <div class="total-debitur col-lg-6 col-sm-6 ">
-                   <!-- Bunga terima-->
-               <div
-                  class="total-debitur-card mb-2 card p-1 d-flex flex-row"
-                  style="width: 22rem; height: 8rem"
-                >
-                  <div class="card-body mb-5 d-flex flex-row">
-                    <div class="rekap-piutang">
-                      <h5 class="card-text text-success mb-2">
-                        Rekap Penerimaan (IDR)
-                      </h5>
-                      <h4 >Rp 308.260.458.101</h4>
-                      <p class=" mt-2">Total Bunga (IDR)</p>
-                    </div>
-                     <div class="wrapperChart">
-                      <canvas
-                        class="
-                          chart
-                          chartjs-render-monitor
-                          d-flex
-                          align-items-center
-                          mt-4
-                        "
-                        id="RekapDataTerimaBungaBRI"
-                        width="221"
-                        height="112"
-                        style="display: block; height: 56px; width: 113px;"
-                      ></canvas>
-                    </div>
-                  </div>
-                </div>
-                <!-- bunga total -->
-                 <div
-                  class="total-debitur-card mb-2 card p-1 d-flex flex-row"
-                  style="width: 22rem; height: 8rem"
-                >
-                  <div class="card-body mb-5 d-flex flex-row">
-                    <div class="rekap-piutang">
-                      <h5 class="card-text text-danger mb-2">
-                        Rekap Piutang (IDR)
-                      </h5>
-                      <h4 >Rp 308.260.458.101</h4>
-                      <p class=" mt-2">Total Pokok (IDR)</p>
-                    </div>
-                     <div class="wrapperChart">
-                      <canvas
-                        class="
-                          chart
-                          chartjs-render-monitor
-                          d-flex
-                          align-items-center
-                          mt-4
-                        "
-                        id="RekapDataBungaTotalBRI"
-                        width="221"
-                        height="112"
-                        style="display: block; height: 56px; width: 113px;"
-                      ></canvas>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <table class="table">
-  <thead>
-    <tr class="m-auto">
-      <th class="th-radius" scope="col">Jangka Waktu</th>
-      <th scope="col">Saldo Pokok</th>
-      <th scope="col">Saldo Bunga</th>
-      <th scope="col">Piuang Pokok</th>
-      <th class="th-radius-right" scope="col">Piuang Bunga</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">120</th>
-      <td>Rp.1.708.360.000</td>
-      <td>Rp.85.000.000</td>
-      <td>Rp.20.938.170</td>
-      <td>Rp.1.145.830</td>
-    </tr>
-    <tr class="table-primary">
-      <th scope="row">120</th>
-      <td>Rp.1.708.360.000</td>
-      <td>Rp.85.000.000</td>
-      <td>Rp.20.938.170</td>
-      <td>Rp.1.145.830</td>
-    </tr>
-    <tr>
-      <th scope="row">120</th>
-      <td>Rp.1.708.360.000</td>
-      <td>Rp.85.000.000</td>
-      <td>Rp.20.938.170</td>
-      <td>Rp.1.145.830</td>
-    </tr>
-     <tr class="table-primary">
-      <th scope="row">120</th>
-      <td>Rp.1.708.360.000</td>
-      <td>Rp.85.000.000</td>
-      <td>Rp.20.938.170</td>
-      <td>Rp.1.145.830</td>
-    </tr>
-    <tr>
-      <th scope="row">120</th>
-      <td>Rp.1.708.360.000</td>
-      <td>Rp.85.000.000</td>
-      <td>Rp.20.938.170</td>
-      <td>Rp.1.145.830</td>
-    </tr>
-  </tbody>
-</table>
-
-
-
-<!-- BTN -->
- <div class="rekapDataBRI">
-        <h1 class="mb-3 h3">Rekap Data MassDebet BTN</h1>
-        <div class="row" >
-          <!-- RekapDebet -->
-          <div class="col-lg-6 col-sm-6" style="margin: 0 auto;">
-            <div class="row m-auto">
-              <!-- total tunggakan -->
-              <div class="col-lg-4 col-sm-12 mb-3">
-                <div class="card p-2" style="width: 14rem">
-                  <canvas
-                    class="chart chartjs-render-monitor"
-                    id="RekapDataTunggakanBTN"
-                    width="360"
-                    height="151"
-                    style="display: block; height: 20%; width: 222px"
-                  ></canvas>
-                  <div class="card-body">
-                    <h5 class="mt-5 card-text d-flex justify-content-center">
-                      Rp 128.971.493.253
-                    </h5>
-                    <p class="card-text mt-5 d-flex justify-content-center">
-                      Total Tunggakan (IDR)
-                      <span class="ms-2"
-                        ><img src="./assets/images/arrow-up.svg" alt=""
-                      /></span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <!-- total debitur -->
-              <div class="total-debitur col-lg-4 col-sm-12 mb-3">
-                <div class="card p-2" style="width: 14rem">
-                  <img
-                    class="m-auto"
-                    src="./assets/images/User.svg"
-                    style="width: 5vw"
-                    alt=""
-                  />
-                  <div class="card-body">
-                    <h2 class="mt-5 card-text d-flex justify-content-center">
-                      10.564
-                    </h2>
-                    <p
-                      class="card-text mt-5 mb-3 d-flex justify-content-center"
-                    >
-                      Total Debitur (IDR)
-                    </p>
-                    <img
-                      src="./assets/images/Grafik.svg"
-                      style="object-fit: cover; width: 100%"
-                      alt=""
-                    />
-                  </div>
-                </div>
-              </div>
-              <!-- total pinjaman -->
-              <div class="col-lg-4 col-sm-12 mb-3">
-                <div class="card p-2" style="width: 14rem">
-                  <canvas
-                    class="chart chartjs-render-monitor"
-                    id="RekapDataPinjamannBTN"
-                    width="360"
-                    height="151"
-                    style="display: block; height: 20%; width: 222px"
-                  ></canvas>
-                  <div class="card-body">
-                    <h5 class="card-text mt-5 d-flex justify-content-center">
-                      Rp 128.971.493.253
-                    </h5>
-                    <p class="card-text mt-5 d-flex justify-content-center">
-                      Total Tunggakan (IDR)
-                      <span class="ms-2"
-                        ><img src="./assets/images/arrow-up.svg" alt=""
-                      /></span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="row">
-              <div class="total-debitur col-lg-6 col-sm-6 mb-3">
-                  <!-- penerimaan BTN -->
-                <div
-                  class="total-debitur-card mb-2 card p-1 d-flex flex-row"
-                  style="width: 22rem; height: 8rem"
-                >
-                  <div class="card-body mb-5 d-flex flex-row">
-                    <div class="rekap-penerimaan">
-                      <h5 class="card-text text-success mb-3">
-                        Rekap Penerimaan (IDR)
-                      </h5>
-                      <h4>Rp 308.260.458.101</h4>
-                      <p class="h6 mt-2">Total Pokok (IDR)</p>
-                    </div>
-                    <div class="wrapperChart">
-                      <canvas
-                        class="
-                          chart
-                          chartjs-render-monitor
-                          d-flex
-                          align-items-center
-                          mt-4
-                        "
-                        id="RekapDataPenerimaanBTN"
-                        width="221"
-                        height="112"
-                        style="display: block; height: 56px; width: 113px;"
-                      ></canvas>
-                    </div>
-                  </div>
-                </div>
-                <!-- Rekap piutang BTN -->
-               <div
-                  class="total-debitur-card mb-2 card p-1 d-flex flex-row"
-                  style="width: 22rem; height: 8rem"
-                >
-                  <div class="card-body mb-5 d-flex flex-row">
-                    <div class="rekap-piutang">
-                      <h5 class="card-text text-danger mb-2">
-                        Rekap Piutang (IDR)
-                      </h5>
-                      <h4 >Rp 308.260.458.101</h4>
-                      <p class=" mt-2">Total Pokok (IDR)</p>
-                    </div>
-                     <div class="wrapperChart">
-                      <canvas
-                        class="
-                          chart
-                          chartjs-render-monitor
-                          d-flex
-                          align-items-center
-                          mt-4
-                        "
-                        id="RekapDataPiutangBTN"
-                        width="221"
-                        height="112"
-                        style="display: block; height: 56px; width: 113px;"
-                      ></canvas>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Rekap Bunga penerimaan Piutang -->
-
-           
-              <div class="total-debitur col-lg-6 col-sm-6 ">
-                   <!-- Bunga terima-->
-               <div
-                  class="total-debitur-card mb-2 card p-1 d-flex flex-row"
-                  style="width: 22rem; height: 8rem"
-                >
-                  <div class="card-body mb-5 d-flex flex-row">
-                    <div class="rekap-piutang">
-                      <h5 class="card-text text-success mb-2">
-                        Rekap Penerimaan (IDR)
-                      </h5>
-                      <h4 >Rp 308.260.458.101</h4>
-                      <p class=" mt-2">Total Bunga (IDR)</p>
-                    </div>
-                     <div class="wrapperChart">
-                      <canvas
-                        class="
-                          chart
-                          chartjs-render-monitor
-                          d-flex
-                          align-items-center
-                          mt-4
-                        "
-                        id="RekapDataTerimaBungaBTN"
-                        width="221"
-                        height="112"
-                        style="display: block; height: 56px; width: 113px;"
-                      ></canvas>
-                    </div>
-                  </div>
-                </div>
-                <!-- bunga total -->
-                 <div
-                  class="total-debitur-card mb-2 card p-1 d-flex flex-row"
-                  style="width: 22rem; height: 8rem"
-                >
-                  <div class="card-body mb-5 d-flex flex-row">
-                    <div class="rekap-piutang">
-                      <h5 class="card-text text-danger mb-2">
-                        Rekap Piutang (IDR)
-                      </h5>
-                      <h4 >Rp 308.260.458.101</h4>
-                      <p class=" mt-2">Total Pokok (IDR)</p>
-                    </div>
-                     <div class="wrapperChart">
-                      <canvas
-                        class="
-                          chart
-                          chartjs-render-monitor
-                          d-flex
-                          align-items-center
-                          mt-4
-                        "
-                        id="RekapDataBungaTotalBTN"
-                        width="221"
-                        height="112"
-                        style="display: block; height: 56px; width: 113px;"
-                      ></canvas>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <table class="table">
-  <thead>
-    <tr class="m-auto">
-      <th class="th-radius" scope="col">Jangka Waktu</th>
-      <th scope="col">Saldo Pokok</th>
-      <th scope="col">Saldo Bunga</th>
-      <th scope="col">Piuang Pokok</th>
-      <th class="th-radius-right" scope="col">Piuang Bunga</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">120</th>
-      <td>Rp.1.708.360.000</td>
-      <td>Rp.85.000.000</td>
-      <td>Rp.20.938.170</td>
-      <td>Rp.1.145.830</td>
-    </tr>
-    <tr class="table-primary">
-      <th scope="row">120</th>
-      <td>Rp.1.708.360.000</td>
-      <td>Rp.85.000.000</td>
-      <td>Rp.20.938.170</td>
-      <td>Rp.1.145.830</td>
-    </tr>
-    <tr>
-      <th scope="row">120</th>
-      <td>Rp.1.708.360.000</td>
-      <td>Rp.85.000.000</td>
-      <td>Rp.20.938.170</td>
-      <td>Rp.1.145.830</td>
-    </tr>
-     <tr class="table-primary">
-      <th scope="row">120</th>
-      <td>Rp.1.708.360.000</td>
-      <td>Rp.85.000.000</td>
-      <td>Rp.20.938.170</td>
-      <td>Rp.1.145.830</td>
-    </tr>
-    <tr>
-      <th scope="row">120</th>
-      <td>Rp.1.708.360.000</td>
-      <td>Rp.85.000.000</td>
-      <td>Rp.20.938.170</td>
-      <td>Rp.1.145.830</td>
-    </tr>
-  </tbody>
-</table>
+        <!--Menu Admin-->
+        <section class="menuAdmin">
+            <a href="#" class="menu"> Dashboard </a>
+            <a href="#" class="menu"> Data KPR </a>
+            <a href="#" class="menu"> Pengajuan </a>
+            <a href="#" class="menu"> Simulasi KPR </a>
+            <a href="#" class="menu"> Lokasi </a>
+        </section>
+        <!--End Menu Admin-->
     </div>
 
+    <div class="container">
+        <!-- grafik Rekap -->
+        <div class="main-chart-graphic row mt-5 pt-5 px-2 py-2">
+            <div class="col-md-12 col-lg-8 mb-sm-3">
+                <div class="row">
+                    <div class="rekap-border col-md-4 col-sm-12 mt-md-5 mb-sm-3">
+                        <h1 class="h4">Rekap data bulanan</h1>
+                        <div class="wrapperChart">
+                            <canvas class="chart chartjs-render-monitor" id="RekapDataBulanan" width="320" height="151"
+                                style="display: block; height: 121px; width: 222px"></canvas>
+                        </div>
+                        <div class="total-pokok-main mt-sm-5">
+                            <h5>Total Pokok</h5>
+                            <h5>Rp 308.260.458.101</h5>
+                        </div>
+                        <div class="total-pokok-main orange mt-sm-4">
+                            <h5>Total Pokok</h5>
+                            <h5>Rp 308.260.458.101</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-12 mt-md-5">
+                        <h1 class="h4">Rekap data bulanan</h1>
+                        <div class="wrapperChart">
+                            <canvas class="chart chartjs-render-monitor" id="rekapDataTahunan" width="800" height="700"
+                                style="display: block; height: 100%; width: 100%"></canvas>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-4 mt-5 ">
+                <div class="debitur-card">
+                    <div class="debitur-baru d-flex justify-content-between align-items-center mb-3">
+                        <div class="debitur-text">
+                            <h4 class="mb-3">Debitur Baru</h4>
+                            <h5 class="mb-2">9 Orang</h5>
+                            <p>Agustus 2021</p>
+                        </div>
+                        <div class="debitur-icon">
+                            <img src="./assets/images/peopleIcon.png" alt="">
+                        </div>
+                    </div>
+                    <div class="debitur-lunas d-flex justify-content-between align-items-center mb-3">
+                        <div class="debitur-text">
+                            <h4 class="mb-3">Debitur Lunas</h4>
+                            <h5 class="mb-2">9 Orang</h5>
+                            <p>Agustus 2021</p>
+                        </div>
+                        <div class="debitur-icon">
+                            <img src="./assets/images/peopleIcon.png" alt="">
+                        </div>
+                    </div>
+                    <div class="debitur-meninggal d-flex justify-content-between align-items-center mb-3">
+                        <div class="debitur-text">
+                            <h4 class="mb-3">Debitur Meninggal</h4>
+                            <h5 class="mb-2">9 Orang</h5>
+                            <p>Agustus 2021</p>
+                        </div>
+                        <div class="debitur-icon">
+                            <img src="./assets/images/peopleIcon.png" alt="">
+                        </div>
+                    </div>
+                    <div class="debitur-outstanding d-flex justify-content-between align-items-center mb-3">
+                        <div class="debitur-text">
+                            <h4 class="mb-3">Debitur Outstanding</h4>
+                            <h5 class="mb-2">9 Orang</h5>
+                            <p>Agustus 2021</p>
+                        </div>
+                        <div class="debitur-icon">
+                            <img src="./assets/images/peopleIcon.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Grafik Rekap BRI -->
+
+        <!-- Rekap data mass debet BRI -->
+        <div class="main-rekap-data-massdebet">
+            <h3 class="mt-4">Rekap Data MassDebet BRI & Manual</h3>
+            <div class="row">
+                <div class="col-md-12 col-lg-6 mt-4">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 mt-md-5">
+                            <div class="card-debet">
+                                <canvas class="chart chartjs-render-monitor" id="RekapDataTunggakanBRI" width="420"
+                                    height="151">
+                                </canvas>
+                                <h5 class="text-center mt-4">Rp 128.971.493.253</h3>
+                                    <p class="text-center mt-3">total tunggakan</p>
+                                    <div class="debet-up d-flex justify-content-center mt-4">
+                                        <img src="./assets/images/arrow-up.svg" alt="">
+                                        <span>14%</span>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 mt-md-5">
+                            <div class="card-debet">
+                                <div class="debet-icon d-flex justify-content-center">
+                                    <img src="./assets/images/User.svg" alt="">
+                                </div>
+                                <h5 class="text-center mt-4">Rp 128.971.493.253</h3>
+                                    <p class="text-center mt-3 mb-2">total tunggakan</p>
+                                    <div class="debet-grafik">
+                                        <img src="./assets/images/grafik1.svg" style="width: 100%; object-fit: cover;" ;
+                                            alt="">
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 mt-md-5">
+                            <div class="card-debet">
+                                <canvas class="chart chartjs-render-monitor" id="RekapDataPinjamannBRI" width="420"
+                                    height="151" style="display: block; height: 20%; width: 222px"></canvas>
+                                <h5 class="text-center mt-4">Rp 128.971.493.253</h3>
+                                    <p class="text-center mt-3 mb-2">total Pinjaman</p>
+                                    <div class="debet-up d-flex justify-content-center mt-4">
+                                        <img src="./assets/images/arrow-down.svg" alt="">
+                                        <span class="text-danger">14%</span>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-6 col-mt-sm-4 mt-4">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-6">
+                            <div class="rekap-penerimaan rekap-card d-flex justify-content-between">
+                                <div class="rekap-text">
+                                    <h6 style="color: #198754;">Rekap Penerimaan</h6>
+                                    <h6 class="mb-4">Rp 308.260.458.101</h6>
+                                    <p>Total Pokok (IDR)</p>
+                                </div>
+                                <div class="rekap-grafik">
+                                    <div class="wrapperChart">
+                                        <canvas class="
+                          chart
+                          chartjs-render-monitor
+                          d-flex
+                          align-items-center
+                         
+                        " id="RekapDataPenerimaanBRI" width="221" height="162"
+                                            style="display: block; height: 56px; width: 113px;"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-6">
+                            <div class="rekap-penerimaan rekap-card d-flex justify-content-between">
+                                <div class="rekap-text">
+                                    <h6 style="color: #198754;">Rekap Penerimaan</h6>
+                                    <h6 class="mb-4">Rp 308.260.458.101</h6>
+                                    <p>Bunga Total (IDR)</p>
+                                </div>
+                                <div class="rekap-grafik">
+                                    <div class="wrapperChart">
+                                        <canvas class="
+                          chart
+                          chartjs-render-monitor
+                          d-flex
+                          align-items-center
+                      
+                        " id="RekapDataTerimaBungaBRI" width="221" height="162"
+                                            style="display: block; height: 56px; width: 113px;"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-6">
+                            <div class="rekap-penerimaan rekap-card d-flex justify-content-between">
+                                <div class="rekap-text">
+                                    <h6 class="text-danger">Rekap Piutang</h6>
+                                    <h6 class="mb-4">Rp 308.260.458.101</h6>
+                                    <p>Total Pokok(IDR)</p>
+                                </div>
+                                <div class="rekap-grafik">
+                                    <div class="wrapperChart">
+                                        <canvas class="
+                          chart
+                          chartjs-render-monitor
+                          d-flex
+                          align-items-center
+                          mt-4
+                        " id="RekapDataPiutangBRI" width="221" height="162"
+                                            style="display: block; height: 56px; width: 113px;"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-6">
+                            <div class="rekap-penerimaan rekap-card d-flex justify-content-between">
+                                <div class="rekap-text">
+                                    <h6 class="text-danger">Rekap Piutang</h6>
+                                    <h6 class="mb-4">Rp 308.260.458.101</h6>
+                                    <p>Total Pokok(IDR)</p>
+                                </div>
+                                <div class="rekap-grafik">
+                                    <div class="wrapperChart">
+                                        <canvas class="
+                          chart
+                          chartjs-render-monitor
+                          d-flex
+                          align-items-center
+                          mt-4
+                        " id="RekapDataBungaTotalBRI" width="221" height="152"
+                                            style="display: block; height: 56px; width: 113px;"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Table BRI -->
+        <table class="table mt-5 text-center">
+            <thead>
+                <tr class="m-auto">
+                    <th class="th-radius" scope="col">Jangka Waktu</th>
+                    <th scope="col">Saldo Pokok</th>
+                    <th scope="col">Saldo Bunga</th>
+                    <th scope="col">Piuang Pokok</th>
+                    <th class="th-radius-right" scope="col">Piuang Bunga</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">120</th>
+                    <td>Rp.1.708.360.000</td>
+                    <td>Rp.85.000.000</td>
+                    <td>Rp.20.938.170</td>
+                    <td>Rp.1.145.830</td>
+                </tr>
+                <tr class="table-primary">
+                    <th scope="row">120</th>
+                    <td>Rp.1.708.360.000</td>
+                    <td>Rp.85.000.000</td>
+                    <td>Rp.20.938.170</td>
+                    <td>Rp.1.145.830</td>
+                </tr>
+                <tr>
+                    <th scope="row">120</th>
+                    <td>Rp.1.708.360.000</td>
+                    <td>Rp.85.000.000</td>
+                    <td>Rp.20.938.170</td>
+                    <td>Rp.1.145.830</td>
+                </tr>
+                <tr class="table-primary">
+                    <th scope="row">120</th>
+                    <td>Rp.1.708.360.000</td>
+                    <td>Rp.85.000.000</td>
+                    <td>Rp.20.938.170</td>
+                    <td>Rp.1.145.830</td>
+                </tr>
+                <tr>
+                    <th scope="row">120</th>
+                    <td>Rp.1.708.360.000</td>
+                    <td>Rp.85.000.000</td>
+                    <td>Rp.20.938.170</td>
+                    <td>Rp.1.145.830</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <!-- BTN -->
+        <!-- End Grafik Rekap -->
+
+        <!-- Rekap data mass debet BRI -->
+        <div class="main-rekap-data-massdebet">
+            <h3 class="mt-4">Rekap Data MassDebet BTN</h3>
+            <div class="row">
+                <div class="col-md-12 col-lg-6 mt-4">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 mt-md-5">
+                            <div class="card-debet">
+                                <canvas class="chart chartjs-render-monitor" id="RekapDataTunggakanBTN" width="420"
+                                    height="151">
+                                </canvas>
+                                <h5 class="text-center mt-4">Rp 128.971.493.253</h3>
+                                    <p class="text-center mt-3">total tunggakan</p>
+                                    <div class="debet-up d-flex justify-content-center mt-4">
+                                        <img src="./assets/images/arrow-up.svg" alt="">
+                                        <span>14%</span>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 mt-md-5">
+                            <div class="card-debet">
+                                <div class="debet-icon d-flex justify-content-center">
+                                    <img src="./assets/images/User.svg" alt="">
+                                </div>
+                                <h5 class="text-center mt-4">Rp 128.971.493.253</h3>
+                                    <p class="text-center mt-3 mb-2">total tunggakan</p>
+                                    <div class="debet-grafik">
+                                        <img src="./assets/images/grafik1.svg" style="width: 100%; object-fit: cover;" ;
+                                            alt="">
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 mt-md-5">
+                            <div class="card-debet">
+                                <canvas class="chart chartjs-render-monitor" id="RekapDataPinjamannBTN" width="420"
+                                    height="151" style="display: block; height: 20%; width: 222px"></canvas>
+                                <h5 class="text-center mt-4">Rp 128.971.493.253</h3>
+                                    <p class="text-center mt-3 mb-2">total Pinjaman</p>
+                                    <div class="debet-up d-flex justify-content-center mt-4">
+                                        <img src="./assets/images/arrow-down.svg" alt="">
+                                        <span class="text-danger">14%</span>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-6 col-mt-sm-4 mt-4">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-6">
+                            <div class="rekap-penerimaan rekap-card d-flex justify-content-between">
+                                <div class="rekap-text">
+                                    <h6 style="color: #198754;">Rekap Penerimaan</h6>
+                                    <h6 class="mb-4">Rp 308.260.458.101</h6>
+                                    <p>Total Pokok (IDR)</p>
+                                </div>
+                                <div class="rekap-grafik">
+                                    <div class="wrapperChart">
+                                        <canvas class="
+                          chart
+                          chartjs-render-monitor
+                          d-flex
+                          align-items-center
+                         
+                        " id="RekapDataPenerimaanBTN" width="221" height="162"
+                                            style="display: block; height: 56px; width: 113px;"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-6">
+                            <div class="rekap-penerimaan rekap-card d-flex justify-content-between">
+                                <div class="rekap-text">
+                                    <h6 style="color: #198754;">Rekap Penerimaan</h6>
+                                    <h6 class="mb-4">Rp 308.260.458.101</h6>
+                                    <p>Bunga Total (IDR)</p>
+                                </div>
+                                <div class="rekap-grafik">
+                                    <div class="wrapperChart">
+                                        <canvas class="
+                          chart
+                          chartjs-render-monitor
+                          d-flex
+                          align-items-center
+                      
+                        " id="RekapDataTerimaBungaBTN" width="221" height="162"
+                                            style="display: block; height: 56px; width: 113px;"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-6">
+                            <div class="rekap-penerimaan rekap-card d-flex justify-content-between">
+                                <div class="rekap-text">
+                                    <h6 class="text-danger">Rekap Piutang</h6>
+                                    <h6 class="mb-4">Rp 308.260.458.101</h6>
+                                    <p>Total Pokok(IDR)</p>
+                                </div>
+                                <div class="rekap-grafik">
+                                    <div class="wrapperChart">
+                                        <canvas class="
+                          chart
+                          chartjs-render-monitor
+                          d-flex
+                          align-items-center
+                          mt-4
+                        " id="RekapDataPiutangBTN" width="221" height="162"
+                                            style="display: block; height: 56px; width: 113px;"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-6">
+                            <div class="rekap-penerimaan rekap-card d-flex justify-content-between">
+                                <div class="rekap-text">
+                                    <h6 class="text-danger">Rekap Piutang</h6>
+                                    <h6 class="mb-4">Rp 308.260.458.101</h6>
+                                    <p>Total Pokok(IDR)</p>
+                                </div>
+                                <div class="rekap-grafik">
+                                    <div class="wrapperChart">
+                                        <canvas class="
+                          chart
+                          chartjs-render-monitor
+                          d-flex
+                          align-items-center
+                          mt-4
+                        " id="RekapDataBungaTotalBTN" width="221" height="162"
+                                            style="display: block; height: 56px; width: 113px;"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Table -->
+        <table class="table mt-5 text-center mb-4">
+            <thead>
+                <tr class="m-auto">
+                    <th class="th-radius" scope="col">Jangka Waktu</th>
+                    <th scope="col">Saldo Pokok</th>
+                    <th scope="col">Saldo Bunga</th>
+                    <th scope="col">Piuang Pokok</th>
+                    <th class="th-radius-right" scope="col">Piuang Bunga</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">120</th>
+                    <td>Rp.1.708.360.000</td>
+                    <td>Rp.85.000.000</td>
+                    <td>Rp.20.938.170</td>
+                    <td>Rp.1.145.830</td>
+                </tr>
+                <tr class="table-primary">
+                    <th scope="row">120</th>
+                    <td>Rp.1.708.360.000</td>
+                    <td>Rp.85.000.000</td>
+                    <td>Rp.20.938.170</td>
+                    <td>Rp.1.145.830</td>
+                </tr>
+                <tr>
+                    <th scope="row">120</th>
+                    <td>Rp.1.708.360.000</td>
+                    <td>Rp.85.000.000</td>
+                    <td>Rp.20.938.170</td>
+                    <td>Rp.1.145.830</td>
+                </tr>
+                <tr class="table-primary">
+                    <th scope="row">120</th>
+                    <td>Rp.1.708.360.000</td>
+                    <td>Rp.85.000.000</td>
+                    <td>Rp.20.938.170</td>
+                    <td>Rp.1.145.830</td>
+                </tr>
+                <tr>
+                    <th scope="row">120</th>
+                    <td>Rp.1.708.360.000</td>
+                    <td>Rp.85.000.000</td>
+                    <td>Rp.20.938.170</td>
+                    <td>Rp.1.145.830</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
     <footer>
-      <p>Copyright 2021 © DITKUAD</p>
+        <p>Copyright 2021 © DITKUAD</p>
     </footer>
+</body>
 
-    <!--Jquery Assets-->
-    <script src="./assets/vendors/jquery/jquery.min.js"></script>
-    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
-    <!--Bootstrap Javascript-->
-    <script src="./assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!--Chart JS-->
-    <script src="./assets/vendors/chartjs/Chart.js"></script>
-    <!--Ionicon-->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-    <!--Data Table-->
-    <script>
-      const labelRekapDataBulanan = ["Total Pokok", "Total Bunga"];
-      const dataRekapDataBulanan = {
+<!--Jquery Assets-->
+<script src="./assets/vendors/jquery/jquery.min.js"></script>
+<script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+<!--Bootstrap Javascript-->
+<script src="./assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!--Chart JS-->
+<script src="./assets/vendors/chartjs/Chart.js"></script>
+<!--Ionicon-->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<!--Data Table-->
+<script>
+    const labelRekapDataBulanan = ["Total Pokok", "Total Bunga"];
+    const dataRekapDataBulanan = {
         labels: labelRekapDataBulanan,
         datasets: [
-          {
-            backgroundColor: ["#7334FF", "#FF832A"],
-            borderColor: "rgb(255, 255, 255)",
-            data: [80, 10],
-          },
+            {
+                backgroundColor: ["#7334FF", "#FF832A"],
+                borderColor: "rgb(255, 255, 255)",
+                data: [80, 10],
+            },
         ],
-      };
-      const configRekapDataBulanan = {
+    };
+    const configRekapDataBulanan = {
         type: "doughnut",
         data: dataRekapDataBulanan,
         options: {
-          legend: {
-            display: false,
-          },
+            legend: {
+                display: false,
+            },
         },
-      };
-      const RekapDataBulananChart = new Chart(
+    };
+    const RekapDataBulananChart = new Chart(
         document.getElementById("RekapDataBulanan"),
         configRekapDataBulanan
-      );
-      // chart line
-    </script>
-    <script>
-      const labels = [
+    );
+    // chart line
+</script>
+<script>
+    const labels = [
         "Nov",
         "Des",
         "Jan",
@@ -882,390 +668,388 @@
         "Jul",
         "Ags",
         "Sep",
-      ];
-      const dataTahunan = {
+    ];
+    const dataTahunan = {
         labels: labels,
         datasets: [
-          {
-            label: "My First dataset",
-            backgroundColor: "rgba(255, 131, 42, 0.52)",
-            borderColor: "rgba(255, 131, 42, 0.52)",
-            data: [650, 550, 600, 460, 700, 600, 650, 850, 550, 250, 400],
-            borderWidth: 5,
-          },
-          {
-            label: "My First dataset",
-            backgroundColor: "rgba(143, 92, 255, 0.52)",
-            borderColor: "rgba(143, 92, 255, 0.52)",
-            data: [450, 800, 500, 400, 300, 400, 450, 300, 250, 450, 500],
-            borderWidth: 5,
-          },
+            {
+                label: "My First dataset",
+                backgroundColor: "rgba(255, 131, 42, 0.52)",
+                borderColor: "rgba(255, 131, 42, 0.52)",
+                data: [650, 550, 600, 460, 700, 600, 650, 850, 550, 250, 400],
+                borderWidth: 5,
+            },
+            {
+                label: "My First dataset",
+                backgroundColor: "rgba(143, 92, 255, 0.52)",
+                borderColor: "rgba(143, 92, 255, 0.52)",
+                data: [450, 800, 500, 400, 300, 400, 450, 300, 250, 450, 500],
+                borderWidth: 5,
+            },
         ],
-      };
-      const configdataTahunan = {
+    };
+    const configdataTahunan = {
         type: "line",
         data: dataTahunan,
         options: {
-          legend: {
-            display: false,
-          },
+            legend: {
+                display: false,
+            },
         },
-      };
-      const pertahunChart = new Chart(
+    };
+    const pertahunChart = new Chart(
         document.getElementById("rekapDataTahunan"),
         configdataTahunan
-      );
-    </script>
+    );
+</script>
 
-    <!-- chartBRI -->
+<!-- chartBRI -->
 
-    <script>
-      const labelRekapDataTunggakanBRI = ["Total Pokok", "Total Bunga"];
-      const dataRekapDataTunggakanBRI = {
+<script>
+    const labelRekapDataTunggakanBRI = ["Total Pokok", "Total Bunga"];
+    const dataRekapDataTunggakanBRI = {
         labels: labelRekapDataTunggakanBRI,
         datasets: [
-          {
-            backgroundColor: ["#FF832A", "#ECECEC"],
-            borderColor: "rgb(255, 255, 255)",
-            data: [80, 10],
-          },
+            {
+                backgroundColor: ["#FF832A", "#ECECEC"],
+                borderColor: "rgb(255, 255, 255)",
+                data: [80, 10],
+            },
         ],
-      };
-      const configRekapDataTunggakanBRI = {
+    };
+    const configRekapDataTunggakanBRI = {
         type: "doughnut",
         data: dataRekapDataTunggakanBRI,
         options: {
-          legend: {
-            display: false,
-          },
+            legend: {
+                display: false,
+            },
         },
-      };
-      const RekapDataTunggakanBRIChart = new Chart(
+    };
+    const RekapDataTunggakanBRIChart = new Chart(
         document.getElementById("RekapDataTunggakanBRI"),
         configRekapDataTunggakanBRI
-      );
-      // chart line
-    </script>
+    );
+    // chart line
+</script>
 
-    <!-- chart pinjaman BRI -->
-    <script>
-      const labelRekapDataPinjamanBRI = ["Total Pokok", "Total Bunga"];
-      const dataRekapDataPinjamannBRI = {
+<!-- chart pinjaman BRI -->
+<script>
+    const labelRekapDataPinjamanBRI = ["Total Pokok", "Total Bunga"];
+    const dataRekapDataPinjamannBRI = {
         labels: labelRekapDataPinjamanBRI,
         datasets: [
-          {
-            backgroundColor: ["#A2A846", "#ECECEC"],
-            borderColor: "rgb(255, 255, 255)",
-            data: [80, 10],
-          },
+            {
+                backgroundColor: ["#A2A846", "#ECECEC"],
+                borderColor: "rgb(255, 255, 255)",
+                data: [80, 10],
+            },
         ],
-      };
-      const configRekapDataPinjamanBRI = {
+    };
+    const configRekapDataPinjamanBRI = {
         type: "doughnut",
         data: dataRekapDataPinjamannBRI,
         options: {
-          legend: {
-            display: false,
-          },
+            legend: {
+                display: false,
+            },
         },
-      };
-      const RekapDataPinjamanBRIChart = new Chart(
+    };
+    const RekapDataPinjamanBRIChart = new Chart(
         document.getElementById("RekapDataPinjamannBRI"),
         configRekapDataPinjamanBRI
-      );
-      // chart line
-    </script>
+    );
+    // chart line
+</script>
 
-    <!-- CHART PENERIMAAN POKOK BRI -->
-    <script>
-      const labelRekapDataPenerimaanBRI = ["Total Pokok", "Total Bunga"];
-      const dataRekapDataPenerimaanBRI = {
+<!-- CHART PENERIMAAN POKOK BRI -->
+<script>
+    const labelRekapDataPenerimaanBRI = ["Total Pokok", "Total Bunga"];
+    const dataRekapDataPenerimaanBRI = {
         labels: labelRekapDataPenerimaanBRI,
         datasets: [
-          {
-            backgroundColor: ["#7334FF", "#ECECEC"],
-            borderColor: "rgb(255, 255, 255)",
-            data: [80, 10],
-          },
+            {
+                backgroundColor: ["#7334FF", "#ECECEC"],
+                borderColor: "rgb(255, 255, 255)",
+                data: [80, 10],
+            },
         ],
-      };
-      const configRekapDataPenerimaanBRI = {
+    };
+    const configRekapDataPenerimaanBRI = {
         type: "doughnut",
         data: dataRekapDataPenerimaanBRI,
         options: {
-          legend: {
-            display: false,
-          },
+            legend: {
+                display: false,
+            },
         },
-      };
-      const RekapDataPenerimaanBRIChart = new Chart(
+    };
+    const RekapDataPenerimaanBRIChart = new Chart(
         document.getElementById("RekapDataPenerimaanBRI"),
         configRekapDataPenerimaanBRI
-      );
-      // chart line
-    </script>
+    );
+    // chart line
+</script>
 
-    <!-- CHART PIUTANG BRI -->
-      <script>
-      const labelRekapDataPiutangBRI = ["Total Pokok", "Total Bunga"];
-      const dataRekapDataPiutangBRI = {
+<!-- CHART PIUTANG BRI -->
+<script>
+    const labelRekapDataPiutangBRI = ["Total Pokok", "Total Bunga"];
+    const dataRekapDataPiutangBRI = {
         labels: labelRekapDataPiutangBRI,
         datasets: [
-          {
-            backgroundColor: ["#7334FF", "#ECECEC"],
-            borderColor: "rgb(255, 255, 255)",
-            data: [80, 10],
-          },
+            {
+                backgroundColor: ["#7334FF", "#ECECEC"],
+                borderColor: "rgb(255, 255, 255)",
+                data: [80, 10],
+            },
         ],
-      };
-      const configRekapDataPiutangBRI = {
+    };
+    const configRekapDataPiutangBRI = {
         type: "doughnut",
         data: dataRekapDataPiutangBRI,
         options: {
-          legend: {
-            display: false,
-          },
+            legend: {
+                display: false,
+            },
         },
-      };
-      const RekapDataPiutangBRIChart = new Chart(
+    };
+    const RekapDataPiutangBRIChart = new Chart(
         document.getElementById("RekapDataPiutangBRI"),
         configRekapDataPiutangBRI
-      );
-      // chart line
-    </script>
+    );
+    // chart line
+</script>
 
-    <!-- CHART TERIMA BUNGA BRI -->
-      <script>
-      const labelRekapDataTerimaBungaBRI = ["Total Pokok", "Total Bunga"];
-      const dataRekapDataTerimaBungaBRI = {
+<!-- CHART TERIMA BUNGA BRI -->
+<script>
+    const labelRekapDataTerimaBungaBRI = ["Total Pokok", "Total Bunga"];
+    const dataRekapDataTerimaBungaBRI = {
         labels: labelRekapDataTerimaBungaBRI,
         datasets: [
-          {
-            backgroundColor: ["#FF832A", "#ECECEC"],
-            borderColor: "rgb(255, 255, 255)",
-            data: [80, 10],
-          },
+            {
+                backgroundColor: ["#FF832A", "#ECECEC"],
+                borderColor: "rgb(255, 255, 255)",
+                data: [80, 10],
+            },
         ],
-      };
-      const configRekapDataTerimaBungaBRI = {
+    };
+    const configRekapDataTerimaBungaBRI = {
         type: "doughnut",
         data: dataRekapDataTerimaBungaBRI,
         options: {
-          legend: {
-            display: false,
-          },
+            legend: {
+                display: false,
+            },
         },
-      };
-      const RekapDataTerimaBungaChart = new Chart(
+    };
+    const RekapDataTerimaBungaChart = new Chart(
         document.getElementById("RekapDataTerimaBungaBRI"),
         configRekapDataTerimaBungaBRI
-      );
-      // chart line
-    </script>
-    <!-- bunga total -->
-      <script>
-      const labelRekapDataBungaTotalBRI = ["Total Pokok", "Total Bunga"];
-      const dataRekapDataBungaTotalBRI = {
+    );
+    // chart line
+</script>
+<!-- bunga total -->
+<script>
+    const labelRekapDataBungaTotalBRI = ["Total Pokok", "Total Bunga"];
+    const dataRekapDataBungaTotalBRI = {
         labels: labelRekapDataBungaTotalBRI,
         datasets: [
-          {
-            backgroundColor: ["#FF832A", "#ECECEC"],
-            borderColor: "rgb(255, 255, 255)",
-            data: [80, 10],
-          },
+            {
+                backgroundColor: ["#FF832A", "#ECECEC"],
+                borderColor: "rgb(255, 255, 255)",
+                data: [80, 10],
+            },
         ],
-      };
-      const configRekapDataBungaTotalBRI = {
+    };
+    const configRekapDataBungaTotalBRI = {
         type: "doughnut",
         data: dataRekapDataBungaTotalBRI,
         options: {
-          legend: {
-            display: false,
-          },
+            legend: {
+                display: false,
+            },
         },
-      };
-      const RekapDataBungaTotalChart = new Chart(
+    };
+    const RekapDataBungaTotalChart = new Chart(
         document.getElementById("RekapDataBungaTotalBRI"),
         configRekapDataBungaTotalBRI
-      );
-      // chart line
-    </script>
-
-
+    );
+    // chart line
+</script>
 
 <!-- chart BTN -->
-   <!-- chartBRI -->
+<!-- chartBRI -->
 
-    <script>
-      const labelRekapDataTunggakanBTN = ["Total Pokok", "Total Bunga"];
-      const dataRekapDataTunggakanBTN = {
+<script>
+    const labelRekapDataTunggakanBTN = ["Total Pokok", "Total Bunga"];
+    const dataRekapDataTunggakanBTN = {
         labels: labelRekapDataTunggakanBTN,
         datasets: [
-          {
-            backgroundColor: ["#FF832A", "#ECECEC"],
-            borderColor: "rgb(255, 255, 255)",
-            data: [80, 10],
-          },
+            {
+                backgroundColor: ["#FF832A", "#ECECEC"],
+                borderColor: "rgb(255, 255, 255)",
+                data: [80, 10],
+            },
         ],
-      };
-      const configRekapDataTunggakanBTN = {
+    };
+    const configRekapDataTunggakanBTN = {
         type: "doughnut",
         data: dataRekapDataTunggakanBTN,
         options: {
-          legend: {
-            display: false,
-          },
+            legend: {
+                display: false,
+            },
         },
-      };
-      const RekapDataTunggakanBTNChart = new Chart(
+    };
+    const RekapDataTunggakanBTNChart = new Chart(
         document.getElementById("RekapDataTunggakanBTN"),
         configRekapDataTunggakanBTN
-      );
-      // chart line
-    </script>
+    );
+    // chart line
+</script>
 
-    <!-- chart pinjaman BRI -->
-    <script>
-      const labelRekapDataPinjamanBTN = ["Total Pokok", "Total Bunga"];
-      const dataRekapDataPinjamannBTN = {
+<!-- chart pinjaman BRI -->
+<script>
+    const labelRekapDataPinjamanBTN = ["Total Pokok", "Total Bunga"];
+    const dataRekapDataPinjamannBTN = {
         labels: labelRekapDataPinjamanBTN,
         datasets: [
-          {
-            backgroundColor: ["#FF832A", "#ECECEC"],
-            borderColor: "rgb(255, 255, 255)",
-            data: [80, 10],
-          },
+            {
+                backgroundColor: ["#FF832A", "#ECECEC"],
+                borderColor: "rgb(255, 255, 255)",
+                data: [80, 10],
+            },
         ],
-      };
-      const configRekapDataPinjamanBTN = {
+    };
+    const configRekapDataPinjamanBTN = {
         type: "doughnut",
         data: dataRekapDataPinjamannBTN,
         options: {
-          legend: {
-            display: false,
-          },
+            legend: {
+                display: false,
+            },
         },
-      };
-      const RekapDataPinjamanBTNChart = new Chart(
+    };
+    const RekapDataPinjamanBTNChart = new Chart(
         document.getElementById("RekapDataPinjamannBTN"),
         configRekapDataPinjamanBTN
-      );
-      // chart line
-    </script>
+    );
+    // chart line
+</script>
 
-    <!-- CHART PENERIMAAN POKOK BRI -->
-    <script>
-      const labelRekapDataPenerimaanBTN = ["Total Pokok", "Total Bunga"];
-      const dataRekapDataPenerimaanBTN = {
+<!-- CHART PENERIMAAN POKOK BRI -->
+<script>
+    const labelRekapDataPenerimaanBTN = ["Total Pokok", "Total Bunga"];
+    const dataRekapDataPenerimaanBTN = {
         labels: labelRekapDataPenerimaanBTN,
         datasets: [
-          {
-            backgroundColor: ["#7334FF", "#ECECEC"],
-            borderColor: "rgb(255, 255, 255)",
-            data: [80, 10],
-          },
+            {
+                backgroundColor: ["#7334FF", "#ECECEC"],
+                borderColor: "rgb(255, 255, 255)",
+                data: [80, 10],
+            },
         ],
-      };
-      const configRekapDataPenerimaanBTN = {
+    };
+    const configRekapDataPenerimaanBTN = {
         type: "doughnut",
         data: dataRekapDataPenerimaanBTN,
         options: {
-          legend: {
-            display: false,
-          },
+            legend: {
+                display: false,
+            },
         },
-      };
-      const RekapDataPenerimaanBTNChart = new Chart(
+    };
+    const RekapDataPenerimaanBTNChart = new Chart(
         document.getElementById("RekapDataPenerimaanBTN"),
         configRekapDataPenerimaanBTN
-      );
-      // chart line
-    </script>
+    );
+    // chart line
+</script>
 
-    <!-- CHART PIUTANG BRI -->
-      <script>
-      const labelRekapDataPiutangBTN = ["Total Pokok", "Total Bunga"];
-      const dataRekapDataPiutangBTN = {
+<!-- CHART PIUTANG BRI -->
+<script>
+    const labelRekapDataPiutangBTN = ["Total Pokok", "Total Bunga"];
+    const dataRekapDataPiutangBTN = {
         labels: labelRekapDataPiutangBTN,
         datasets: [
-          {
-            backgroundColor: ["#7334FF", "#ECECEC"],
-            borderColor: "rgb(255, 255, 255)",
-            data: [80, 10],
-          },
+            {
+                backgroundColor: ["#7334FF", "#ECECEC"],
+                borderColor: "rgb(255, 255, 255)",
+                data: [80, 10],
+            },
         ],
-      };
-      const configRekapDataPiutangBTN = {
+    };
+    const configRekapDataPiutangBTN = {
         type: "doughnut",
         data: dataRekapDataPiutangBTN,
         options: {
-          legend: {
-            display: false,
-          },
+            legend: {
+                display: false,
+            },
         },
-      };
-      const RekapDataPiutangBTNChart = new Chart(
+    };
+    const RekapDataPiutangBTNChart = new Chart(
         document.getElementById("RekapDataPiutangBTN"),
         configRekapDataPiutangBTN
-      );
-      // chart line
-    </script>
+    );
+    // chart line
+</script>
 
-    <!-- CHART TERIMA BUNGA BTN -->
-      <script>
-      const labelRekapDataTerimaBungaBTN = ["Total Pokok", "Total Bunga"];
-      const dataRekapDataTerimaBungaBTN = {
+<!-- CHART TERIMA BUNGA BTN -->
+<script>
+    const labelRekapDataTerimaBungaBTN = ["Total Pokok", "Total Bunga"];
+    const dataRekapDataTerimaBungaBTN = {
         labels: labelRekapDataTerimaBungaBTN,
         datasets: [
-          {
-            backgroundColor: ["#FF832A", "#ECECEC"],
-            borderColor: "rgb(255, 255, 255)",
-            data: [80, 10],
-          },
+            {
+                backgroundColor: ["#FF832A", "#ECECEC"],
+                borderColor: "rgb(255, 255, 255)",
+                data: [80, 10],
+            },
         ],
-      };
-      const configRekapDataTerimaBungaBTN = {
+    };
+    const configRekapDataTerimaBungaBTN = {
         type: "doughnut",
         data: dataRekapDataTerimaBungaBTN,
         options: {
-          legend: {
-            display: false,
-          },
+            legend: {
+                display: false,
+            },
         },
-      };
-      const RekapDataTerimaBungaChartBTN = new Chart(
+    };
+    const RekapDataTerimaBungaChartBTN = new Chart(
         document.getElementById("RekapDataTerimaBungaBTN"),
         configRekapDataTerimaBungaBTN
-      );
-      // chart line
-    </script>
-    <!-- bunga total -->
-      <script>
-      const labelRekapDataBungaTotalBTN = ["Total Pokok", "Total Bunga"];
-      const dataRekapDataBungaTotalBTN = {
+    );
+    // chart line
+</script>
+<!-- bunga total -->
+<script>
+    const labelRekapDataBungaTotalBTN = ["Total Pokok", "Total Bunga"];
+    const dataRekapDataBungaTotalBTN = {
         labels: labelRekapDataBungaTotalBTN,
         datasets: [
-          {
-            backgroundColor: ["#FF832A", "#ECECEC"],
-            borderColor: "rgb(255, 255, 255)",
-            data: [80, 10],
-          },
+            {
+                backgroundColor: ["#FF832A", "#ECECEC"],
+                borderColor: "rgb(255, 255, 255)",
+                data: [80, 10],
+            },
         ],
-      };
-      const configRekapDataBungaTotalBTN = {
+    };
+    const configRekapDataBungaTotalBTN = {
         type: "doughnut",
         data: dataRekapDataBungaTotalBTN,
         options: {
-          legend: {
-            display: false,
-          },
+            legend: {
+                display: false,
+            },
         },
-      };
-      const RekapDataBungaTotalBTN = new Chart(
+    };
+    const RekapDataBungaTotalBTN = new Chart(
         document.getElementById("RekapDataBungaTotalBTN"),
         configRekapDataBungaTotalBTN
-      );
-      // chart line
-    </script>
-  </body>
+    );
+    // chart line
+</script>
+
 </html>
