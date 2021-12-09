@@ -1,0 +1,85 @@
+.main-chart-graphic{
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+   
+}
+
+
+.total-pokok-main h5{
+    padding: 5px;
+    border-radius: 6px;
+}
+
+
+/* debitur */
+
+.debitur-baru{
+    color: #ffff;
+    background-color: #284E78;
+    padding: 15px 16px;
+    border-radius: 15px;
+}
+.debitur-lunas{
+    color: #ffff;
+    background-color: #198754;
+    padding: 15px 16px;
+    border-radius: 15px;
+}
+.debitur-meninggal{
+    color: #ffff;
+    background-color: #DC3545;
+    padding: 15px 16px;
+    border-radius: 15px;
+}
+.debitur-outstanding{
+    color: #ffff;
+    background-color: #7334FF;
+    padding: 15px 16px;
+    border-radius: 15px;
+}
+
+.debitur-icon img{
+    width: 50px;
+    height: 40px;
+}
+
+/* debitur bank */
+
+.card-debet{
+    box-shadow: 0px 7px 7px 1px rgba(0, 0, 0, 0.25);
+border-radius: 15px;
+padding: 10px 10px;
+}
+
+
+/* rekap */
+
+.rekap-card{
+    box-shadow: 0px 7px 7px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    padding: 16px 16px;
+}
+
+.table-primary{
+    background-color: #ECF2F3;
+}
+
+thead{
+    background-color: #284E78;
+    color: #ffff;
+   
+}
+.th-radius{
+     border-radius: 15px 0px 0px 0px;
+}
+.th-radius-right{
+     border-radius: 0px 15px 0px 0px;
+}
+
+footer {
+  background: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 2rem;
+  box-shadow: 0px -10px 70px rgba(0, 0, 0, 0.25);
+}
