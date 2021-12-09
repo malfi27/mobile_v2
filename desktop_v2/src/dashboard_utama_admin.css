@@ -1,0 +1,788 @@
+/*------------
+GOOGLE FONT
+------------*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@font-face {
+  font-family: 'Roboto', sans-serif;
+}
+
+/*------------
+Resset Css
+------------*/
+*, ::after, ::before, h1, h2, h3, h4, h5, h6, p {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  outline: none;
+}
+
+.nameProduct {
+  color: #3E3C3C;
+  font-weight: 700;
+  line-height: 37.5px;
+  margin-bottom: 1.5rem;
+  font-size: 28px;
+}
+
+#mainContent {
+  padding: 3rem;
+}
+
+#mainContent .informationSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#mainContent .informationSection .rekapPersonilInformation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#mainContent .informationSection .rekapPersonilInformation .rekapDoughnutChart {
+  border-right: 1px solid #3E3C3C;
+  width: 30%;
+}
+
+#mainContent .informationSection .rekapPersonilInformation .rekapDoughnutChart .headerText {
+  font-weight: 500;
+}
+
+#mainContent .informationSection .rekapPersonilInformation .rekapDoughnutChart .wrapperChart {
+  width: 100%;
+  margin: 3rem 0;
+}
+
+#mainContent .informationSection .rekapPersonilInformation .rekapDoughnutChart .wrapperChart .chart {
+  width: 100%;
+}
+
+#mainContent .informationSection .rekapPersonilInformation .rekapDoughnutChart .informationChart .personil {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#mainContent .informationSection .rekapPersonilInformation .rekapDoughnutChart .informationChart .personil .icon {
+  margin-right: .5rem;
+}
+
+#mainContent .informationSection .rekapPersonilInformation .rekapDoughnutChart .informationChart .personil .icon img {
+  width: 100%;
+}
+
+#mainContent .informationSection .rekapPersonilInformation .rekapDoughnutChart .informationChart .personil .value h3 {
+  font-weight: 500;
+}
+
+#mainContent .informationSection .rekapPersonilInformation .rekapDoughnutChart .informationChart .personil .value h2 {
+  font-weight: 700;
+}
+
+#mainContent .informationSection .rekapPersonilInformation .rekapLineChart {
+  width: 70%;
+  padding: 0 2rem;
+}
+
+#mainContent .informationSection .rekapPersonilInformation .rekapLineChart .headerText {
+  font-weight: 500;
+}
+
+#mainContent .informationSection .rekapPersonilInformation .rekapLineChart .wrapperChart {
+  width: 100%;
+  margin-top: 3rem;
+}
+
+#mainContent .informationSection .rekapPersonilInformation .rekapLineChart .wrapperChart canvas {
+  width: 100%;
+  max-height: 396px;
+}
+
+#mainContent .informationSection .adminInformation .infoCard {
+  margin: 1rem 0;
+  color: #fff;
+  border-radius: 10px;
+  width: 100%;
+  -webkit-box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
+}
+
+#mainContent .informationSection .adminInformation .infoCard:nth-child(1) {
+  background-color: #284E78;
+}
+
+#mainContent .informationSection .adminInformation .infoCard:nth-child(2) {
+  background-color: #3C543C;
+}
+
+#mainContent .informationSection .adminInformation .infoCard:nth-child(3) {
+  background-color: rgba(220, 53, 69, 0.8);
+}
+
+#mainContent .informationSection .adminInformation .infoCard:nth-child(4) {
+  background-color: #7334FF;
+}
+
+#mainContent .informationSection .adminInformation .infoCard .labelCard {
+  margin-bottom: .8rem;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+#mainContent .informationSection .adminInformation .infoCard .wrapperValue {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+#mainContent .informationSection .adminInformation .infoCard .wrapperValue .icon img {
+  width: 100%;
+  max-width: 74px;
+}
+
+#mainContent .productSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#mainContent .productSection .productLine {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#mainContent .productSection .productLine .baltabProduct {
+  margin-bottom: 1.5rem;
+}
+
+#mainContent .productSection .productLine .baltabProduct .wrapperCardBaltab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#mainContent .productSection .productLine .baltabProduct .wrapperCardBaltab .cards {
+  width: 100%;
+  text-align: center;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+#mainContent .productSection .productLine .baltabProduct .wrapperCardBaltab .cards h1 {
+  font-weight: 700;
+}
+
+#mainContent .productSection .productLine .baltabProduct .wrapperCardBaltab .cards h1 .valuePengajuan {
+  color: #DC3545;
+}
+
+#mainContent .productSection .productLine .baltabProduct .wrapperCardBaltab .cards p {
+  color: #3E3C3C;
+  font-weight: 400;
+}
+
+#mainContent .productSection .productLine .baltabProduct .wrapperCardBaltab .cards .chartIcon svg {
+  width: 100%;
+}
+
+#mainContent .productSection .productLine .eAkuntingProduct .wrapperTableV2:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+#mainContent .productSection .productLine .eAkuntingProduct .wrapperTableV2 .labelTable {
+  font-size: 24px;
+  padding-left: 2rem;
+  font-weight: 600;
+  margin-bottom: .5rem;
+}
+
+#mainContent .productSection .productLine .eAkuntingProduct .wrapperTableV2 .table thead {
+  color: #fff;
+}
+
+#mainContent .productSection .productLine .eAkuntingProduct .wrapperTableV2 .table thead tr th {
+  background-color: #284E78;
+  padding: .8rem 2rem;
+}
+
+#mainContent .productSection .productLine .eAkuntingProduct .wrapperTableV2 .table thead tr th:first-child {
+  border-radius: 15px 0px 0px 0px;
+}
+
+#mainContent .productSection .productLine .eAkuntingProduct .wrapperTableV2 .table thead tr th:last-child {
+  border-radius: 0px 15px 0px 0px;
+}
+
+#mainContent .productSection .productLine .eAkuntingProduct .wrapperTableV2 .table tbody tr:nth-child(even) {
+  background: #ECF2F3;
+}
+
+#mainContent .productSection .productLine .eAkuntingProduct .wrapperTableV2 .table tbody tr td {
+  padding: .8rem 2rem;
+}
+
+#mainContent .productSection .productLine .eAkuntingProduct .wrapperTableV2 .piutangAkun thead tr th {
+  background-color: #7334FF;
+}
+
+#mainContent .productSection .productLine .eAkuntingProduct .wrapperTableV2 .hutangAkun thead tr th {
+  background-color: #DC3545;
+}
+
+#mainContent .productSection .productLine .kprProduct .wrapperDebitur {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#mainContent .productSection .productLine .kprProduct .wrapperDebitur .debitur {
+  width: 100%;
+  border-radius: 15px;
+  background: #fff;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+#mainContent .productSection .productLine .kprProduct .wrapperDebitur .debitur:nth-child(1) {
+  border-left: 15px solid #284E78;
+}
+
+#mainContent .productSection .productLine .kprProduct .wrapperDebitur .debitur:nth-child(2) {
+  border-left: 15px solid #435C41;
+}
+
+#mainContent .productSection .productLine .kprProduct .wrapperDebitur .debitur:nth-child(3) {
+  border-left: 15px solid #dc3545;
+}
+
+#mainContent .productSection .productLine .kprProduct .wrapperDebitur .debitur:nth-child(4) {
+  border-left: 15px solid #7334ff;
+}
+
+#mainContent .productSection .productLine .kprProduct .wrapperDebitur .debitur .wrapperContentDebitur {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#mainContent .productSection .productLine .kprProduct .wrapperDebitur .debitur .wrapperContentDebitur .contentDebitur {
+  width: 70%;
+}
+
+#mainContent .productSection .productLine .kprProduct .wrapperDebitur .debitur .wrapperContentDebitur .contentDebitur h3 {
+  font-weight: 600;
+}
+
+#mainContent .productSection .productLine .kprProduct .wrapperDebitur .debitur .wrapperContentDebitur .contentDebitur p {
+  font-weight: 400;
+}
+
+#mainContent .productSection .productLine .kprProduct .wrapperDebitur .debitur .wrapperContentDebitur .iconDebitur {
+  width: 30%;
+}
+
+#mainContent .productSection .productLine .kprProduct .secondSectionKPR {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+#mainContent .productSection .productLine .kprProduct .secondSectionKPR .rekapDataBulanan {
+  padding: 1.5rem;
+}
+
+#mainContent .productSection .productLine .kprProduct .secondSectionKPR .rekapDataBulanan .labelName {
+  text-align: center;
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 2rem;
+}
+
+#mainContent .productSection .productLine .kprProduct .secondSectionKPR .rekapDataBulanan .legendsInformation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2rem;
+}
+
+#mainContent .productSection .productLine .kprProduct .secondSectionKPR .rekapDataBulanan .legendsInformation .legends .label {
+  position: relative;
+  margin-bottom: .3rem;
+}
+
+#mainContent .productSection .productLine .kprProduct .secondSectionKPR .rekapDataBulanan .legendsInformation .legends .label::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -15px;
+  height: 24px;
+  width: 7px;
+  border-radius: 20px;
+}
+
+#mainContent .productSection .productLine .kprProduct .secondSectionKPR .rekapDataBulanan .legendsInformation .legends .value {
+  font-weight: 600;
+}
+
+#mainContent .productSection .productLine .kprProduct .secondSectionKPR .rekapDataBulanan .legendsInformation .pokok .label::before {
+  background: #7334FF;
+}
+
+#mainContent .productSection .productLine .kprProduct .secondSectionKPR .rekapDataBulanan .legendsInformation .bunga .label::before {
+  background: #FF832A;
+}
+
+#mainContent .productSection .productLine .kprProduct .secondSectionKPR .wrapperDebiturBank {
+  position: relative;
+}
+
+#mainContent .productSection .productLine .kprProduct .secondSectionKPR .wrapperDebiturBank .debiturBank {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1.8rem 1.5rem;
+  border-radius: 15px;
+  width: 100%;
+}
+
+#mainContent .productSection .productLine .kprProduct .secondSectionKPR .wrapperDebiturBank .debiturBank:nth-child(1) {
+  border-left: 15px solid #284E78;
+}
+
+#mainContent .productSection .productLine .kprProduct .secondSectionKPR .wrapperDebiturBank .debiturBank:nth-child(2) {
+  border-left: 15px solid #7334FF;
+}
+
+#mainContent .productSection .productLine .kprProduct .secondSectionKPR .wrapperDebiturBank .debiturBank .content .labelName {
+  font-size: 22px;
+  margin-bottom: 1rem;
+}
+
+#mainContent .productSection .productLine .kprProduct .secondSectionKPR .wrapperDebiturBank .debiturBank .content h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#mainContent .productSection .productLine .kprProduct .secondSectionKPR .wrapperDebiturBank .debiturBank .content p {
+  font-size: 16px;
+}
+
+#mainContent .productSection .productLine .kprProduct .threeSection .wrapperCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+#mainContent .productSection .productLine .kprProduct .threeSection .wrapperCard .cards {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.3rem 1rem;
+}
+
+#mainContent .productSection .productLine .kprProduct .threeSection .wrapperCard .cards .wrapperChart {
+  width: 40%;
+}
+
+#mainContent .productSection .productLine .kprProduct .threeSection .wrapperCard .cards .informationCards {
+  width: 60%;
+}
+
+#mainContent .productSection .productLine .kprProduct .threeSection .wrapperCard .cards .informationCards h1 {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+#mainContent .productSection .productLine .kprProduct .threeSection .wrapperCard .cards .informationCards .value {
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: .6rem;
+}
+
+#mainContent .productSection .productLine .kprProduct .threeSection .wrapperCard .cards .informationCards p {
+  font-size: 14px;
+}
+
+#mainContent .productSection .productLine .kprProduct .threeSection .wrapperCard .cards:not(:last-child) {
+  margin-right: 1rem;
+}
+
+#mainContent .productSection .productLine .etppadProduct .rekapTabunganPerbulan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem 0;
+  margin-bottom: 1.5rem;
+}
+
+#mainContent .productSection .productLine .etppadProduct .rekapTabunganPerbulan .rekapStatistic {
+  text-align: center;
+  padding: 0 2rem;
+  border-right: 1px solid #3E3C3C;
+  width: 30%;
+}
+
+#mainContent .productSection .productLine .etppadProduct .rekapTabunganPerbulan .rekapStatistic .headerText {
+  font-size: 24px;
+  margin-bottom: 3rem;
+}
+
+#mainContent .productSection .productLine .etppadProduct .rekapTabunganPerbulan .rekapStatistic .icon {
+  margin-bottom: 1rem;
+}
+
+#mainContent .productSection .productLine .etppadProduct .rekapTabunganPerbulan .rekapStatistic .nominal {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+#mainContent .productSection .productLine .etppadProduct .rekapTabunganPerbulan .rekapStatistic p {
+  font-size: 16px;
+}
+
+#mainContent .productSection .productLine .etppadProduct .rekapTabunganPerbulan .rekapLineChart {
+  padding: 0 2rem;
+  width: 70%;
+}
+
+#mainContent .productSection .productLine .etppadProduct .rekapTabunganPerbulan .rekapLineChart .headerText {
+  font-size: 24px;
+  margin-bottom: 3rem;
+}
+
+#mainContent .productSection .productLine .etppadProduct .rekapTabunganPerbulan .rekapLineChart .wrapperChart .chart {
+  width: 100%;
+}
+
+#mainContent .productSection .productLine .etppadProduct .wrapperTableV2:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+#mainContent .productSection .productLine .etppadProduct .wrapperTableV2 .table thead {
+  color: #fff;
+}
+
+#mainContent .productSection .productLine .etppadProduct .wrapperTableV2 .table thead tr th {
+  background-color: #198754;
+  padding: .8rem 2rem;
+}
+
+#mainContent .productSection .productLine .etppadProduct .wrapperTableV2 .table thead tr th:first-child {
+  border-radius: 15px 0px 0px 0px;
+}
+
+#mainContent .productSection .productLine .etppadProduct .wrapperTableV2 .table thead tr th:last-child {
+  border-radius: 0px 15px 0px 0px;
+}
+
+#mainContent .productSection .productLine .etppadProduct .wrapperTableV2 .table tbody tr:nth-child(even) {
+  background: #ECF2F3;
+}
+
+#mainContent .productSection .productLine .etppadProduct .wrapperTableV2 .table tbody tr td {
+  padding: .8rem 2rem;
+  font-size: 16px;
+}
+
+#mainContent .productSection .productLine .etppadProduct .wrapperTableV2 .table tbody tr .nameAndNRP h1 {
+  font-size: 16px;
+}
+
+#mainContent .productSection .productLine .etppadProduct .wrapperTableV2 .table tbody tr .nameAndNRP .nama {
+  font-weight: 400;
+  margin-bottom: .3rem;
+}
+
+#mainContent .productSection .productLine .etppadProduct .wrapperTableV2 .table tbody tr .nameAndNRP .nrp {
+  font-weight: 600;
+}
+
+#mainContent .productSection .productLine .etppadProduct .wrapperTableV2 .piutangAkun thead tr th {
+  background-color: #7334FF;
+}
+
+#mainContent .productSection .productLine .etppadProduct .wrapperTableV2 .hutangAkun thead tr th {
+  background-color: #DC3545;
+}
+
+footer {
+  background: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 2rem;
+  -webkit-box-shadow: 0px -10px 70px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px -10px 70px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (min-width: 0px) {
+  #mainContent .informationSection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 1.5rem 0;
+  }
+  #mainContent .informationSection .rekapPersonilInformation {
+    padding: 2rem 1rem;
+    margin-bottom: 1.5rem;
+  }
+  #mainContent .informationSection .rekapPersonilInformation .rekapDoughnutChart {
+    padding: 0 1rem;
+  }
+  #mainContent .informationSection .rekapPersonilInformation .rekapDoughnutChart .headerText {
+    font-size: 22px;
+  }
+  #mainContent .informationSection .rekapPersonilInformation .rekapDoughnutChart .informationChart .personil {
+    margin: 1rem 0;
+  }
+  #mainContent .informationSection .rekapPersonilInformation .rekapDoughnutChart .informationChart .personil .icon {
+    margin-right: .5rem;
+  }
+  #mainContent .informationSection .rekapPersonilInformation .rekapDoughnutChart .informationChart .personil .icon img {
+    max-width: 28px;
+  }
+  #mainContent .informationSection .rekapPersonilInformation .rekapDoughnutChart .informationChart .personil .value h3 {
+    font-size: 16px;
+  }
+  #mainContent .informationSection .rekapPersonilInformation .rekapDoughnutChart .informationChart .personil .value h2 {
+    font-size: 18px;
+  }
+  #mainContent .informationSection .rekapPersonilInformation .rekapLineChart .headerText {
+    font-size: 22px;
+  }
+  #mainContent .informationSection .adminInformation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #mainContent .informationSection .adminInformation .infoCard {
+    width: 46.9%;
+    margin: .5rem;
+    padding: 2rem 1rem;
+  }
+  #mainContent .informationSection .adminInformation .infoCard .wrapperValue {
+    font-size: 16px;
+  }
+  #mainContent .productSection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #mainContent .productSection .productLine .baltabProduct .wrapperCardBaltab .cards:not(:last-child) {
+    margin-right: 1.5rem;
+  }
+  #mainContent .productSection .productLine .baltabProduct .wrapperCardBaltab .cards .icon {
+    padding: 1.5rem 1.3rem;
+  }
+  #mainContent .productSection .productLine .baltabProduct .wrapperCardBaltab .cards h1 {
+    font-size: 24px;
+    padding: 0 1.3rem;
+  }
+  #mainContent .productSection .productLine .baltabProduct .wrapperCardBaltab .cards p {
+    margin-bottom: 1.5rem;
+    font-size: 14px;
+    padding: .4rem 1.3rem;
+  }
+  #mainContent .productSection .productLine .baltabProduct .wrapperCardBaltab .cards .chartIcon svg {
+    width: 100%;
+  }
+  #mainContent .productSection .productLine .kprProduct .wrapperDebitur .debitur {
+    padding: 1rem .7rem;
+  }
+  #mainContent .productSection .productLine .kprProduct .wrapperDebitur .debitur:not(:last-child) {
+    margin-right: .8rem;
+  }
+  #mainContent .productSection .productLine .kprProduct .wrapperDebitur .debitur:last-child .wrapperContentDebitur .contentDebitur {
+    width: 100%;
+  }
+  #mainContent .productSection .productLine .kprProduct .wrapperDebitur .debitur .labelName {
+    font-size: 18px;
+    margin-bottom: 1rem;
+  }
+  #mainContent .productSection .productLine .kprProduct .wrapperDebitur .debitur .wrapperContentDebitur .contentDebitur h3, #mainContent .productSection .productLine .kprProduct .wrapperDebitur .debitur .wrapperContentDebitur .contentDebitur p {
+    font-size: 14px;
+  }
+  #mainContent .productSection .productLine .kprProduct .secondSectionKPR {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #mainContent .productSection .productLine .kprProduct .secondSectionKPR .rekapDataBulanan {
+    width: 100%;
+    margin: 1.5rem 0;
+  }
+  #mainContent .productSection .productLine .kprProduct .secondSectionKPR .rekapDataBulanan .wrapperChart {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #mainContent .productSection .productLine .kprProduct .secondSectionKPR .rekapDataBulanan .wrapperChart .chart {
+    max-width: 500px;
+  }
+  #mainContent .productSection .productLine .kprProduct .secondSectionKPR .rekapDataBulanan .legendsInformation .legends {
+    margin: 0 1.5rem;
+  }
+  #mainContent .productSection .productLine .kprProduct .secondSectionKPR .wrapperDebiturBank {
+    width: 100%;
+  }
+  #mainContent .productSection .productLine .kprProduct .secondSectionKPR .wrapperDebiturBank .debiturBank:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #mainContent .informationSection {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  #mainContent .informationSection .rekapPersonilInformation {
+    padding: 3rem 1rem;
+    width: 70%;
+    margin-bottom: 0;
+  }
+  #mainContent .informationSection .rekapPersonilInformation .rekapDoughnutChart .headerText {
+    font-size: 24px;
+  }
+  #mainContent .informationSection .rekapPersonilInformation .rekapDoughnutChart .informationChart .personil {
+    margin: 1rem 0;
+  }
+  #mainContent .informationSection .rekapPersonilInformation .rekapDoughnutChart .informationChart .personil .icon {
+    margin-right: .5rem;
+  }
+  #mainContent .informationSection .rekapPersonilInformation .rekapDoughnutChart .informationChart .personil .icon img {
+    max-width: 28px;
+  }
+  #mainContent .informationSection .rekapPersonilInformation .rekapDoughnutChart .informationChart .personil .value h3 {
+    font-size: 18px;
+  }
+  #mainContent .informationSection .rekapPersonilInformation .rekapDoughnutChart .informationChart .personil .value h2 {
+    font-size: 22px;
+  }
+  #mainContent .informationSection .rekapPersonilInformation .rekapLineChart .headerText {
+    font-size: 24px;
+  }
+  #mainContent .informationSection .adminInformation {
+    width: 30%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    padding: 0 1.5rem;
+  }
+  #mainContent .informationSection .adminInformation .infoCard {
+    width: 100%;
+    margin: 0;
+    padding: 1.3rem 1rem;
+  }
+  #mainContent .informationSection .adminInformation .infoCard:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+  #mainContent .productSection .productLine .baltabProduct .wrapperCardBaltab .cards:not(:last-child) {
+    margin-right: 2rem;
+  }
+  #mainContent .productSection .productLine .baltabProduct .wrapperCardBaltab .cards h1 {
+    font-size: 22px;
+  }
+  #mainContent .productSection .productLine .baltabProduct .wrapperCardBaltab .cards p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  #mainContent .productSection {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #mainContent .productSection .productLine {
+    padding: 0 1rem;
+    width: 50%;
+  }
+  #mainContent .productSection .productLine .kprProduct .secondSectionKPR {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 1.5rem 0;
+  }
+  #mainContent .productSection .productLine .kprProduct .secondSectionKPR .rekapDataBulanan {
+    width: 50%;
+    margin: 0;
+    margin-right: 1rem;
+  }
+  #mainContent .productSection .productLine .kprProduct .secondSectionKPR .rekapDataBulanan .wrapperChart .chart {
+    max-width: 242px;
+  }
+  #mainContent .productSection .productLine .kprProduct .secondSectionKPR .rekapDataBulanan .legendsInformation .legends p {
+    font-size: 12px;
+  }
+  #mainContent .productSection .productLine .kprProduct .secondSectionKPR .wrapperDebiturBank {
+    width: 50%;
+  }
+  #mainContent .productSection .productLine .kprProduct .secondSectionKPR .wrapperDebiturBank .debiturBank:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  #mainContent .productSection .productLine .kprProduct .secondSectionKPR .rekapDataBulanan .legendsInformation .legends p {
+    font-size: 14px;
+  }
+}
+/*# sourceMappingURL=dashboard_utama_admin.css.map */

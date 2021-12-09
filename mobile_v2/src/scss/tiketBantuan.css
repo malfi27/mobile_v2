@@ -1,0 +1,155 @@
+/*------------
+Font
+------------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@font-face {
+  src: url(../font/stelfish.ttf);
+}
+
+/*------------
+Resset Css
+------------*/
+*, ::after, ::before, h1, h2, p {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+}
+
+/*------------
+Variables
+------------*/
+/*------------
+Styling
+------------*/
+body {
+  background-color: #fff;
+}
+
+#headerBack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5rem 1rem;
+}
+
+#headerBack a svg {
+  min-width: 16px;
+}
+
+#headerBack .namePage {
+  margin-left: .7rem;
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+}
+
+#mainContent {
+  padding: 2rem 1rem;
+}
+
+#mainContent .tiketBantuanForm form .input-control {
+  margin: .5rem 0;
+  position: relative;
+}
+
+#mainContent .tiketBantuanForm form .input-control label {
+  font-size: 12px;
+}
+
+#mainContent .tiketBantuanForm form .input-control .form-control {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+  font-size: 14px;
+  padding: .3rem 0;
+  border-radius: 0;
+  padding-top: .1rem;
+  position: relative;
+}
+
+#mainContent .tiketBantuanForm form .input-control .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#mainContent .tiketBantuanForm form .btnKirim {
+  margin-top: 1.5rem;
+  width: 100%;
+  background: #368736;
+  border-radius: 20px;
+  color: #fff;
+  font-weight: 400;
+}
+
+#mainContent .tiketBantuanWrapper .headTiket {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#mainContent .tiketBantuanWrapper .headTiket p {
+  margin-bottom: 1rem;
+  font-size: 14px;
+}
+
+#mainContent .tiketBantuanWrapper .headTiket .tiket {
+  padding: 2rem;
+  border-radius: 50%;
+  border: 3px solid #08850D;
+}
+
+#mainContent .tiketBantuanWrapper .headTiket .tiket .numberTiket {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  color: #08850D;
+}
+
+#mainContent .tiketBantuanWrapper .bodyTiket {
+  margin-top: 2rem;
+}
+
+#mainContent .tiketBantuanWrapper .bodyTiket .input-control {
+  margin: .5rem 0;
+  position: relative;
+}
+
+#mainContent .tiketBantuanWrapper .bodyTiket .input-control label {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+#mainContent .tiketBantuanWrapper .bodyTiket .input-control .form-control {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+  font-size: 14px;
+  padding: .3rem 0;
+  border-radius: 0;
+  padding-top: .1rem;
+  position: relative;
+}
+
+#mainContent .tiketBantuanWrapper .bodyTiket .input-control .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+/*# sourceMappingURL=tiketBantuan.css.map */

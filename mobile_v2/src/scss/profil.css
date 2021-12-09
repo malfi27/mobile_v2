@@ -1,0 +1,158 @@
+/*------------
+Font
+------------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: steelfish;
+  src: url(../font/stelfish.ttf);
+}
+
+/*------------
+Resset Css
+------------*/
+*, ::after, ::before, h1, h2, p {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+}
+
+/*------------
+Variables
+------------*/
+/*------------
+Styling
+------------*/
+body {
+  background-color: #f7f7f7;
+}
+
+#mainHeader {
+  background-image: url("/mobile_v2/dist/assets/images/test.png");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 230px;
+}
+
+#mainContent {
+  position: relative;
+  padding: 0 1rem;
+  top: -120px;
+}
+
+#mainContent .profileUser {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #fff;
+  position: relative;
+}
+
+#mainContent .profileUser .detailUser {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#mainContent .profileUser .detailUser .imagesUser img {
+  width: 100%;
+  min-width: 72px;
+  max-width: 72px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+#mainContent .profileUser .detailUser .informationUser {
+  margin-left: 1rem;
+  font-weight: 500;
+}
+
+#mainContent .profileUser .detailUser .informationUser p, #mainContent .profileUser .detailUser .informationUser h1 {
+  margin-bottom: .3rem;
+  line-height: 19px;
+}
+
+#mainContent .profileUser .detailUser .informationUser p {
+  font-size: 12px;
+}
+
+#mainContent .profileUser .detailUser .informationUser h1 {
+  font-size: 16px;
+}
+
+#mainContent .profileUser .detailUser .informationUser .nrp {
+  margin-bottom: 0;
+}
+
+#mainContent .profileUser .editProfil svg {
+  width: 100%;
+  min-height: 18px;
+}
+
+#mainContent .profilMenu {
+  margin-top: 4rem;
+}
+
+#mainContent .profilMenu .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-decoration: none;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+}
+
+#mainContent .profilMenu .menu .iconAndName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#mainContent .profilMenu .menu .iconAndName svg {
+  width: 100%;
+  max-width: 20px;
+}
+
+#mainContent .profilMenu .menu .iconAndName .profilNameMenu {
+  margin-left: .5rem;
+  color: #3e3c3c;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+#mainContent .profilMenu .menu .arrows svg {
+  min-height: 10px;
+}
+
+#mainContent .profilMenu .btnLogout {
+  margin-top: 2rem;
+  color: #e90101;
+  font-weight: 400;
+  padding: .5rem 1rem;
+  width: 100%;
+  border-radius: 20px;
+  background: transparent;
+  border: 2px solid #e90101;
+}
+/*# sourceMappingURL=profil.css.map */

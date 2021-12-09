@@ -1,0 +1,229 @@
+/*------------
+Font
+------------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: steelfish;
+  src: url(../font/stelfish.ttf);
+}
+
+/*------------
+Resset Css
+------------*/
+*, ::after, ::before, h1, h2, p {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+}
+
+/*------------
+Variables
+------------*/
+/*------------
+Styling
+------------*/
+body {
+  background-color: #f7f7f7;
+}
+
+#mainContent {
+  padding-bottom: 5rem;
+}
+
+#mainContent .inboxWrapper {
+  padding: 2rem 1rem;
+}
+
+#mainContent .inboxWrapper .headInbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+#mainContent .inboxWrapper .headInbox .form-check {
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#mainContent .inboxWrapper .headInbox .form-check .form-check-input {
+  height: 16px;
+  width: 16px;
+}
+
+#mainContent .inboxWrapper .headInbox .form-check .form-check-label {
+  padding-left: .5rem;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: -4px;
+}
+
+#mainContent .inboxWrapper .headInbox .actionUser {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100%;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#mainContent .inboxWrapper .headInbox .actionUser .btnAction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+#mainContent .inboxWrapper .headInbox .actionUser .btnAction .icon svg {
+  min-height: 18px;
+}
+
+#mainContent .inboxWrapper .headInbox .actionUser .btnAction .nameAction {
+  font-size: 10px;
+  text-align: center;
+}
+
+#mainContent .inboxWrapper .headInbox .actionUser .btnDelete {
+  color: #ee4c4c;
+}
+
+#mainContent .inboxWrapper .headInbox .actionUser .btnTandai {
+  color: #28a745;
+  margin-left: 1rem;
+}
+
+#mainContent .inboxWrapper .bodyInbox .inbox {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background: #fff;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 1rem;
+  border-radius: 8px;
+  margin: .7rem 0;
+  border: 1px solid #e3e3e3;
+}
+
+#mainContent .inboxWrapper .bodyInbox .inbox .inboxContent .firstLine {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#mainContent .inboxWrapper .bodyInbox .inbox .inboxContent .firstLine .from {
+  color: #111;
+  font-weight: 600;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#mainContent .inboxWrapper .bodyInbox .inbox .inboxContent .firstLine .new::before {
+  content: '';
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  background: #284E78;
+  border-radius: 10px;
+  margin-right: .3rem;
+}
+
+#mainContent .inboxWrapper .bodyInbox .inbox .inboxContent .firstLine .time {
+  color: #111;
+  font-size: 12px;
+}
+
+#mainContent .inboxWrapper .bodyInbox .inbox .inboxContent .label {
+  margin-top: .4rem;
+  color: #111;
+  font-size: 14px;
+}
+
+#mainContent .inboxWrapper .bodyInbox .inbox .inboxContent .message {
+  margin-top: .7rem;
+  font-size: 12px;
+  color: #aaa;
+  font-weight: 400;
+}
+
+#mainContent .detailInboxWrapper {
+  padding: 2rem 1rem;
+}
+
+#mainContent .detailInboxWrapper .headInbox {
+  margin-bottom: 1.5rem;
+}
+
+#mainContent .detailInboxWrapper .headInbox .label {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+#mainContent .detailInboxWrapper .headInbox .date {
+  color: #797979;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+#mainContent .detailInboxWrapper .bodyInbox .pesan {
+  font-size: 14px;
+}
+
+#mainContent .detailInboxWrapper .bodyInbox .paragraf {
+  margin-bottom: .8rem;
+}
+/*# sourceMappingURL=inbox.css.map */
