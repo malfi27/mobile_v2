@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Utama Admin</title>
+
+    <!--Bootstrap Assets-->
+    <link rel="stylesheet" href="./assets/vendors/bootstrap/css/bootstrap.min.css" />
+
+    <!--Component CSS-->
+    <link rel="stylesheet" href="./assets/css/component/navbar.css" />
+    <link rel="stylesheet" href="./assets/css/component/menuAdmin_v2.css" />
+    <link rel="stylesheet" href="./assets/css/component/cards.css" />
+    <link rel="stylesheet" href="./assets//css/dashboard_kpr.css" />
+
+    <!--Data Table-->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.2/css/dataTables.bootstrap5.min.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.2.0/css/fixedHeader.dataTables.min.css" />
+
+    <!--Styling Pages-->
+    <link rel="stylesheet" href="./assets/css/SimulasiKPR.css">
+</head>
+
+<body>
+    <div id="mainHeader">
+        <!--Navbar Utama-->
+        <nav class="navbars navbarUtama">
+            <div class="navbarWrapper">
+                <div class="backMenu">
+                    <!-- <a href="#" class="backButton">
+                        <ion-icon name="arrow-back-outline"></ion-icon>
+                        Kembali
+                    </a> -->
+                </div>
+                <div class="brandLogo">
+                    <div class="logo brandBTN">
+                        <span></span>
+                        <img src="./assets/images/BTN_BRAND.png" alt="" />
+                    </div>
+                    <div class="logo">
+                        <img src="./assets/images/KARTIKAEKA_BRAND.png" alt="" />
+                    </div>
+                    <div class="logo">
+                        <img src="./assets/images/ETTPAD_BRAND.png" alt="" />
+                    </div>
+                </div>
+
+                <div class="userControl">
+                    <div class="notification">
+                        <button class="btnNotification" type="button" id="notification" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="./assets/images/notificationIcon.png" alt="" />
+                        </button>
+
+                        <ul class="dropdown-menu" aria-labelledby="notification">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="iconMassage">
+                                        <ion-icon name="chatbubble-ellipses"></ion-icon>
+                                    </div>
+                                    <div class="wrapperMessage">
+                                        <div class="messageName">
+                                            <h1>Selamat Datang Di SISFOBETA 4.0</h1>
+                                        </div>
+                                        <div class="messageContent">
+                                            <p>
+                                                aplikasi yang terintegrasi untuk memudahkan prajurit
+                                                di seluruh Indonesia dimanapun dan kapanpun untuk
+                                                mendapatkan informasi iuran twp, baltab , dan kpr
+                                                secara online dan up to date
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="messageTime">
+                                        <span>19.30</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="iconMassage">
+                                        <ion-icon name="chatbubble-ellipses"></ion-icon>
+                                    </div>
+                                    <div class="wrapperMessage">
+                                        <div class="messageName">
+                                            <h1>Selamat Datang Di SISFOBETA 4.0</h1>
+                                        </div>
+                                        <div class="messageContent">
+                                            <p>
+                                                aplikasi yang terintegrasi untuk memudahkan prajurit
+                                                di seluruh Indonesia dimanapun dan kapanpun untuk
+                                                mendapatkan informasi iuran twp, baltab , dan kpr
+                                                secara online dan up to date
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="messageTime">
+                                        <span>19.30</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="profil">
+                        <button class="dropdown-toggle" type="button" id="profilMenu" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="./assets/images/defaultProfile.png" alt="" />
+                        </button>
+
+                        <ul class="dropdown-menu" aria-labelledby="profilMenu">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <ion-icon name="person"></ion-icon>
+                                    Profil
+                                </a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="more">
+                        <button class="dropdown-toggle" type="button" id="moreMenu" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="./assets/images/moreIcon.png" alt="" />
+                        </button>
+
+                        <ul class="dropdown-menu" aria-labelledby="moreMenu">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <ion-icon name="person"></ion-icon>
+                                    more
+                                </a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--End Navbar-->
+
+        <!--Menu Admin-->
+        <section class="menuAdmin">
+            <a href="#" class="menu"> Dashboard </a>
+            <a href="#" class="menu"> Data KPR </a>
+            <a href="#" class="menu"> Pengajuan </a>
+            <a href="#" class="menu"> Simulasi KPR </a>
+            <a href="#" class="menu"> Lokasi </a>
+        </section>
+        <!--End Menu Admin-->
+    </div>
+    <div class="container mt-5 mb-5">
+      <h4>Simulasi KPR</h4>
+        <div class=" btn-group w-25">
+            <button class="text-start btn btn-secondary dropdown-toggle bg-transparent text-dark fw-bold" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                Kpr Syariah
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="#">KPR Konvensional</a></li>
+            </ul>
+        </div>
+        <div class="konvesional-wrapper mt-5">
+            <h4>Konvensional</h4>
+            <hr>
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                        <form>
+                            <label class="mb-3" for="fname">Jumlah Pinjaman</label>
+                            <input type="text" id="fname" name="fname">
+                    </form>
+                </div>
+                 <div class="col-md-4 col-sm-12">
+                        <form>
+                            <label class="mb-3" for="fname">Angsuran Bulanan</label>
+                            <input type="text" id="fname" name="fname">
+                    </form>
+                </div>
+                 <div class="col-md-4 col-sm-12">
+                        <form>
+                            <label class="mb-3" for="fname">Bunga</label>
+                            <input type="date" id="fname" name="fname">
+                    </form>
+                </div>
+            </div>
+            <form class="mt-5">
+                 <label class="mb-3" for="fname">Bunga</label>
+                <input type="date" id="fname" name="fname">
+            </form>
+            
+            <button class="hitung mb-5 btn btn-primary mt-5 text-start">Hitung</button>
+        </div>
+    </div>
+    <footer>
+        <p>Copyright 2021 © DITKUAD</p>
+    </footer>
+</body>
+
+<!--Jquery Assets-->
+<script src="./assets/vendors/jquery/jquery.min.js"></script>
+<script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+<!--Bootstrap Javascript-->
+<script src="./assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!--Chart JS-->
+<script src="./assets/vendors/chartjs/Chart.js"></script>
+<!--Ionicon-->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<!--Data Table-->
+
+</html>
