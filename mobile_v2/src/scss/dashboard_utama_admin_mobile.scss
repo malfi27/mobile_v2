@@ -1,0 +1,670 @@
+/*------------
+GOOGLE FONT
+------------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@font-face {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*------------
+Resset Css
+------------*/
+*,::after,::before,h1,h2,h3,h4,h5,h6,p {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+
+
+//ReusableClass
+.nameProduct {
+    color: #3E3C3C;
+    font-weight: 700;
+    line-height: 37.5px;
+    margin-bottom: 1.5rem;
+    font-size: 20px;
+}
+
+#mainContent {
+    padding: 1rem;
+    .informationSection {
+        display: flex;
+        .rekapPersonilInformation {
+            display: flex;
+            flex-direction: column;
+            .rekapDoughnutChart {
+                width: 100%;
+                .headerText {
+                    font-weight: 500;
+                }
+                .wrapperChart {
+                    width: 100%;
+                    margin: 3rem 0;
+                    .chart {
+                        width: 100%;
+                    }
+                }
+                .informationChart {
+                    .personil {
+                        display: flex;
+                        align-items: center;
+                        .icon {
+                            margin-right: .5rem;
+                            img {
+                                width: 100%;
+                            }
+                        }
+                        .value {
+                            h3 {
+                                font-weight: 500; 
+                            }
+                            h2 {
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+            }
+            .rekapLineChart {
+                width: 100%;
+                .headerText {
+                    font-weight: 500;
+                }
+                .wrapperChart {
+                    width: 100%;
+                    margin-top: 1.5rem;
+                    canvas {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .adminInformation {
+            .linesCards {
+                display: flex;
+                .infoCard {
+                    color: #fff;
+                    border-radius: 10px;
+                    width: 100%;
+                    box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
+    
+                    &:nth-child(1) {
+                        background-color: #284E78;
+                    }
+                    &:nth-child(2) {
+                        background-color: #3C543C;
+                    }
+                    
+                    .labelCard {
+                        margin-bottom: .8rem;
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+                    .wrapperValue {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        font-weight: 700;
+                        p {
+                            font-size: 12px;
+                        }
+    
+                        .icon {
+                            img {
+                                width: 100%;
+                                max-width: 34px;
+                            }
+                        }
+                    }
+                }
+            }
+            .line2 {
+                .infoCard {
+                    &:nth-child(1) {
+                        background-color: rgba(220, 53, 69, 0.8);
+                    }
+                    &:nth-child(2) {
+                        background-color: #7334FF;
+                    }
+                }
+            }
+        }
+    }
+
+    .productSection {
+        display: flex;
+        .productLine {
+            transition: 1s;
+            .baltabProduct {
+                margin-bottom: 1.5rem;
+                .wrapperCardBaltab {
+                    display: flex;
+                    .cards {
+                        width: 100%;
+                        text-align: center;
+                        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+                        h1 {
+                            font-weight: 700;
+                            .valuePengajuan {
+                                color: #DC3545;
+                            }
+                        }
+                        p {
+                            color: #3E3C3C;
+                            font-weight: 400;
+                        }
+                        .chartIcon {
+                            svg {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+            .eAkuntingProduct {
+                .wrapperTableV2 {
+                    &:not(:last-child) {
+                        margin-bottom: 2rem;
+                    }
+                    .labelTable {
+                        font-size: 18px;
+                        padding-left: 2rem;
+                        font-weight: 600;
+                        margin-bottom: .5rem;
+                    }
+                    .table {
+                        thead {
+                            color: #fff;
+                            tr {
+                                th {
+                                    background-color: #284E78;
+                                    padding: .8rem 2rem;
+                                    font-size: 12px;
+                                    &:first-child {
+                                        border-radius: 15px 0px 0px 0px;
+                                    }
+                                    &:last-child {
+                                        border-radius: 0px 15px 0px 0px;
+                                    }
+                                }
+                            }
+                        }
+                        tbody {
+                            tr {
+                                &:nth-child(even) {
+                                    background: #ECF2F3;
+                                }
+
+                                td {
+                                    padding: .8rem 2rem;
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+                    .piutangAkun {
+                        thead {
+                            tr {
+                                th {
+                                    background-color: #7334FF;
+                                }
+                            }
+                        }
+                    }
+                    .hutangAkun {
+                        thead {
+                            tr {
+                                th {
+                                    background-color: #DC3545;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .kprProduct {
+               .wrapperDebitur {
+                   .linesCards {
+                       display: flex;
+                    .debitur {
+                        width: 100%;
+                        border-radius: 15px;
+                        background: #fff;
+                        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    
+                        &:nth-child(1) {
+                            border-left: 15px solid #284E78;
+                        }
+                        &:nth-child(2) {
+                            border-left: 15px solid #435C41;
+                        }
+                        
+                            .wrapperContentDebitur {
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+    
+                                .contentDebitur {
+                                    width: 70%;
+                                    h3 {
+                                        font-weight: 600;
+                                    }
+                                    p {
+                                        font-weight: 400;
+                                    }
+                                }
+                                .iconDebitur {
+                                    width: 30%;
+                                }
+                            }
+                        }
+                   }
+                   .cards2 {
+                       .debitur {
+                        &:nth-child(1) {
+                            border-left: 15px solid rgba(220, 53, 69, 1);
+                        }
+                        &:nth-child(2) {
+                            border-left: 15px solid rgba(115, 52, 255, 1);
+                        }
+                       }
+                   }
+               } 
+               .secondSectionKPR {
+                   display: flex;
+                   margin-bottom: 1.5rem;
+                   .rekapDataBulanan {
+                       padding: 1.5rem;
+                       .labelName {
+                           text-align: center;
+                           font-weight: 500;
+                           font-size: 18px;
+                           margin-bottom: 2rem;
+                       }
+
+                       .legendsInformation {
+                           display: flex;
+                           justify-content: center;
+                           margin-top: 2rem;
+                           .legends {
+                               .label {
+                                   position: relative;
+                                   margin-bottom: .3rem;
+                                   font-size: 12px;
+
+                                   &::before {
+                                       content: '';
+                                       display: block;
+                                       position: absolute;
+                                       left: -15px;
+                                       height: 24px;
+                                       width: 7px;
+                                       border-radius: 20px;
+                                   }
+                               }
+
+                               .value {
+                                   font-weight: 600;
+                                   font-size: 12px;
+                               }
+                           }
+
+                           .pokok {
+                               .label {
+                                   &::before {
+                                       background: #7334FF;
+                                   }
+                               }
+                           }
+                            .bunga {
+                                .label {
+                                    &::before {
+                                        background: #FF832A;
+                                    }
+                                }
+                            }
+                       }
+                   }
+                   .wrapperDebiturBank {
+                       position: relative;
+                       .debiturBank{
+                           display: flex;
+                           align-items: center;
+                           justify-content: space-between;
+                           padding: 1.3rem .8rem;
+                           border-radius: 15px;
+                           width: 100%;
+
+                           &:nth-child(1) {
+                               border-left: 15px solid #284E78;
+                           }
+                           
+                           &:nth-child(2) {
+                               border-left: 15px solid #7334FF ;
+                           }
+
+                           .content {
+                               .labelName {
+                                   font-size: 18px;
+                                   margin-bottom: 1rem;
+                               }
+                               h3 {
+                                   font-size: 14px;
+                                   font-weight: 600;
+                               }
+                               p {
+                                   font-size: 14px;
+                               }
+                           }
+                       }
+                   }
+               }
+               .threeSection {
+                   .wrapperCard {
+                       display: flex;
+                       margin-bottom: 1rem;
+                       width: 100%;
+                       .cards {
+                           width: 100%;
+                           display: flex;
+                           flex-direction: column;
+                           align-items: center;
+                           padding: 1.3rem 1rem;
+                           .wrapperChart {
+                                width: 100%;
+                                margin-bottom: 1.5rem;
+                                canvas {
+                                    width: 100%;
+                                }
+                           }
+                           .informationCards {
+                                width: 100%;
+                                h1 {
+                                    font-size: 14px;
+                                    font-weight: 500;
+                                }
+                                .value {
+                                    font-weight: 500;
+                                    font-size: 12px;
+                                    margin-bottom: .5rem;
+                                }
+                                p {
+                                    font-size: 14px;
+                                }
+                           }
+                           &:not(:last-child) {
+                               margin-right: 1rem;
+                           }
+                       }
+                   }
+               }
+            }
+            .etppadProduct {
+                .rekapTabunganPerbulan {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 1rem 0;
+                    margin-bottom: 1.5rem;
+                    .rekapStatistic {
+                        text-align: center;
+                        padding: 1rem;
+                        width: 100%;
+                        margin-bottom: 1.5rem;
+                        .headerText {
+                            font-size: 18px;
+                            margin-bottom: 2rem;
+                        }
+                        .icon {
+                            margin-bottom: 1rem;
+                        }
+                        .nominal {
+                            font-size: 16px;
+                            font-weight: 600;
+                        }
+                        p {
+                            font-size: 12px;
+                        }
+                    }
+                    .rekapLineChart {
+                        padding: 1rem;
+                        width: 100%;
+                        .headerText {
+                            font-size: 18px;
+                            margin-bottom: 2rem;
+                        }
+                        .wrapperChart {
+                            .chart {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+                .wrapperTableV2 {
+                    &:not(:last-child) {
+                        margin-bottom: 2rem;
+                    }
+                    .table {
+                        thead {
+                            color: #fff;
+                            tr {
+                                th {
+                                    background-color: #198754;
+                                    padding: .8rem 2rem;
+                                    font-size: 12px;
+                                    &:first-child {
+                                        border-radius: 15px 0px 0px 0px;
+                                    }
+                                    &:last-child {
+                                        border-radius: 0px 15px 0px 0px;
+                                    }
+                                }
+                            }
+                        }
+                        tbody {
+                            tr {
+                                &:nth-child(even) {
+                                    background: #ECF2F3;
+                                }
+                                td {
+                                    padding: .8rem 2rem;
+                                    font-size: 12px;
+                                }
+                                .nameAndNRP {
+                                    h1 {
+                                        font-size: 12px;
+                                    }
+                                    .nama {
+                                        font-weight: 400;
+                                        margin-bottom: .3rem;
+                                    }
+                                    .nrp {
+                                        font-weight: 600;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .piutangAkun {
+                        thead {
+                            tr {
+                                th {
+                                    background-color: #7334FF;
+                                }
+                            }
+                        }
+                    }
+                    .hutangAkun {
+                        thead {
+                            tr {
+                                th {
+                                    background-color: #DC3545;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    background: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+    font-size: 12px;
+    box-shadow: 0px -10px 70px rgba(0, 0, 0, 0.25);
+}
+
+
+
+//Responsive Tablet - Desktop
+@media screen and (min-width : 0px) {
+    #mainContent {
+        .informationSection {
+            flex-direction: column;
+            margin: 1.5rem 0;
+            .rekapPersonilInformation {
+                margin-bottom: 1.5rem;
+                .rekapDoughnutChart {
+                    padding: 1rem;
+                    margin-bottom: 1.5rem;
+                    .headerText {
+                        font-size: 18px;
+                    }
+                    .informationChart {
+                        .personil {
+                            margin: 1rem 0;
+                            .icon {
+                                margin-right: .5rem;
+                                img {
+                                    max-width: 28px;
+                                }
+                            }
+                            .value {
+                                h3 {
+                                    font-size: 14px;
+                                }
+                                h2 {
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .rekapLineChart {
+                    padding: 1rem;
+                    .headerText {
+                        font-size: 18px;
+                    }
+                }
+            }
+            .adminInformation {
+                .linesCards {
+                    .infoCard {
+                        width: 100%;
+                        margin: .5rem;
+                        padding: 1rem;
+                        .wrapperValue {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+        .productSection {
+            flex-direction: column;
+            .productLine {
+                .baltabProduct {
+                    .wrapperCardBaltab {
+                        .cards {
+                            &:not(:last-child) {
+                                margin-right: 1.5rem;
+                            }
+                            .icon {
+                                padding: 1.5rem .5rem;
+                            }
+                            h1 {
+                                font-size: 12px;
+                                padding: 0 .5rem;
+                            }
+                            p {
+                                margin-bottom: 1.5rem;
+                                font-size: 10px;
+                                padding: .4rem .5rem;
+                            }
+                            .chartIcon {
+                                svg {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .kprProduct {
+                    .wrapperDebitur {
+                        .debitur {
+                            padding: 1rem .7rem;
+                            margin-bottom: .8rem;
+                            &:not(:last-child) {
+                                margin-right: .8rem;
+                            }
+                            &:last-child {
+                                .wrapperContentDebitur {
+                                    .contentDebitur {
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                            .labelName {
+                                font-size: 14px;
+                                margin-bottom: 1rem;
+                            }
+                            .wrapperContentDebitur {
+                                .contentDebitur {
+                                    h3,p {
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .secondSectionKPR {
+                        flex-direction: column;
+                        .rekapDataBulanan {
+                            width: 100%;
+                            margin: 1.5rem 0;
+
+                            .wrapperChart {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                .chart {
+                                    max-width: 500px;
+                                }
+                            }
+
+                            .legendsInformation {
+                                .legends {
+                                    margin: 0 1.5rem;
+                                }
+                            }
+                        }
+                        .wrapperDebiturBank {
+                            width: 100%;
+                            .debiturBank {
+                                &:not(:last-child) {
+                                    margin-bottom: 1rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

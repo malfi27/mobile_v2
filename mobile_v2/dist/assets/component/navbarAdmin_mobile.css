@@ -10,8 +10,7 @@ GOOGLE FONT
 Resset Css
 ------------*/
 *, ::after, ::before, h1, h2, p {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
@@ -25,39 +24,23 @@ Resset Css
 }
 
 #mainHeader .navbarUtama .navbarWrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 #mainHeader .navbarUtama .navbarWrapper .backMenu {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex: 1;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 #mainHeader .navbarUtama .navbarWrapper .backMenu .backButton {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   color: #fff;
   text-decoration: none;
   font-weight: 400;
   font-size: 18px;
-  width: -webkit-min-content;
-  width: -moz-min-content;
   width: min-content;
 }
 
@@ -66,18 +49,10 @@ Resset Css
 }
 
 #mainHeader .navbarUtama .navbarWrapper .brandLogo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+  align-items: center;
+  justify-content: center;
+  flex: 2;
 }
 
 #mainHeader .navbarUtama .navbarWrapper .brandLogo .logo {
@@ -89,22 +64,14 @@ Resset Css
 }
 
 #mainHeader .navbarUtama .navbarWrapper .userControl {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex: 1;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 #mainHeader .navbarUtama .navbarWrapper .userControl .notification {
-  margin: 0 .7rem;
+  margin: 0 .4rem;
 }
 
 #mainHeader .navbarUtama .navbarWrapper .userControl .notification button {
@@ -113,14 +80,13 @@ Resset Css
 }
 
 #mainHeader .navbarUtama .navbarWrapper .userControl .notification button img {
-  max-width: 28px;
+  max-width: 18px;
 }
 
 #mainHeader .navbarUtama .navbarWrapper .userControl .notification .dropdown-menu {
   padding: 1rem 0;
   border: 0;
-  -webkit-box-shadow: 0px 11px 11px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 11px 11px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 11px 11px rgba(0, 0, 0, 0.1);
   max-width: 600px;
   top: 10px !important;
 }
@@ -130,29 +96,21 @@ Resset Css
 }
 
 #mainHeader .navbarUtama .navbarWrapper .userControl .notification .dropdown-menu li .dropdown-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 #mainHeader .navbarUtama .navbarWrapper .userControl .notification .dropdown-menu li .dropdown-item .iconMassage {
   background: #f0f7ff;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: .5rem .5rem;
   border-radius: 6px;
 }
 
 #mainHeader .navbarUtama .navbarWrapper .userControl .notification .dropdown-menu li .dropdown-item .iconMassage ion-icon {
   margin: 0;
-  font-size: 22px;
+  font-size: 18px;
   color: #7e97ae;
 }
 
@@ -178,12 +136,8 @@ Resset Css
 }
 
 #mainHeader .navbarUtama .navbarWrapper .userControl .notification .dropdown-menu li .dropdown-item .messageTime {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 #mainHeader .navbarUtama .navbarWrapper .userControl .notification .dropdown-menu li .dropdown-item .messageTime span {
@@ -191,7 +145,7 @@ Resset Css
 }
 
 #mainHeader .navbarUtama .navbarWrapper .userControl .profil {
-  margin: 0 .7rem;
+  margin: 0 .4rem;
 }
 
 #mainHeader .navbarUtama .navbarWrapper .userControl .profil button {
@@ -205,23 +159,17 @@ Resset Css
 
 #mainHeader .navbarUtama .navbarWrapper .userControl .profil button img {
   border-radius: 50%;
-  max-width: 34px;
+  max-width: 22px;
 }
 
 #mainHeader .navbarUtama .navbarWrapper .userControl .profil .dropdown-menu {
-  -webkit-box-shadow: 0px 11px 11px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 11px 11px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 11px 11px rgba(0, 0, 0, 0.1);
   top: 10px !important;
 }
 
 #mainHeader .navbarUtama .navbarWrapper .userControl .profil .dropdown-menu li .dropdown-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition: .3s;
+  align-items: center;
   transition: .3s;
   color: #333;
 }
@@ -232,12 +180,11 @@ Resset Css
 
 #mainHeader .navbarUtama .navbarWrapper .userControl .profil .dropdown-menu li .dropdown-item:hover {
   color: #3C543C;
-  -webkit-transition: .3s;
   transition: .3s;
 }
 
 #mainHeader .navbarUtama .navbarWrapper .userControl .more {
-  margin: 0 .7rem;
+  margin: 0 .4rem;
 }
 
 #mainHeader .navbarUtama .navbarWrapper .userControl .more button {
@@ -250,23 +197,17 @@ Resset Css
 }
 
 #mainHeader .navbarUtama .navbarWrapper .userControl .more button img {
-  max-width: 6px;
+  max-width: 4px;
 }
 
 #mainHeader .navbarUtama .navbarWrapper .userControl .more .dropdown-menu {
-  -webkit-box-shadow: 0px 11px 11px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 11px 11px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 11px 11px rgba(0, 0, 0, 0.1);
   top: 10px !important;
 }
 
 #mainHeader .navbarUtama .navbarWrapper .userControl .more .dropdown-menu li .dropdown-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition: .3s;
+  align-items: center;
   transition: .3s;
   color: #333;
 }
@@ -277,31 +218,29 @@ Resset Css
 
 #mainHeader .navbarUtama .navbarWrapper .userControl .more .dropdown-menu li .dropdown-item:hover {
   color: #3C543C;
-  -webkit-transition: .3s;
   transition: .3s;
 }
 
 @media screen and (min-width: 0px) {
-  #mainHeader .navbarUtama .navbarWrapper .brandLogo .logo img {
-    max-width: 60px;
-  }
-  #mainHeader .navbarUtama .navbarWrapper .brandLogo .brandBTN img {
-    min-width: 100px;
-  }
-  #mainHeader .navbarUtama .navbarWrapper .userControl .notification .dropdown-menu li .dropdown-item .wrapperMessage .messageName h1 {
-    font-size: 18px;
-  }
-  #mainHeader .navbarUtama .navbarWrapper .userControl .notification .dropdown-menu li .dropdown-item .wrapperMessage .messageContent p {
+  #mainHeader .navbarUtama .navbarWrapper .backMenu .backButton {
     font-size: 14px;
   }
-}
-
-@media screen and (min-width: 1024px) {
+  #mainHeader .navbarUtama .navbarWrapper .backMenu .backButton ion-icon {
+    font-size: 14px;
+  }
   #mainHeader .navbarUtama .navbarWrapper .brandLogo .logo img {
-    max-width: 65px;
+    max-width: 20px;
   }
   #mainHeader .navbarUtama .navbarWrapper .brandLogo .brandBTN img {
-    min-width: 100px;
+    min-width: 20px;
+  }
+  #mainHeader .navbarUtama .navbarWrapper .userControl .notification .dropdown-menu li .dropdown-item .wrapperMessage .messageName h1 {
+    font-size: 12px;
+  }
+  #mainHeader .navbarUtama .navbarWrapper .userControl .notification .dropdown-menu li .dropdown-item .wrapperMessage .messageContent p {
+    font-size: 11px;
+  }
+  #mainHeader .navbarUtama .navbarWrapper .userControl .notification .dropdown-menu li .dropdown-item .messageTime span {
+    font-size: 10px;
   }
 }
-/*# sourceMappingURL=navbar.css.map */
