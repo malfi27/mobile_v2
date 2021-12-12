@@ -1,0 +1,68 @@
+/*------------
+GOOGLE FONT
+------------*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+/*------------
+Resset Css
+------------*/
+*, ::after, ::before, h1, h2, h3, h4, h5, h6, p {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+}
+
+#mainContent {
+  padding: 3rem 5rem;
+}
+
+#mainContent .wrapperDetailData {
+  border-radius: 18px;
+}
+
+#mainContent .wrapperDetailData .headerCards {
+  background-color: #e2e2e2;
+  padding: 2rem;
+  border-radius: 20px 20px 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+#mainContent .wrapperDetailData .headerCards .btns {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  background-color: #3C543C;
+  width: min-content;
+  padding: .7rem 1rem;
+  color: #fff;
+  border-radius: 26px;
+  font-size: 14px;
+}
+
+#mainContent .wrapperDetailData .headerCards .btns ion-icon {
+  margin-right: .5rem;
+}
+
+#mainContent .wrapperDetailData .bodyCards {
+  padding: 1rem 2rem;
+}
+
+#mainContent .wrapperDetailData .bodyCards .table tr td:nth-child(1) {
+  width: 20%;
+}
+
+#mainContent .wrapperDetailData .bodyCards .table tr td:nth-child(2) {
+  width: 2%;
+}
+
+#mainContent .wrapperDetailData .bodyCards .table tr td:nth-child(3) {
+  width: 78%;
+}

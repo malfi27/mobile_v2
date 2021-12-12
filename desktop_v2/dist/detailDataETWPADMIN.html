@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Utama Admin</title>
+
+    <!--Bootstrap Assets-->
+    <link rel="stylesheet" href="./assets/vendors/bootstrap/css/bootstrap.min.css">
+
+    <!--Component CSS-->
+    <link rel="stylesheet" href="./assets/css/component/navbar.css">
+    <link rel="stylesheet" href="./assets/css/component/menuAdmin_v2.css">
+    <link rel="stylesheet" href="./assets/css/component/cards.css">
+
+    <!--Data Table-->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.2/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.2.0/css/fixedHeader.dataTables.min.css">
+
+    <!--Styling Pages-->
+    <link rel="stylesheet" href="./assets/css/detailData.css">
+</head>
+<body>
+    <div id="mainHeader">
+        <!--Navbar Utama-->
+        <nav class="navbars navbarUtama">
+            <div class="navbarWrapper">
+                <div class="backMenu">
+                    <!-- <a href="#" class="backButton">
+                        <ion-icon name="arrow-back-outline"></ion-icon>
+                        Kembali
+                    </a> -->
+                </div>
+                <div class="brandLogo">
+                    <div class="logo brandBTN">
+                        <img src="./assets/images/BTN_BRAND.png" alt="">
+                    </div>
+                    <div class="logo">
+                        <img src="./assets/images/KARTIKAEKA_BRAND.png" alt="">
+                    </div>
+                    <div class="logo">
+                        <img src="./assets/images/ETTPAD_BRAND.png" alt="">
+                    </div>
+                </div>
+
+                <div class="userControl">
+                    <div class="notification">
+                        
+                        <button class="btnNotification" type="button" id="notification" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="./assets/images/notificationIcon.png" alt="">
+                        </button>
+    
+                        <ul class="dropdown-menu" aria-labelledby="notification">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="iconMassage">
+                                        <ion-icon name="chatbubble-ellipses"></ion-icon>
+                                    </div>
+                                    <div class="wrapperMessage">
+                                        <div class="messageName">
+                                            <h1>Selamat Datang Di SISFOBETA 4.0</h1>
+                                        </div>
+                                        <div class="messageContent">
+                                            <p>aplikasi yang terintegrasi untuk memudahkan prajurit di seluruh Indonesia dimanapun dan kapanpun untuk mendapatkan informasi iuran twp, baltab , dan kpr secara online dan up to date</p>
+                                        </div>
+                                    </div>
+                                    <div class="messageTime">
+                                    <span>19.30</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="iconMassage">
+                                        <ion-icon name="chatbubble-ellipses"></ion-icon>
+                                    </div>
+                                    <div class="wrapperMessage">
+                                        <div class="messageName">
+                                            <h1>Selamat Datang Di SISFOBETA 4.0</h1>
+                                        </div>
+                                        <div class="messageContent">
+                                            <p>aplikasi yang terintegrasi untuk memudahkan prajurit di seluruh Indonesia dimanapun dan kapanpun untuk mendapatkan informasi iuran twp, baltab , dan kpr secara online dan up to date</p>
+                                        </div>
+                                    </div>
+                                    <div class="messageTime">
+                                    <span>19.30</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="profil">
+                        <button class="dropdown-toggle" type="button" id="profilMenu" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="./assets/images/defaultProfile.png" alt="">
+                        </button>
+
+                        <ul class="dropdown-menu" aria-labelledby="profilMenu">
+                          <li><a class="dropdown-item" href="#">
+                            <ion-icon name="person"></ion-icon>  
+                            Profil</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="more">
+                        <button class="dropdown-toggle" type="button" id="moreMenu" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="./assets/images/moreIcon.png" alt="">
+                        </button>
+
+                        <ul class="dropdown-menu" aria-labelledby="moreMenu">
+                          <li><a class="dropdown-item" href="#">
+                            <ion-icon name="person"></ion-icon>  
+                            more</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--End Navbar-->
+
+        <!--Menu Admin-->
+        <section class="menuAdmin">
+            <a href="#" class="menu">
+                e-TPP
+            </a>
+            <a href="#" class="menu">
+                e-KPR
+            </a>
+            <a href="#" class="menu">
+                e-BALTAB
+            </a>
+            <a href="#" class="menu">
+                e-TWP
+            </a>
+            <a href="#" class="menu">
+                Master
+            </a>
+            <a href="#" class="menu">
+                Konten Managemen
+            </a>
+            <a href="#" class="menu">
+                Kelola User
+            </a>
+            <a href="#" class="menu">
+                Pusat Bantuan Managemen
+            </a>
+        </section>
+        <!--End Menu Admin-->
+    </div>
+
+    <div id="mainContent">
+        <div class="wrapperDetailData cards">
+            <div class="headerCards">
+                <a href="#" class="btns">
+                    <ion-icon name="arrow-back-outline"></ion-icon>
+                    Kembali
+                </a>
+                <a href="#" class="btns">
+                    <ion-icon name="download-outline"></ion-icon>
+                    Export
+                </a>
+            </div>
+            <div class="bodyCards">
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <tr>
+                            <td>Nama</td>
+                            <td>:</td>
+                            <td colspan="2">{{ $kpr->nama }}</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Pangkat</td>
+                            <td>:</td>
+                            <td colspan="2">{{ $kpr->pangkat }}</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>NRP</td>
+                            <td>:</td>
+                            <td>{{ $kpr->nrp }}</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Kesatuan</td>
+                            <td>:</td>
+                            <td>{{ $kpr->kesatuan }}</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Kotama</td>
+                            <td>:</td>
+                            <td>{{ $kpr->kotama }}</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Alamat</td>
+                            <td>:</td>
+                            <td>{{ $kpr->alamat }}</td>
+                            <td></td>
+                        </tr>
+                            <tr>
+                                <td>No Rekening</td>
+                                <td>:</td>
+                                <td>{{ $kpr->rek_btn }}</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>No Rekening</td>
+                                <td>:</td>
+                                <td>{{ $kpr->rek_bri }}</td>
+                                <td></td>
+                            </tr>
+                        <tr>
+                            <td>Nama Bank</td>
+                            <td>:</td>
+                            <td>{{ $kpr->nama_bank }}</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Tahap</td>
+                            <td>:</td>
+                            <td>{{ $kpr->tahap }}</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Pinjaman</td>
+                            <td>:</td>
+                            <td>{{ 'Rp. ' . number_format($kpr->pinjaman, 0, ',', '.') }}</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Jangka Waktu</td>
+                            <td>:</td>
+                            <td>{{ $kpr->jk_waktu }}</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Bulan angsuran</td>
+                            <td>:</td>
+                            <td>{{ $kpr->tmt_angsuran }}</td>
+                            <td></td>
+                        </tr>
+
+
+                        <tr>
+                            <td>Jumlah angsuran</td>
+                            <td>:</td>
+                            <td>{{ 'Rp. ' . number_format($kpr->jml_angs, 0, ',', '.') }}</td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>angsuran ke</td>
+                            <td>:</td>
+                            <td>{{ $kpr->angs_ke }}</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Angsuran masuk</td>
+                            <td>:</td>
+                            <td>{{ $kpr->angsuran_masuk }}</td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>Tunggakan</td>
+                            <td>:</td>
+                            <td>{{ $kpr->tunggakan }}</td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>Jumlah Tunggakan</td>
+                            <td>:</td>
+                            <td>{{ 'Rp. ' . number_format($kpr->jml_tunggakan, 0, ',', '.') }}</td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>Keterangan</td>
+                            <td>:</td>
+                            <td>{{ $kpr->keterangan }}</td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>Piutang Pokok</td>
+                            <td>:</td>
+                            <td>{{ 'Rp. ' . number_format($total_pokok_piutang, 0, ',', '.') }}</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Tunggakan Bunga</td>
+                            <td>:</td>
+                            <td>{{ 'Rp. ' . number_format($tunggakan_bunga, 0, ',', '.') }}</td>
+                            <td></td>
+                        </tr>
+                        
+                          <tr>
+                            <td>Pokok bulan ini</td>
+                            <td>:</td>
+                            <td>{{ 'Rp. ' . number_format($kpr->pokok_bulan_ini, 0, ',', '.') }}</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Bunga bulan ini</td>
+                            <td>:</td>
+                            <td>{{ 'Rp. ' . number_format($kpr->bunga_bulan_ini, 0, ',', '.') }}</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Total Transaksi Mass Debet</td>
+                            <td>:</td>
+                            <td>{{ $massdebat }}</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Total Transaksi Manual</td>
+                            <td>:</td>
+                            <td>{{ $kpr->angs_masuk_manual }}</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--Jquery Assets-->
+    <script src="./assets/vendors/jquery/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <!--Bootstrap Javascript-->
+    <script src="./assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!--Chart JS-->
+    <script src="./assets/vendors/chartjs/Chart.js"></script>
+    <!--Ionicon-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!--Data Table-->
+</body>
+</html>
