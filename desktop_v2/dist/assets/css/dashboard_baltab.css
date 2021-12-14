@@ -3,6 +3,20 @@
     border-radius: 15px;
    
 }
+
+h5{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+p{
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.container{
+    margin-top: 80px !important;
+}
 .rekap-border{
     border-right: 2px solid #000;
 }

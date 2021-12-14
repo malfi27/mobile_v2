@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Profile</title>
+
+    <!--Bootstrap Assets-->
+    <link rel="stylesheet" href="./assets/vendors/bootstrap/css/bootstrap.min.css" />
+
+    <!--Styling Pages-->
+    <link rel="stylesheet" href="./assets/css/editProfile.css">
+</head>
+
+<body>
+    <div class="container mt-5 mb-5">
+        <!-- Tabs -->
+        <ul class="nav justify-content-start">
+            <li class="nav-item">
+                <a class="nav-link active text-dark" aria-current="page" href="#">
+                    <h3>Profile</h3>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">
+                    <h3>Password</h3>
+                </a>
+            </li>
+        </ul>
+        <!-- End Tabs -->
+        <!-- Profile -->
+        <div class="form-profile">
+            <div class="row">
+                <div class="col-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="NRP" class="form-label">NRP</label>
+                            <input type="number" class="form-control" id="NRP">
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="Name" class="form-label">Nama</label>
+                            <input type="text" class="form-control" id="Name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="Email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="Email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="NIK" class="form-label">NIK</label>
+                            <input type="number" class="form-control" id="NIK">
+                        </div>
+                        <div class="mb-3">
+                            <label for="NTlpn" class="form-label">No Telepon</label>
+                            <input type="number" class="form-control" id="NTlpn">
+                        </div>
+                        <div class="mb-3">
+                            <label for="NPWP" class="form-label">NPWP</label>
+                            <input type="number" class="form-control" id="NPWP">
+                        </div>
+                        <div class="mb-3">
+                            <label for="TglLahir" class="form-label">Tanggal Lahir</label>
+                            <input type="date" class="form-control" id="TglLahir">
+                        </div>
+                        <div class="mb-3">
+                            <label for="Pangkat" class="form-label">Pangkat</label>
+                            <select id="Pangkat" class="form-select">
+                                <option>Pilih Pangkat</option>
+                                <option>1</option>
+                                <option>2</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="Corps" class="form-label">Corps</label>
+                            <select id="Corps" class="form-select">
+                                <option>Pilih corps</option>
+                                <option>Corps1</option>
+                                <option>Corps2</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="Kesatuan" class="form-label">Kesatuan</label>
+                            <select id="Kesatuan" class="form-select">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="Kotama" class="form-label">Kotama</label>
+                            <select id="Kotama" class="form-select">
+                                <option>Pilih Kotama</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="nBank" class="form-label">Nama Bank</label>
+                            <input type="text" class="form-control" id="nBank">
+                        </div>
+                        <div class="mb-3">
+                            <label for="nRekening" class="form-label">Nama Rekening</label>
+                            <input type="text" class="form-control" id="nRekening">
+                        </div>
+                        <div class="mb-3">
+                            <label for="noRekening" class="form-label">No Rekening</label>
+                            <input type="number" class="form-control" id="noRekening">
+                        </div>
+                        <div class="mb-3">
+                            <label for="noDebitur" class="form-label">No Debitur</label>
+                            <input type="number" class="form-control" id="noDebitur">
+                        </div>
+                        <div class="button d-flex justify-content-end">
+                            <button class="btn btn-danger me-2">Kembali</button>
+                            <button class="btn btn-success">Perbarui</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- End Profile -->
+
+        <!-- Modal -->
+        <!-- Button trigger modal -->
+
+
+    </div>
+
+</body>
+
+<!--Jquery Assets-->
+<script src="./assets/vendors/jquery/jquery.min.js"></script>
+<script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+<!--Bootstrap Javascript-->
+<script src="./assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!--Chart JS-->
+<script src="./assets/vendors/chartjs/Chart.js"></script>
+<!--Ionicon-->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<!--Data Table-->
+
+
+
+</html>
