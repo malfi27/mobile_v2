@@ -8,6 +8,7 @@
   width: 100%;
   padding: .5rem;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 #mainHeader .menuAdmin .menu {
