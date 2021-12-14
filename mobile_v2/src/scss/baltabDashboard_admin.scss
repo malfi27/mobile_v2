@@ -2,9 +2,11 @@
 Font
 ------------*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
 @font-face {
     font-family: steelfish;
     src: url(../font/stelfish.ttf);
+    font-family: 'Readex Pro', sans-serif;
 }
 
 /*------------
@@ -45,19 +47,136 @@ Resset Css
             }
         }
     }
+    .wrapperDanaDetail {
+        .danaDetail {
+            display: flex;
+            .cards {
+                .labelCards {
+                    font-family: 'Readex Pro', sans-serif !important;
+                }
+                .infoCards {
+                    display: flex;
+                    align-items: center;
+
+                    .detailCards {
+                        width: 100%;
+                        color: #3E3C3C;
+                        p {
+                            font-family: 'Readex Pro', sans-serif !important;
+                            &:nth-child(1) {
+                                font-weight: 700;
+                            }
+                            &:nth-child(2) {
+                                font-weight: 500;
+                            }
+
+                        }
+                    }
+                    .wrapperChart {
+                        width: 100%;
+                        canvas {
+                            width: 100%;
+                        }
+                    }
+                }
+
+            }
+        }
+        .wrapperDanaPenyaluran {
+            .cards {
+                .labelCards {
+                    color: #FF832A;
+                }
+            }
+        }
+        .wrapperDanaAlokasi {
+            .cards {
+                .labelCards {
+                    color: #198754;
+                }
+            }
+        }
+    }
+    .wrapperRekapDataPerbulan {
+        .cards {
+            padding: .7rem 1rem;
+            .headerCards {
+                margin-bottom: 1rem;
+                .titleCards {
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+            }
+            .bodyCards {
+                display: flex;
+                align-items: center;
+                .wrapperChart {
+                    width: 60%;
+                    canvas {
+                        width: 100%;
+                        position: relative;
+                        z-index: 2;
+                    }
+                }
+                .wrapperLegendsOfCards {
+                    width: 40%;
+                    p {
+                        position: relative;
+                        font-size: 10px;
+                        margin-bottom: 1rem;
+                        &::before {
+                            content: '';
+                            display: block;
+                            height: 18px;
+                            width: 5px;
+                            background: #7334FF;
+                            position: absolute;
+                            left: -10px;
+                            border-radius: 8px;
+                            
+                        }
+                        &:nth-child(2) {
+                            &::before {
+                                background: #FF832A;
+                            }
+                        }
+                        &:nth-child(3) {
+                            &::before {
+                                background: #DC3545;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .wrapperRekapDataTahunan {
+        padding: 1rem;
+        .titleCards {
+            font-size: 16px;
+            margin-bottom: 1rem;
+        }
+    }
 }
 
 
 @media screen and (min-width : 0px) {
     #mainContent {
+        .nameContent {
+            font-weight: 600;
+            font-size: 18px;
+            margin-bottom: 1.5rem;
+        }
         .wrapperInfoData {
+            margin-bottom: 1rem;
             .cards {
+                padding: .5rem;
                 &:not(:last-child) {
                     margin-right: 1rem;
                 }
                 .icon {
                     svg {
-                        max-width: 48px;
+                        max-width: 42px;
                     }
                 }
                 .wrapperChartCards {
@@ -66,6 +185,64 @@ Resset Css
                 h1 {
                     font-size: 12px;
                     margin-bottom: .4rem;
+                }
+                h2 {
+                    font-size: 8px;
+                    margin-bottom: .4rem;
+                }
+                p {
+                    font-size: 8px;
+                }
+            }
+        }
+        .wrapperDanaDetail {
+            margin-bottom: 1.5rem;
+            .danaDetail {
+                &:not(:last-child) {
+                    margin-bottom: .7rem;
+                }
+                .cards {
+                    padding: .5rem .7rem;
+                    width: 100%;
+                    &:not(:last-child) {
+                        margin-right: .5rem;
+                    }
+                    .labelCards {
+                        font-size: 10px;
+                        margin-bottom: .7rem;
+                    }
+                    .infoCards {
+                        .detailCards {
+                            p {
+                                font-size: 8px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width : 375px) {
+    #mainContent {
+        .nameContent {
+            font-size: 18px;
+        }
+        .wrapperInfoData {
+            .cards {
+                padding: .7rem;
+                .icon {
+                    svg {
+                        max-width: 62px;
+                    }
+                }
+                .wrapperChartCards {
+                    margin-top: 1.3rem;
+                }
+                h1 {
+                    font-size: 12px;
+                    margin-bottom: .5rem;
                 }
                 h2 {
                     font-size: 10px;
@@ -77,8 +254,4 @@ Resset Css
             }
         }
     }
-}
-
-@media screen and (min-width : 375px) {
-    
 }

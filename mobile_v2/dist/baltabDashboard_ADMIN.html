@@ -197,6 +197,90 @@
                 <p><span class="bulan">Agustus</span> <span class="tahun">2021</span></p>
             </div>
         </div>
+
+        <div class="wrapperDanaDetail">
+            <div class="wrapperDanaAlokasi danaDetail">
+                <div class="cards">
+                    <h1 class="labelCards">Dana Alokasi</h1>
+                    <div class="infoCards">
+                        <div class="detailCards">
+                            <p>Rp <span class="value">300.000.000</span></p>
+                            <p>Total Pokok (IDR)</p>
+                        </div>
+                        <div class="wrapperChart">
+                            <canvas id="DanaAlokasi"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <h1 class="labelCards">Approval Dana Alokasi</h1>
+                    <div class="infoCards">
+                        <div class="detailCards">
+                            <p>Rp <span class="value">300.000.000</span></p>
+                            <p>Total Pokok (IDR)</p>
+                        </div>
+                        <div class="wrapperChart">
+                            <canvas id="approvalDanaAlokasi"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapperDanaPenyaluran danaDetail">
+                <div class="cards">
+                    <h1 class="labelCards">Dana Penyaluran</h1>
+                    <div class="infoCards">
+                        <div class="detailCards">
+                            <p>Rp <span class="value">300.000.000</span></p>
+                            <p>Total Pokok (IDR)</p>
+                        </div>
+                        <div class="wrapperChart">
+                            <canvas id="DanaPenyaluran"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <h1 class="labelCards">Approval Dana Penyaluran</h1>
+                    <div class="infoCards">
+                        <div class="detailCards">
+                            <p>Rp <span class="value">300.000.000</span></p>
+                            <p>Total Pokok (IDR)</p>
+                        </div>
+                        <div class="wrapperChart">
+                            <canvas id="approvalDanaPenyaluran"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapperRekapDataPerbulan">
+            <div class="cards">
+                <div class="headerCards">
+                    <h1 class="titleCards">Rekap Data Perbulan</h1>
+                </div>
+                <div class="bodyCards">
+                    <div class="wrapperChart">
+                        <canvas id="RekapDataBulanan"></canvas>
+                    </div>
+                    <div class="wrapperLegendsOfCards">
+                        <p>Dana Alokasi</p>
+                        <p>Jumlah Pengajuan</p>
+                        <p>Dana Penyaluran</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapperRekapDataTahunan cards">
+            <h1 class="titleCards">
+                Rekap Data Pertahun
+            </h1>
+            <div class="wrapperChart">
+                <canvas id="rekapDataTahunan"></canvas>
+            </div>
+        </div>
     </div>
 
 
@@ -211,5 +295,209 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <!--Data Table-->
+
+
+    <script>
+        //Dana Alokasi
+        const labelDanaAlokasi = ["Total Pokok", "Total Bunga"];
+        const dataDanaAlokasi = {
+            labels: labelDanaAlokasi,
+            datasets: [
+                {
+                    backgroundColor: ["#7334FF", "#ECECEC"],
+                    borderColor: "rgb(255, 255, 255)",
+                    data: [80, 10],
+                },
+            ],
+        };
+        const configDanaAlokasi = {
+            type: "doughnut",
+            data: dataDanaAlokasi,
+            options: {
+                legend: {
+                    display: false,
+                },
+            },
+        };
+        const RekapDanaAlokasi = new Chart(
+            document.getElementById("DanaAlokasi"),
+            configDanaAlokasi
+        );
+
+
+
+        //Approval Dana Alokasi
+        const labelApprovalDanaAlokasi = ["Total Pokok", "Total Bunga"];
+        const dataApprovalDanaAlokasi = {
+            labels: labelApprovalDanaAlokasi,
+            datasets: [
+                {
+                    backgroundColor: ["#FF832A", "#ECECEC"],
+                    borderColor: "rgb(255, 255, 255)",
+                    data: [80, 10],
+                },
+            ],
+        };
+        const configApprovalDanaAlokasi = {
+            type: "doughnut",
+            data: dataApprovalDanaAlokasi,
+            options: {
+                legend: {
+                    display: false,
+                },
+            },
+        };
+        const RekapApprovalDanaAlokasi = new Chart(
+            document.getElementById("approvalDanaAlokasi"),
+            configApprovalDanaAlokasi
+        );
+
+        //Dana Penyaluran
+        const labelDanaPenyaluran = ["Total Pokok", "Total Bunga"];
+        const dataDanaPenyaluran = {
+            labels: labelDanaPenyaluran,
+            datasets: [
+                {
+                    backgroundColor: ["#7334FF", "#ECECEC"],
+                    borderColor: "rgb(255, 255, 255)",
+                    data: [80, 10],
+                },
+            ],
+        };
+        const configDanaPenyaluran = {
+            type: "doughnut",
+            data: dataDanaPenyaluran,
+            options: {
+                legend: {
+                    display: false,
+                },
+            },
+        };
+        const RekapDanaPenyaluran = new Chart(
+            document.getElementById("DanaPenyaluran"),
+            configDanaPenyaluran
+        );
+
+        //Approval Dana Penyaluran
+        const labelApprovalDanaPenyaluran = ["Total Pokok", "Total Bunga"];
+        const dataApprovalDanaPenyaluran = {
+            labels: labelApprovalDanaPenyaluran,
+            datasets: [
+                {
+                    backgroundColor: ["#FF832A", "#ECECEC"],
+                    borderColor: "rgb(255, 255, 255)",
+                    data: [80, 10],
+                },
+            ],
+        };
+        const configApprovalDanaPenyaluran = {
+            type: "doughnut",
+            data: dataApprovalDanaPenyaluran,
+            options: {
+                legend: {
+                    display: false,
+                },
+            },
+        };
+        const RekapApprovalDanaPenyaluran = new Chart(
+            document.getElementById("approvalDanaPenyaluran"),
+            configApprovalDanaPenyaluran
+        );
+
+
+
+
+
+
+
+
+
+
+
+        const labelRekapDataBulanan = ["Total Pokok", "Total Bunga"];
+        const dataRekapDataBulanan = {
+            labels: labelRekapDataBulanan,
+            datasets: [
+                {
+                    backgroundColor: ["#7334FF", "#ff0000", "#FF832A" ],
+                    borderColor: "rgb(255, 255, 255)",
+                    data: [50, 25, 25],
+                },
+            ],
+        };
+        const configRekapDataBulanan = {
+            type: "doughnut",
+            data: dataRekapDataBulanan,
+            options: {
+                legend: {
+                    display: false,
+                },
+            },
+        };
+        const RekapDataBulananChart = new Chart(
+            document.getElementById("RekapDataBulanan"),
+            configRekapDataBulanan
+        );
+
+
+
+
+
+
+
+
+        const labels = [
+        "Nov",
+        "Des",
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Ags",
+        "Sep",
+    ];
+    const dataTahunan = {
+        labels: labels,
+        datasets: [
+            {
+                label: "My First dataset",
+                backgroundColor: "rgba(255, 131, 42, 0.52)",
+                borderColor: "rgba(255, 131, 42, 0.52)",
+                data: [650, 550, 600, 460, 700, 600, 650, 850, 550, 250, 400],
+                borderWidth: 3,
+            },
+            {
+                label: "My First dataset",
+                backgroundColor: "rgba(143, 92, 255, 0.52)",
+                borderColor: "rgba(143, 92, 255, 0.52)",
+                data: [450, 800, 500, 400, 300, 400, 450, 300, 250, 450, 500],
+                borderWidth: 3,
+            },
+             {
+                label: "My First dataset",
+                backgroundColor: "#DC3545",
+                borderColor: "#DC3545",
+                data: [250, 400, 300, 400, 200, 600, 250, 300, 450, 450, 500],
+                borderWidth: 3,
+            },
+        ],
+    };
+    const configdataTahunan = {
+        type: "line",
+        data: dataTahunan,
+        options: {
+            legend: {
+                display: false,
+            },
+        },
+    };
+    const pertahunChart = new Chart(
+        document.getElementById("rekapDataTahunan"),
+        configdataTahunan
+    );
+    </script>
 </body>
 </html>
