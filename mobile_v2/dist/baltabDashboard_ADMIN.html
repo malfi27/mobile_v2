@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Utama Admin</title>
+
+    <!--Bootstrap Assets-->
+    <link rel="stylesheet" href="./assets/vendors/bootstrap/css/bootstrap.min.css">
+
+    <!--Component CSS-->
+    <link rel="stylesheet" href="./assets/component/navbarAdmin_mobile.css">
+    <link rel="stylesheet" href="./assets/component/menuAdmin_mobile.css">
+    <link rel="stylesheet" href="./assets/component/cards.css">
+
+    <!--Data Table-->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.2/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.2.0/css/fixedHeader.dataTables.min.css">
+
+    <!--Styling Pages-->
+    <link rel="stylesheet" href="./assets/css/baltabDashboard_admin.css">
+</head>
+<body>
+    <div id="mainHeader">
+        <!--Navbar Utama-->
+        <nav class="navbars navbarUtama">
+            <div class="navbarWrapper">
+                <div class="backMenu">
+                    <a href="#" class="backButton">
+                        <ion-icon name="arrow-back-outline"></ion-icon>
+                        Kembali
+                    </a>
+                </div>
+                <!-- <div class="brandLogo">
+                    <div class="logo brandBTN">
+                        <img src="./assets/images/BTN_BRAND.png" alt="">
+                    </div>
+                    <div class="logo">
+                        <img src="./assets/images/KARTIKAEKA_BRAND.png" alt="">
+                    </div>
+                    <div class="logo">
+                        <img src="./assets/images/ETTPAD_BRAND.png" alt="">
+                    </div>
+                </div> -->
+
+                <div class="userControl">
+                    <div class="notification">
+                        
+                        <button class="btnNotification" type="button" id="notification" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="./assets/images/notificationIcon.png" alt="">
+                        </button>
+    
+                        <ul class="dropdown-menu" aria-labelledby="notification">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="iconMassage">
+                                        <ion-icon name="chatbubble-ellipses"></ion-icon>
+                                    </div>
+                                    <div class="wrapperMessage">
+                                        <div class="messageName">
+                                            <h1>Selamat Datang Di SISFOBETA 4.0</h1>
+                                        </div>
+                                        <div class="messageContent">
+                                            <p>aplikasi yang terintegrasi untuk memudahkan prajurit di seluruh Indonesia dimanapun dan kapanpun untuk mendapatkan informasi iuran twp, baltab , dan kpr secara online dan up to date</p>
+                                        </div>
+                                    </div>
+                                    <div class="messageTime">
+                                    <span>19.30</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="iconMassage">
+                                        <ion-icon name="chatbubble-ellipses"></ion-icon>
+                                    </div>
+                                    <div class="wrapperMessage">
+                                        <div class="messageName">
+                                            <h1>Selamat Datang Di SISFOBETA 4.0</h1>
+                                        </div>
+                                        <div class="messageContent">
+                                            <p>aplikasi yang terintegrasi untuk memudahkan prajurit di seluruh Indonesia dimanapun dan kapanpun untuk mendapatkan informasi iuran twp, baltab , dan kpr secara online dan up to date</p>
+                                        </div>
+                                    </div>
+                                    <div class="messageTime">
+                                    <span>19.30</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="profil">
+                        <button class="dropdown-toggle" type="button" id="profilMenu" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="./assets/images/defaultProfile.png" alt="">
+                        </button>
+
+                        <ul class="dropdown-menu" aria-labelledby="profilMenu">
+                          <li><a class="dropdown-item" href="#">
+                            <ion-icon name="person"></ion-icon>  
+                            Profil</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="more">
+                        <button class="dropdown-toggle" type="button" id="moreMenu" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="./assets/images/moreIcon.png" alt="">
+                        </button>
+
+                        <ul class="dropdown-menu" aria-labelledby="moreMenu">
+                          <li><a class="dropdown-item" href="#">
+                            <ion-icon name="person"></ion-icon>  
+                            more</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--End Navbar-->
+
+        <!--Menu Admin-->
+        <section class="menuAdmin">
+            <a href="#" class="menu">
+                Dashboard
+            </a>
+            <a href="#" class="menu">
+                Data Pokok
+            </a>
+            <a href="#" class="menu">
+                Rekayasa Data
+            </a>
+            <a href="#" class="menu">
+                Pengajuan
+            </a>
+            <a href="#" class="menu">
+                Sprin
+            </a>
+        </section>
+        <!--End Menu Admin-->
+    </div>
+
+    <div id="mainContent">
+        <h1 class="nameContent">Data Penyaluran Dana</h1>
+        
+        <div class="wrapperInfoData">
+            <div class="cards">
+                <div class="icon">
+                    <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25" cy="25" r="25" fill="#DC3545"/>
+                        <path d="M24.8582 24.3997C27.0192 24.3997 28.7711 22.5194 28.7711 20.1998C28.7711 17.8803 27.0192 16 24.8582 16C22.6972 16 20.9453 17.8803 20.9453 20.1998C20.9453 22.5194 22.6972 24.3997 24.8582 24.3997Z" fill="white"/>
+                        <path d="M32.6816 26.8005C34.2252 26.8005 35.4765 25.4574 35.4765 23.8006C35.4765 22.1439 34.2252 20.8008 32.6816 20.8008C31.138 20.8008 29.8867 22.1439 29.8867 23.8006C29.8867 25.4574 31.138 26.8005 32.6816 26.8005Z" fill="white"/>
+                        <path d="M17.1113 26.8005C18.6549 26.8005 19.9062 25.4574 19.9062 23.8006C19.9062 22.1439 18.6549 20.8008 17.1113 20.8008C15.5677 20.8008 14.3164 22.1439 14.3164 23.8006C14.3164 25.4574 15.5677 26.8005 17.1113 26.8005Z" fill="white"/>
+                        <path d="M24.8566 25.5986C20.8498 25.5986 17.5898 29.0977 17.5898 33.3983C17.5898 33.7295 17.8403 33.9983 18.1488 33.9983H31.5644C31.873 33.9983 32.1234 33.7295 32.1234 33.3983C32.1234 29.0977 28.8634 25.5986 24.8566 25.5986Z" fill="white"/>
+                        <path d="M18.0739 28.1296C17.7318 28.0516 17.3841 28 17.0308 28C14.2572 28 12 30.4227 12 33.3998C12 33.731 12.2504 33.9998 12.559 33.9998H16.5747C16.5121 33.8114 16.4718 33.611 16.4718 33.3998C16.4718 31.4307 17.0711 29.6127 18.0739 28.1296Z" fill="white"/>
+                        <path d="M32.6837 28C32.3304 28 31.9827 28.0516 31.6406 28.1296C32.6434 29.6127 33.2427 31.4307 33.2427 33.3998C33.2427 33.611 33.2024 33.8113 33.1398 33.9998H37.1555C37.4641 33.9998 37.7145 33.731 37.7145 33.3998C37.7145 30.4227 35.4574 28 32.6837 28Z" fill="white"/>
+                    </svg>
+                </div>
+
+                <h1><span class="red">714.781</span> Prajurit</h1>
+                <h2><span class="red">714.781</span> Proses Pencairan</h2>
+                <h2><span class="red">30</span> Telah Dicairkan</h2>
+
+                <div class="wrapperChartCards">
+                    <img src="./assets/images/chartIMG.png" alt="">
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="icon">
+                    <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25" cy="25" r="25" fill="#284E78"/>
+                        <path d="M31.3728 18.0371H30.8464V30.9676C30.8464 31.8266 30.1472 32.5258 29.2882 32.5258H23.9555H19.7148V33.0051C19.7148 33.554 20.1603 33.9995 20.7092 33.9995H26.04H31.3709C31.9197 33.9995 32.3652 33.554 32.3652 33.0051V19.0315C32.3652 18.4826 31.9216 18.0371 31.3728 18.0371Z" fill="white"/>
+                        <path d="M23.9561 31.9624H29.287C29.8358 31.9624 30.2813 31.5169 30.2813 30.9681V18.0376V16.9944C30.2813 16.4455 29.8358 16 29.287 16H23.9561H22.1836V16.3289C22.1873 16.3628 22.1892 16.3985 22.1892 16.4342V18.6015V19.1579C22.1892 19.9305 21.5614 20.5583 20.7888 20.5583H20.2324H18.0651C18.0369 20.5583 18.0069 20.5564 17.9787 20.5545H17.6328V30.9681C17.6328 31.5169 18.0783 31.9624 18.6272 31.9624H19.7174H23.9561ZM24.1573 28.5827H20.6817C20.4223 28.5827 20.2118 28.3722 20.2118 28.1128C20.2118 27.8534 20.4223 27.6429 20.6817 27.6429H24.1591C24.4185 27.6429 24.6291 27.8534 24.6291 28.1128C24.6291 28.3722 24.4167 28.5827 24.1573 28.5827ZM27.6347 26.1842H20.6817C20.4223 26.1842 20.2118 25.9737 20.2118 25.7143C20.2118 25.4549 20.4223 25.2444 20.6817 25.2444H27.6347C27.8941 25.2444 28.1046 25.4549 28.1046 25.7143C28.1046 25.9737 27.8941 26.1842 27.6347 26.1842ZM20.6817 22.6974H27.6347C27.8941 22.6974 28.1046 22.9079 28.1046 23.1673C28.1046 23.4267 27.8941 23.6372 27.6347 23.6372H20.6817C20.4223 23.6372 20.2118 23.4267 20.2118 23.1673C20.2118 22.9079 20.4223 22.6974 20.6817 22.6974Z" fill="white"/>
+                        <path d="M18.0647 19.994H20.7884C20.7903 19.994 20.794 19.994 20.7959 19.994C21.2508 19.9902 21.6192 19.6218 21.623 19.1669C21.623 19.165 21.623 19.1613 21.623 19.1594V16.4338C21.623 16.1819 21.4162 16.0146 21.202 16.0146C21.0986 16.0146 20.9952 16.0522 20.9087 16.1387L17.7677 19.2797C17.5046 19.5428 17.6907 19.994 18.0647 19.994Z" fill="white"/>
+                    </svg>
+                </div>
+
+                <h1>711.888</h1>
+                <p>Kelengkapan Pengajuan</p>
+                <p><span class="bulan">Agustus</span> <span class="tahun">2021</span></p>
+            </div>
+            <div class="cards">
+                <div class="icon">
+                    <svg  viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25" cy="25" r="25" fill="#198754"/>
+                        <path d="M24.9878 22.0918C23.0044 22.0918 21.3965 23.6997 21.3965 25.6831C21.3965 27.6666 23.0044 29.2745 24.9878 29.2745C26.9713 29.2745 28.5792 27.6666 28.5792 25.6831C28.578 23.7002 26.9708 22.093 24.9878 22.0918ZM27.2725 24.7831L24.6849 27.2539C24.6288 27.3068 24.5545 27.3362 24.4772 27.336C24.3968 27.3355 24.3195 27.3046 24.2609 27.2495L22.7941 25.7827C22.6758 25.6644 22.6758 25.4725 22.7941 25.3542C22.9124 25.2359 23.1043 25.2359 23.2224 25.3542L24.4816 26.6134L26.857 24.346C26.9148 24.2901 26.9926 24.2595 27.073 24.2612C27.1535 24.2629 27.2301 24.2965 27.2855 24.3548C27.3943 24.4789 27.3886 24.6658 27.2725 24.7831Z" fill="white"/>
+                        <path d="M30.1238 17.3672H28.0901V18.358C28.0906 18.4384 28.059 18.5159 28.002 18.5726C27.9451 18.6296 27.8678 18.6614 27.7872 18.6609H22.1883C22.1078 18.6614 22.0304 18.6296 21.9736 18.5726C21.9166 18.5159 21.8849 18.4384 21.8854 18.358V17.3672H19.8517C19.0634 17.3679 18.4247 18.0068 18.4238 18.7951V32.5719C18.4247 33.3602 19.0634 33.999 19.8517 33.9998H30.1238C30.9121 33.999 31.551 33.3602 31.5516 32.5719V18.7951C31.551 18.0068 30.9121 17.3679 30.1238 17.3672ZM24.9877 29.8806C22.6698 29.8806 20.7906 28.0014 20.7906 25.6835C20.7906 23.3654 22.6698 21.4864 24.9877 21.4864C27.3059 21.4864 29.1849 23.3654 29.1849 25.6835C29.1827 28.0006 27.3048 29.8784 24.9877 29.8806Z" fill="white"/>
+                        <path d="M22.4902 16H27.4834V18.0509H22.4902V16Z" fill="white"/>
+                    </svg>
+                </div>
+
+                <h1>880</h1>
+                <p>Approval Sprin
+                <p><span class="bulan">Agustus</span> <span class="tahun">2021</span></p>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Jquery Assets-->
+    <script src="./assets/vendors/jquery/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <!--Bootstrap Javascript-->
+    <script src="./assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!--Chart JS-->
+    <script src="./assets/vendors/chartjs/Chart.js"></script>
+    <!--Ionicon-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!--Data Table-->
+</body>
+</html>

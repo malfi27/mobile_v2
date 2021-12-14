@@ -1,0 +1,55 @@
+#authEmail {
+    padding: 2rem;
+    font-family: 'Readex Pro', sans-serif;
+    text-align: center;
+    .icon {
+        margin-bottom: 1.5rem
+    }
+
+    h1 {
+        margin-bottom: .3rem;
+        .namaPrajurit {
+            color: #3C543C;
+            font-weight: 700;
+        }
+    }
+    .label {
+        margin-bottom: 2rem;
+    }
+
+    .wrapperCards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .cards {
+            padding: 2rem 3rem;
+            border-radius: 24px;
+            border: 2px solid #eee;
+            text-align: start;
+            .labelEmail {
+                font-size: 24px;
+                margin-bottom: .7rem;
+                .prajurit {
+                    color: #3C543C;
+                    font-weight: 700;
+                }
+            }
+            .textEmail {
+                color: #808080;
+                font-size: 16px;
+                margin-bottom: 2rem;
+            }
+
+            .helpMore {
+                border-top: 2px solid #eee;
+                text-align: center;
+                padding: 2rem 0 .5rem  0;
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+}
