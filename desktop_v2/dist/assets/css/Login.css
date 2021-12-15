@@ -1,0 +1,20 @@
+.container-fluid{
+    background-image: url("../images/background-login.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.form-control{
+    margin: 0 auto;
+    width: 24rem;
+    border: 2px solid;
+    border-radius: 15px;
+    padding: 10px 20px;
+}
+.btn{
+    margin: 0 auto;
+    width: 24rem;
+    background-color: #3E563E;
+    border-radius: 8px;
+    padding: 10px 
+;
+}
