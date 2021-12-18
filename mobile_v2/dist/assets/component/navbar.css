@@ -18,6 +18,26 @@ Resset Css
   outline: none;
 }
 
+.btnNotification {
+        position:relative;
+}
+.btnNotification[data-badge]:after {
+        content:attr(data-badge);
+        position:absolute;
+        top:-5px;
+        right:-5px;
+        font-size:.7em;
+        background:#e53935;
+        color:white;
+        width:18px;
+        height:18px;
+        text-align:center;
+        line-height:18px;
+        border-radius: 50%;
+}
+
+
+
 /*------------
 Variables
 ------------*/
