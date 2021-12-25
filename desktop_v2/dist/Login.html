@@ -21,12 +21,19 @@
              <label for="email" class="form-label text-center d-flex justify-content-center fw-bold">Email address</label>
             <input type="email" class="form-control" id="Email" placeholder="Masukan Email anda" required>
             <!-- Password -->
-            <h3 class="text-center mt-5">Masukan Password Baru</h3>
+            <div class="password-input">
+                <h3 class="text-center mt-5">Masukan Password Baru</h3>
             <p class="text-center text-danger">Password baru, minimal 8 karakter terdiri huruf besar, huruf kecil dan simbol !</p>
             <input minlength="8" type="password" class="form-control" id="password" placeholder="Masukan Password Baru" required>
+            <div class="eye-icon">
+              <img class="eye-password" src="./assets/images/Eye.svg" alt="">
+            </div>
+            </div>
             <!-- Konfirmasi Password -->
             <label for="KonfirPassword" class="form-label d-flex justify-content-center fw-bold mt-4">Konfirmasi Password Baru</label>
             <input minlength="8" type="password" class="form-control" id="KonfirPassword" placeholder="Masukan Password Baru" required>
+            <img class="eye-password" src="./assets/images/Eye.svg" alt="">
+            <!-- button -->
             <button class="btn text-light fw-bold d-flex justify-content-center mt-4">Kirim Email</button>
         </form>
       </div>
