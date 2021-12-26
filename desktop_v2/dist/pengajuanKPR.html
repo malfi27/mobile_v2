@@ -16,8 +16,8 @@
     <!--Component CSS-->
     <link rel="stylesheet" href="./assets/css/component/navbar.css" />
     <link rel="stylesheet" href="./assets/css/component/menuAdmin_v2.css" />
-    
-    
+
+
 
     <!--Data Table-->
     <link rel="stylesheet" href="https://cdn.datatables.net/1.11.2/css/dataTables.bootstrap5.min.css" />
@@ -28,249 +28,60 @@
 </head>
 
 <body>
-    <div id="mainHeader">
-        <!--Navbar Utama-->
-        <nav class="navbars navbarUtama">
-            <div class="navbarWrapper">
-                <div class="backMenu">
-                    <!-- <a href="#" class="backButton">
-                        <ion-icon name="arrow-back-outline"></ion-icon>
-                        Kembali
-                    </a> -->
+    <div class="wrapper-pengajuan">
+        <div class="pengajuan-kpr">
+            <div class="header-Card p-3">
+                <h1 class="fs-3">Pengajuan KPR</h1>
+            </div>
+            <div class="content-card p-3">
+                <!-- Harga Properti -->
+                  <div class="mb-3">
+                       <label for="HProperti" class="form-label fw-bold fs-5">Harga Properti</label>
+                        <input type="number" class="form-control" id="HProperti">
+                  </div>
+                  <!-- Bunga -->
+                  <div class="mb-3">
+                       <label for="Bunga" class="form-label fw-bold fs-5">Bunga %</label>
+                        <input type="number" class="form-control" id="Bunga" value="5">
+                  </div>
+                  <!-- Uang Muka -->
+                <div class="mb-3">
+                    <label for="UangMuka" class="fs-5 fw-bold">Uang Muka</label>
+                    <div class="input-group mb-2">
+                        <span class="input-group-text text-dark fw-bold">Rp</span>
+                        <input type="number" class="form-control" id="UangMuka" ><span style="width: 25%;"><input type="number" class="form-control" ></span>
+                        <span class="input-group-text text-dark fw-bold">%</span>
+                    </div>
+                    <p class="fw-bold">Uang muka minimal 15% dari harga properti</p>
                 </div>
-                <div class="brandLogo">
-                    <div class="logo brandBTN">
-                        <img src="./assets/images/BTN_BRAND.png" alt="">
-                    </div>
-                    <div class="logo">
-                        <img src="./assets/images/KARTIKAEKA_BRAND.png" alt="">
-                    </div>
-                    <div class="logo">
-                        <img src="./assets/images/ETTPAD_BRAND.png" alt="">
-                    </div>
+                <!-- Jumlah Pinjaman -->
+                <div class="mb-3">
+                    <label for="jumlahPinjaman" class="fs-5 fw-bold">Jumlah Pinjaman</label>   
+                    <input type="number" class="form-control fw-bold" id="jumlahPinjaman" style="background-color:#C9C9C9" value="1000000000" >
                 </div>
-
-                <div class="userControl">
-                    <div class="notification">
-
-                        <button class="btnNotification" data-badge=12 type="button" id="notification"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            <img class="btnNotification" data-badge=12 src="./assets/images/notificationIcon.png"
-                                alt="">
-                        </button>
-
-                        <ul class="dropdown-menu" aria-labelledby="notification">
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <div class="iconMassage">
-                                        <ion-icon name="chatbubble-ellipses"></ion-icon>
-                                    </div>
-                                    <div class="wrapperMessage">
-                                        <div class="messageName">
-                                            <h1>Selamat Datang Di SISFOBETA 4.0</h1>
-                                        </div>
-                                        <div class="messageContent">
-                                            <p>aplikasi yang terintegrasi untuk memudahkan prajurit di seluruh Indonesia
-                                                dimanapun dan kapanpun untuk mendapatkan informasi iuran twp, baltab ,
-                                                dan kpr secara online dan up to date</p>
-                                        </div>
-                                    </div>
-                                    <div class="messageTime">
-                                        <span>19.30</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <div class="iconMassage">
-                                        <ion-icon name="chatbubble-ellipses"></ion-icon>
-                                    </div>
-                                    <div class="wrapperMessage">
-                                        <div class="messageName">
-                                            <h1>Selamat Datang Di SISFOBETA 4.0</h1>
-                                        </div>
-                                        <div class="messageContent">
-                                            <p>aplikasi yang terintegrasi untuk memudahkan prajurit di seluruh Indonesia
-                                                dimanapun dan kapanpun untuk mendapatkan informasi iuran twp, baltab ,
-                                                dan kpr secara online dan up to date</p>
-                                        </div>
-                                    </div>
-                                    <div class="messageTime">
-                                        <span>19.30</span>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="profil">
-                        <button class="dropdown-toggle" type="button" id="profilMenu" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            <img src="./assets/images/defaultProfile.png" alt="">
-                        </button>
-
-                        <ul class="dropdown-menu" aria-labelledby="profilMenu">
-                            <li><a class="dropdown-item" href="#">
-                                    <ion-icon name="person"></ion-icon>
-                                    Profil
-                                </a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="more">
-                        <button class="dropdown-toggle" type="button" id="moreMenu" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            <img src="./assets/images/moreIcon.png" alt="">
-                        </button>
-
-                        <ul class="dropdown-menu" aria-labelledby="moreMenu">
-                            <li><a class="dropdown-item" href="#">
-                                    <ion-icon name="person"></ion-icon>
-                                    more
-                                </a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                        </ul>
-                    </div>
+                <!-- Jangka Waktu -->
+                 <div class="mb-3">
+                    <label for="PilihKavling" class="fs-5 fw-bold">Jangka Waktu</label>   
+                    <select class="form-control" name="JangkaWaktu" id="jangkaWaktu">
+                        <option value="5tahun">5tahun</option>
+                        <option value="5tahun">5tahun</option>
+                        <option value="5tahun">5tahun</option>
+                    </select>
+                </div>
+                <!-- Pilih Kavling -->
+                <div class="mb-3">
+                    <label for="PilihKavling" class="fs-5 fw-bold">Pilih Kavling</label>   
+                    <select class="form-control" name="PilihKavling" id="PilihKavling">
+                        <option value="5tahun">5tahun</option>
+                        <option value="5tahun">5tahun</option>
+                        <option value="5tahun">5tahun</option>
+                    </select>
                 </div>
             </div>
-        </nav>
-        <!--End Navbar-->
-
-        <!--Menu Admin-->
-        <section class="menuAdmin">
-            <a href="#" class="menu">
-                e-TPP
-            </a>
-            <a href="#" class="menu">
-                e-KPR
-            </a>
-            <a href="#" class="menu">
-                e-BALTAB
-            </a>
-            <a href="#" class="menu">
-                e-TWP
-            </a>
-            <a href="#" class="menu">
-                Master
-            </a>
-            <a href="#" class="menu">
-                Konten Managemen
-            </a>
-            <a href="#" class="menu">
-                Kelola User
-            </a>
-            <a href="#" class="menu">
-                Pusat Bantuan Managemen
-            </a>
-        </section>
-        <!--End Menu Admin-->
-    </div>
-    <div class="table-container  w-75 m-auto mt-5">
-        <h3 class="mb-3">Konfirmasi Pengajuan</h3>
-         <div class="table-pengajuan-KPR ">
-        <div class="select-kpr d-flex justify-content-between">
-            <div class="select-entries d-flex align-items-center ">
-                <h4>Show</h4>
-                <select class="ms-3 pe-3 ps-3 pt-2 pb-2 mb-3" name="entries" id="entries">
-                    <option value="10">10</option>
-                    <option value="10">10</option>
-                    <option value="10">10</option>
-                    <option value="10">10</option>
-                </select>
-                <h4 class="ms-3">Entries</h4>
-            </div>
-            <!-- search -->
-            <form class="d-flex">
-                <img src="./assets/images/search.svg" style="width: 20px;" alt="">
-                <input class="form-control me-2 border-0" type="search" placeholder="Search" aria-label="Search">
-
-            </form>
+            <button class="btn container-fluid text-white p-3">Ajukan KPR</button>
         </div>
-        <table class="table mt-5 text-center">
-            <thead style="background-color: #A2A846;">
-                <tr class="m-auto table-tittle">
-                    <th class="th-radius" scope="col">#</th>
-                    <th scope="col">Status</th>
-                    <th scope="col">Nama/NRP</th>
-                    <th scope="col">Pangkat/Kesatuan</th>
-                    <th scope="col">Pinjaman</th>
-                    <th scope="col">Jangka Waktu</th>
-                    <th scope="col">Action</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">1.</th>
-                    <td><button class="btn">Kosong</button></td>
-                    <td>Agus Gatau</td>
-                    <td>Ah Males</td>
-                    <td>Pengen</td>
-                    <td>Beli</td>
-                    <td><img src="./assets/images/delete 1.svg" alt=""></td>
-                    
-                </tr>
-                <tr >
-                    <th scope="row">1.</th>
-                    <td><button class="btn">Kosong</button></td>
-                    <td>Agus Gatau</td>
-                    <td>Ah Males</td>
-                    <td>Pengen</td>
-                    <td>Beli</td>
-                    <td><img src="./assets/images/delete 1.svg" alt=""></td>
-                </tr>
-                <tr>
-                    <th scope="row">1.</th>
-                   <td><button class="btn">Kosong</button></td>
-                    <td>Agus Gatau</td>
-                    <td>Ah Males</td>
-                    <td>Pengen</td>
-                    <td>Beli</td>
-                    <td><img src="./assets/images/delete 1.svg" alt=""></td>
-                </tr>
-                <tr >
-                    <th scope="row">1.</th>
-                  <td><button class="btn">Kosong</button></td>
-                    <td>Agus Gatau</td>
-                    <td>Ah Males</td>
-                    <td>Pengen</td>
-                    <td>Beli</td>
-                    <td><img src="./assets/images/delete 1.svg" alt=""></td>
-                </tr>
-                <tr>
-                    <th scope="row">1.</th>
-                    <td><button class="btn">Kosong</button></td>
-                    <td>Agus Gatau</td>
-                    <td>Ah Males</td>
-                    <td>Pengen</td>
-                    <td>Beli</td>
-                    <td><img src="./assets/images/delete 1.svg" alt=""></td>
-                </tr>
-            </tbody>
+    </div>
 
-        </table>
-        <nav aria-label="...">
-            <ul class="pagination">
-                <li class="page-item disabled">
-                    <a class="page-link" href="#" aria-label="Previous">
-        <span aria-hidden="true">&laquo;</span>
-      </a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item active" aria-current="page">
-                    <a class="page-link" href="#">2</a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                     <a class="page-link" href="#" aria-label="Next">
-        <span aria-hidden="true">&raquo;</span>
-      </a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-    </div>
-   
 </body>
 <!--Jquery Assets-->
 <script src="./assets/vendors/jquery/jquery.min.js"></script>
