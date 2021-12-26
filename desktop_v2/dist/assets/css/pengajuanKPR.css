@@ -13,9 +13,15 @@
     color: #ffff;
 }
 
-.btn{
-    border-radius: 0px 0px 15px 15px;
+.btn-ajukan{
     font-size: 26px;
     font-weight: bold;
     background-color: #28A745;
+}
+.submit-btn{
+    background-color: #3E563E;
+    color: #ffff;
+    border-radius: 27px;
+    width: 80%;
+    padding:20px;
 }

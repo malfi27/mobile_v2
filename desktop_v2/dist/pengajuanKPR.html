@@ -33,55 +33,227 @@
             <div class="header-Card p-3">
                 <h1 class="fs-3">Pengajuan KPR</h1>
             </div>
-            <div class="content-card p-3">
-                <!-- Harga Properti -->
-                  <div class="mb-3">
-                       <label for="HProperti" class="form-label fw-bold fs-5">Harga Properti</label>
-                        <input type="number" class="form-control" id="HProperti">
-                  </div>
-                  <!-- Bunga -->
-                  <div class="mb-3">
-                       <label for="Bunga" class="form-label fw-bold fs-5">Bunga %</label>
-                        <input type="number" class="form-control" id="Bunga" value="5">
-                  </div>
-                  <!-- Uang Muka -->
-                <div class="mb-3">
-                    <label for="UangMuka" class="fs-5 fw-bold">Uang Muka</label>
-                    <div class="input-group mb-2">
-                        <span class="input-group-text text-dark fw-bold">Rp</span>
-                        <input type="number" class="form-control" id="UangMuka" ><span style="width: 25%;"><input type="number" class="form-control" ></span>
-                        <span class="input-group-text text-dark fw-bold">%</span>
-                    </div>
-                    <p class="fw-bold">Uang muka minimal 15% dari harga properti</p>
-                </div>
-                <!-- Jumlah Pinjaman -->
-                <div class="mb-3">
-                    <label for="jumlahPinjaman" class="fs-5 fw-bold">Jumlah Pinjaman</label>   
-                    <input type="number" class="form-control fw-bold" id="jumlahPinjaman" style="background-color:#C9C9C9" value="1000000000" >
-                </div>
-                <!-- Jangka Waktu -->
-                 <div class="mb-3">
-                    <label for="PilihKavling" class="fs-5 fw-bold">Jangka Waktu</label>   
-                    <select class="form-control" name="JangkaWaktu" id="jangkaWaktu">
-                        <option value="5tahun">5tahun</option>
-                        <option value="5tahun">5tahun</option>
-                        <option value="5tahun">5tahun</option>
-                    </select>
-                </div>
-                <!-- Pilih Kavling -->
-                <div class="mb-3">
-                    <label for="PilihKavling" class="fs-5 fw-bold">Pilih Kavling</label>   
-                    <select class="form-control" name="PilihKavling" id="PilihKavling">
-                        <option value="5tahun">Bumi Bogor</option>
-                        <option value="5tahun">Bumi Surabaya</option>
-                        <option value="5tahun">Bumi</option>
-                    </select>
-                </div>
-            </div>
-            <button class="btn container-fluid text-white p-3">Ajukan KPR</button>
+            <button type="button" class="btn-ajukan btn container-fluid text-white p-3" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">Ajukan KPR</button>
         </div>
     </div>
-
+    <!-- Modal -->
+    <div class="modal  fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content p-5">
+                <div class="modal-header">
+                    <h5 class="modal-title fs-3 fw-bold" id="exampleModalLabel">Pengajuan KPR</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="pengajuan-kpr">
+                            <!-- Harga Properti -->
+                            <div class="mb-3">
+                                <label for="HProperti" class="form-label fw-bold fs-5">Harga Properti</label>
+                                <input type="number" class="form-control" id="HProperti" placeholder="20000">
+                            </div>
+                            <!-- Bunga -->
+                            <div class="mb-3">
+                                <label for="Bunga" class="form-label fw-bold fs-5">Bunga %</label>
+                                <input type="number" class="form-control" id="Bunga" value="5">
+                            </div>
+                            <!-- Jangka Waktu -->
+                            <div class="mb-3">
+                                <label for="JangkaWaktu" class="form-label fw-bold fs-5">Jangka Waktu (Tahun)</label>
+                                <input type="number" class="form-control" id="jangkaWaktu" value="5">
+                            </div>
+                            <!-- pilih kavling -->
+                            <div class="mb-3">
+                                <label for="JangkaWaktu" class="form-label fw-bold fs-5">Jangka Waktu (Tahun)</label>
+                                <select name="pilihKavling" class="form-control" id="pilihKavlingg">
+                                    <option value="Bogor">Bogor</option>
+                                    <option value="Bogor">Bogor</option>
+                                    <option value="Bogor">Bogor</option>
+                                    <option value="Bogor">Bogor</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="data-diri">
+                            <h3>Data</h3>
+                            <div class="row">
+                                <div class="col-6">
+                                    <!-- Nama Lengkap -->
+                                    <div class="mb-3">
+                                        <label for="namaLengkap" class="form-label fw-bold fs-5">Nama Lengkap</label>
+                                        <input type="text" class="form-control" id="namaLengkap"
+                                            placeholder="isi data anda disini">
+                                    </div>
+                                    <!-- No Ktp -->
+                                    <div class="mb-3">
+                                        <label for="NoKTP" class="form-label fw-bold fs-5">No KTP</label>
+                                        <input type="number" class="form-control" id="NoKTP"
+                                            placeholder="isi data anda disini">
+                                    </div>
+                                    <!-- tanggal lahir -->
+                                    <div class="mb-3">
+                                        <label for="tglLahir" class="form-label fw-bold fs-5">Tanggal Lahir</label>
+                                        <input type="date" class="form-control" id="tglLahir"
+                                            placeholder="isi data anda disini">
+                                    </div>
+                                    <!-- Alamat -->
+                                    <div class="mb-3">
+                                        <label for="Alamat" class="form-label fw-bold fs-5">Alamat</label>
+                                        <input type="text" class="form-control" id="Alamat"
+                                            placeholder="isi data anda disini">
+                                    </div>
+                                    <!-- Rt -->
+                                    <div class="mb-3">
+                                        <label for="Rt" class="form-label fw-bold fs-5">Rt</label>
+                                        <input type="text" class="form-control" id="Rt"
+                                            placeholder="isi data anda disini">
+                                    </div>
+                                    <!-- Rw -->
+                                    <div class="mb-3">
+                                        <label for="Rw" class="form-label fw-bold fs-5">Rw</label>
+                                        <input type="text" class="form-control" id="Rw"
+                                            placeholder="isi data anda disini">
+                                    </div>
+                                    <!-- kode pos -->
+                                    <div class="mb-3">
+                                        <label for="kodePos" class="form-label fw-bold fs-5">Kode Pos</label>
+                                        <input type="number" class="form-control" id="kodePos"
+                                            placeholder="isi data anda disini">
+                                    </div>
+                                    <!-- Provinsi -->
+                                    <div class="mb-3">
+                                        <label for="provinsi" class="form-label fw-bold fs-5">Provinsi</label>
+                                        <select name="provinsi" class="form-control" id="provinsi">
+                                            <option value="Jawa Barat">Jawa Barat</option>
+                                            <option value="Jawa Timur">Jawa Timur</option>
+                                            <option value="Jawa Selatan">Jawa Selatan</option>
+                                            <option value="Bogor">Bogor</option>
+                                        </select>
+                                    </div>
+                                    <!-- Kota -->
+                                    <div class="mb-3">
+                                        <label for="Kota" class="form-label fw-bold fs-5">Kota</label>
+                                        <select name="kota" class="form-control" id="kota">
+                                            <option value="Bandung">Bandung</option>
+                                            <option value="Jakarta">Jakarta</option>
+                                            <option value="Cimahi">Cimahi</option>
+                                            <option value="Bogor">Bogor</option>
+                                        </select>
+                                    </div>
+                                    <!-- Kecamatan -->
+                                    <div class="mb-3">
+                                        <label for="kecamatan" class="form-label fw-bold fs-5">Kecamatan</label>
+                                        <select name="kecamatan" class="form-control" id="kecamatan">
+                                            <option value="Leuwiliang">Leuwiliang</option>
+                                            <option value="Cibungbulang">Cibungbulang</option>
+                                            <option value="Cimahi">Cimahi</option>
+                                            <option value="Bogor">Bogor</option>
+                                        </select>
+                                    </div>
+                                    <!-- keluarahan -->
+                                    <div class="mb-3">
+                                        <label for="Kelurahan" class="form-label fw-bold fs-5">Kelurahan</label>
+                                        <select name="Kelurahan" class="form-control" id="Kelurahan">
+                                            <option value="Leuwiliang">Leuwiliang</option>
+                                            <option value="Cibungbulang">Cibungbulang</option>
+                                            <option value="Cimahi">Cimahi</option>
+                                            <option value="Bogor">Bogor</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <!-- No Telepon -->
+                                    <div class="mb-3">
+                                        <label for="noTelepon" class="form-label fw-bold fs-5">Nomor Telepon</label>
+                                        <input type="number" class="form-control" id="noTelepon"
+                                            placeholder="isi data anda disini">
+                                    </div>
+                                    <!-- No Telepon2 -->
+                                    <div class="mb-3">
+                                        <label for="noTelepon2" class="form-label fw-bold fs-5">No Telepon 2</label>
+                                        <input type="number" class="form-control" id="noTelepon2"
+                                            placeholder="isi data anda disini">
+                                    </div>
+                                    <!-- Nama Perusahaan -->
+                                    <div class="mb-3">
+                                        <label for="NamaPerusahaan" class="form-label fw-bold fs-5">Nama
+                                            Perusahaan</label>
+                                        <input type="text" class="form-control" id="NamaPerusahaan"
+                                            placeholder="isi data anda disini">
+                                    </div>
+                                    <!-- Jenis Pekerjaan -->
+                                    <div class="mb-3">
+                                        <label for="jenisPekerjaan" class="form-label fw-bold fs-5">Jenis
+                                            Pekerjaan</label>
+                                        <select name="jenisPekerjaan" class="form-control" id="jenisPekerjaan">
+                                            <option value="PNS">PNS</option>
+                                            <option value="BUMN">BUMN</option>
+                                            <option value="Wiraswasta">Wiraswasta</option>
+                                            <option value="Pegawai">Pegawai</option>
+                                        </select>
+                                    </div>
+                                    <!-- Penghasilan -->
+                                    <div class="mb-3">
+                                        <label for="Penghasilan" class="form-label fw-bold fs-5">Penghasilan</label>
+                                        <input type="number" class="form-control" id="Penghasilan"
+                                            placeholder="isi data anda disini">
+                                    </div>
+                                    <!-- Pekerjaan Pasangan -->
+                                    <div class="mb-3">
+                                        <label for="pekerjaanPasangan" class="form-label fw-bold fs-5">pekerjaan
+                                            Pasangan</label>
+                                        <input type="text" class="form-control" id="pekerjaanPasangan"
+                                            placeholder="isi data anda disini">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio1" value="option1">
+                                            <label class="form-check-label" for="inlineRadio1">Sudah Menikah</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio2" value="option2">
+                                            <label class="form-check-label" for="inlineRadio2">Belum Menikah</label>
+                                        </div>
+                                    </div>
+                                    <!--Nama Lengkap Pasangan -->
+                                    <div class="mb-3">
+                                        <label for="NLPasangan" class="form-label fw-bold fs-5">Nama Lengkap
+                                            Pasangan</label>
+                                        <input type="text" class="form-control" id="NLPasangan"
+                                            placeholder="isi data anda disini">
+                                    </div>
+                                    <!-- no KTP Pasangan -->
+                                    <div class="mb-3">
+                                        <label for="NoKTPpasangan" class="form-label fw-bold fs-5">No KTP
+                                            Pasangan</label>
+                                        <input type="number" class="form-control" id="NoKTPpasangan"
+                                            placeholder="isi data anda disini">
+                                    </div>
+                                    <!-- Tempat Lahir Pasangann -->
+                                    <div class="mb-3">
+                                        <label for="tempatLahirPasangan" class="form-label fw-bold fs-5">Tempat Lahir
+                                            Pasangan</label>
+                                        <input type="text" class="form-control" id="tempatLahirPasangan"
+                                            placeholder="isi data anda disini">
+                                    </div>
+                                    <!-- tanggal Lahir Pasangann -->
+                                    <div class="mb-3">
+                                        <label for="tanggalLahirPasangan" class="form-label fw-bold fs-5">Tanggal Lahir
+                                            Pasangan</label>
+                                        <input type="date" class="form-control" id="tanggalLahirPasangan"
+                                            placeholder="isi data anda disini">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="modal-footer d-flex justify-content-center">
+                        <button type="submit" class="submit-btn btn">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 <!--Jquery Assets-->
 <script src="./assets/vendors/jquery/jquery.min.js"></script>
