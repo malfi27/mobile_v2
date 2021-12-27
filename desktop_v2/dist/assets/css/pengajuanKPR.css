@@ -25,3 +25,6 @@
     width: 80%;
     padding:20px;
 }
+.dropify-wrapper .dropify-message p{
+            font-size: 14px;
+        }

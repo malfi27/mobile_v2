@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="./assets/vendors/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap5.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/css/dropify.min.css"
+        integrity="sha512-EZSUkJWTjzDlspOoPSpUFR0o0Xy7jdzW//6qhUkoZ9c4StFkVsp9fbbd0O06p9ELS3H486m4wmrCELjza4JEog=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
 
     <!--Component CSS-->
     <link rel="stylesheet" href="./assets/css/component/navbar.css" />
@@ -74,7 +76,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="data-diri">
+                        <div class="data-diri mt-4">
                             <h3>Data</h3>
                             <div class="row">
                                 <div class="col-6">
@@ -82,43 +84,43 @@
                                     <div class="mb-3">
                                         <label for="namaLengkap" class="form-label fw-bold fs-5">Nama Lengkap</label>
                                         <input type="text" class="form-control" id="namaLengkap"
-                                            placeholder="isi data anda disini">
+                                            placeholder="isi Nama Lengkap" required>
                                     </div>
                                     <!-- No Ktp -->
                                     <div class="mb-3">
-                                        <label for="NoKTP" class="form-label fw-bold fs-5">No KTP</label>
+                                        <label for="NoKTP" class="form-label fw-bold fs-5">No.KTP</label>
                                         <input type="number" class="form-control" id="NoKTP"
-                                            placeholder="isi data anda disini">
+                                            placeholder="isi Nomor KTP" required>
                                     </div>
                                     <!-- tanggal lahir -->
                                     <div class="mb-3">
                                         <label for="tglLahir" class="form-label fw-bold fs-5">Tanggal Lahir</label>
                                         <input type="date" class="form-control" id="tglLahir"
-                                            placeholder="isi data anda disini">
+                                            placeholder="isi Tanggal Lahir" required>
                                     </div>
                                     <!-- Alamat -->
                                     <div class="mb-3">
                                         <label for="Alamat" class="form-label fw-bold fs-5">Alamat</label>
                                         <input type="text" class="form-control" id="Alamat"
-                                            placeholder="isi data anda disini">
+                                            placeholder="isi data anda disini" required>
                                     </div>
                                     <!-- Rt -->
                                     <div class="mb-3">
                                         <label for="Rt" class="form-label fw-bold fs-5">Rt</label>
                                         <input type="text" class="form-control" id="Rt"
-                                            placeholder="isi data anda disini">
+                                            placeholder="isi RT" required>
                                     </div>
                                     <!-- Rw -->
                                     <div class="mb-3">
                                         <label for="Rw" class="form-label fw-bold fs-5">Rw</label>
                                         <input type="text" class="form-control" id="Rw"
-                                            placeholder="isi data anda disini">
+                                            placeholder="isi RW" required>
                                     </div>
                                     <!-- kode pos -->
                                     <div class="mb-3">
                                         <label for="kodePos" class="form-label fw-bold fs-5">Kode Pos</label>
                                         <input type="number" class="form-control" id="kodePos"
-                                            placeholder="isi data anda disini">
+                                            placeholder="isi kode pos" required>
                                     </div>
                                     <!-- Provinsi -->
                                     <div class="mb-3">
@@ -166,13 +168,13 @@
                                     <div class="mb-3">
                                         <label for="noTelepon" class="form-label fw-bold fs-5">Nomor Telepon</label>
                                         <input type="number" class="form-control" id="noTelepon"
-                                            placeholder="isi data anda disini">
+                                            placeholder="isi data anda disini"  required>
                                     </div>
-                                    <!-- No Telepon2 -->
+                                    <!-- Email -->
                                     <div class="mb-3">
-                                        <label for="noTelepon2" class="form-label fw-bold fs-5">No Telepon 2</label>
-                                        <input type="number" class="form-control" id="noTelepon2"
-                                            placeholder="isi data anda disini">
+                                        <label for="Email" class="form-label fw-bold fs-5">Email</label>
+                                        <input type="email" class="form-control" id="Email"
+                                            placeholder="isi data anda disini" required>
                                     </div>
                                     <!-- Nama Perusahaan -->
                                     <div class="mb-3">
@@ -185,7 +187,7 @@
                                     <div class="mb-3">
                                         <label for="jenisPekerjaan" class="form-label fw-bold fs-5">Jenis
                                             Pekerjaan</label>
-                                        <select name="jenisPekerjaan" class="form-control" id="jenisPekerjaan">
+                                        <select name="jenisPekerjaan" class="form-control" id="jenisPekerjaan" required>
                                             <option value="PNS">PNS</option>
                                             <option value="BUMN">BUMN</option>
                                             <option value="Wiraswasta">Wiraswasta</option>
@@ -196,63 +198,113 @@
                                     <div class="mb-3">
                                         <label for="Penghasilan" class="form-label fw-bold fs-5">Penghasilan</label>
                                         <input type="number" class="form-control" id="Penghasilan"
-                                            placeholder="isi data anda disini">
+                                            placeholder="isi data anda disini" required>
                                     </div>
-                                    <!-- Pekerjaan Pasangan -->
-                                    <div class="mb-3">
-                                        <label for="pekerjaanPasangan" class="form-label fw-bold fs-5">pekerjaan
-                                            Pasangan
-                                        </label>
-                                        <input type="text" class="form-control" id="pekerjaanPasangan"
-                                            placeholder="isi data anda disini">
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="type"
-                                                id="inlineRadio1" value="1">
-                                            <label class="form-check-label" for="inlineRadio1">Sudah Menikah</label>
+                                    <!-- radio -->
+                                    <div class="d-flex mt-4 mb-3">
+                                        <div class="p-2 flex-fill w-50">
+
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="status_nikah"
+                                                    id="sudah" value="1">
+                                                <label class="form-check-label" for="sudah">
+                                                    Sudah Menikah
+                                                </label>
+                                            </div>
+
                                         </div>
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="type"
-                                                id="inlineRadio2" value="2">
-                                            <label class="form-check-label" for="inlineRadio2">Belum Menikah</label>
+                                        <div class="p-2 flex-fill w-50">
+
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="status_nikah"
+                                                    id="belum" value="0" checked>
+                                                <label class="form-check-label" for="belum">
+                                                    Belum Menikah
+                                                </label>
+                                            </div>
+
                                         </div>
                                     </div>
-                                    <div class="sudah-menikah">
-                                              <!--Nama Lengkap Pasangan -->
-                                    <div class="mb-3">
-                                        <label for="NLPasangan" class="form-label fw-bold fs-5">Nama Lengkap
-                                            Pasangan</label>
-                                        <input type="text" class="form-control" id="NLPasangan"
-                                            placeholder="isi data anda disini">
+                                    <div class="pasangan d-none">
+                                        <div class="mb-3">
+                                            <label for="namaLengkapPasangan" class="form-label">Nama Lengkap
+                                                Pasangan</label>
+                                            <input type="text" class="form-control" id="namaLengkapPasangan"
+                                                name="nama_lengkap_pasangan"
+                                                placeholder="Masukan Nama Lengkap Pasangan Anda" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="nomorKTPPasangan" class="form-label">No KTP
+                                                Pasangan</label>
+                                            <input type="number" class="form-control" id="nomorKTPPasangan"
+                                                name="no_ktp_pasangan"
+                                                placeholder="Masukan Nomor Induk Kependudukan Pasangan Anda" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="tempatLahirPasangan" class="form-label">Tempat Lahir
+                                                Pasangan</label>
+                                            <input type="text" class="form-control" id="tempatLahirPasangan"
+                                                name="tempat_lahir_pasangan"
+                                                placeholder="Masukan Kota Tempat Pasangan Anda Lahir" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="tanggalLahirPasangan" class="form-label">Tanggal Lahir
+                                                Pasangan</label>
+                                            <input type="date" class="form-control" id="tanggalLahirPasangan"
+                                                name="tgl_lahir_pasangan"
+                                                placeholder="Masukan Tanggal Lahir Pasangan Anda" required>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="Jenis Pekerjaan" class="form-label">Jenis Pekerjaan</label>
+                                            <select id="jenis_pekerjaan_pasangan" class="form-select mb-3"
+                                                name="jenis_pekerjaan_pasangan">
+                                                <option selected>Jenis Pekerjaan</option>
+                                                <option value="{{ $item['kd'] }}">{{ $item['nl'] }}</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="penghasilanPasangan" class="form-label">Penghasilan
+                                                Pasangan</label>
+                                            <input type="number" class="form-control" id="penghasilanPasangan"
+                                                name="penghasilan_pasangan"
+                                                placeholder="Masukan Jumlah Penghasilan Pasangan Anda (Bulan)">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="biayaRumahTangga" class="form-label">Biaya rumah tangga</label>
+                                            <input type="number" class="form-control" id="biayaRumahTangga"
+                                                name="biaya_rumah_tangga"
+                                                placeholder="Masukan Biaya Rumah Tangga (Bulan)">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="pengeluaranPasangan" class="form-label">Pengeluaran</label>
+                                            <input type="number" class="form-control" id="pengeluaranPasangan"
+                                                name="pengeluaran"
+                                                placeholder="Masukan Pengeluaran Anda Setiap Bulannya">
+                                        </div>
                                     </div>
-                                    <!-- no KTP Pasangan -->
-                                    <div class="mb-3">
-                                        <label for="NoKTPpasangan" class="form-label fw-bold fs-5">No KTP
-                                            Pasangan</label>
-                                        <input type="number" class="form-control" id="NoKTPpasangan"
-                                            placeholder="isi data anda disini">
-                                    </div>
-                                    <!-- Tempat Lahir Pasangann -->
-                                    <div class="mb-3">
-                                        <label for="tempatLahirPasangan" class="form-label fw-bold fs-5">Tempat Lahir
-                                            Pasangan</label>
-                                        <input type="text" class="form-control" id="tempatLahirPasangan"
-                                            placeholder="isi data anda disini">
-                                    </div>
-                                    <!-- tanggal Lahir Pasangann -->
-                                    <div class="mb-3">
-                                        <label for="tanggalLahirPasangan" class="form-label fw-bold fs-5">Tanggal Lahir
-                                            Pasangan</label>
-                                        <input type="date" class="form-control" id="tanggalLahirPasangan"
-                                            placeholder="isi data anda disini">
-                                    </div>
-                                </div>
-                                </div>
+                                    <h4>Gambar KTP</h4>
+                                <input type="file" name="ktp" class="dropify" required />
+                                <br>
+                                <h4>Gambar Slip Gaji</h4>
+                                <input type="file" name="slip" class="dropify" required />
+                                <br>
+                                <h4>Pas Foto</h4>
+                                <input type="file" name="pasFoto" class="dropify" required />
+                                <br>
+                                <h4>Gambar Rekening Koran</h4>
+                                <input type="file" name="rekKoran" class="dropify" required />
+
+                                <br>
                             </div>
                         </div>
+                        <div class="modal-footer d-flex justify-content-center">
+                            <button type="submit" class="submit-btn btn">Save changes</button>
+                        </div>
                     </form>
-                    <div class="modal-footer d-flex justify-content-center">
-                        <button type="submit" class="submit-btn btn">Save changes</button>
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -269,16 +321,23 @@
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <!--Data Table-->
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/js/dropify.min.js"
+    integrity="sha512-8QFTrG0oeOiyWo/VM9Y8kgxdlCryqhIxVeRpWSezdRRAvarxVtwLnGroJgnVW9/XBRduxO/z1GblzPrMQoeuew=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
-    
-    $("input[name='type']").change(function() {
-    var status = $(this).val();
-    if (status != 2) {
-        $(".sudah-menikah").show();
-    } else {
-        $(".sudah-menikah").hide();
-    }
-});
+    $('.dropify').dropify();
+    $('#sudah').click(function () {
+        if ($('#sudah').is(':checked')) {
+            $('.pasangan').removeClass('d-none');
+        }
+    });
+
+    $('#belum').click(function () {
+        if ($('#belum').is(':checked')) {
+            $('.pasangan').addClass('d-none');
+        }
+    });
+
 </script>
+
 </html>
