@@ -23,8 +23,21 @@
     color: #ffff;
     border-radius: 27px;
     width: 80%;
-    padding:20px;
+    padding:1rem 1rem;
 }
 .dropify-wrapper .dropify-message p{
             font-size: 14px;
-        }
+}
+.form-control {
+    padding: .5rem 1rem;
+    border-radius: 8px;
+    border-width: 2px;
+}
+.form-control:focus {
+    box-shadow: none;
+    border-color: #3E563E;
+    border-width: 2px;
+}
+.form-label {
+    margin-bottom: .5rem;
+}

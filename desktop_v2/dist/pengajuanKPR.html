@@ -76,10 +76,10 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="data-diri mt-4">
+                        <div class="data-diri mt-5">
                             <h3>Data</h3>
-                            <div class="row">
-                                <div class="col-6">
+                            <div class="d-flex flex-sm-column flex-lg-row">
+                                <div class="col-sm-12 col-lg-6 me-lg-4">
                                     <!-- Nama Lengkap -->
                                     <div class="mb-3">
                                         <label for="namaLengkap" class="form-label">Nama Lengkap</label>
@@ -163,7 +163,7 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-sm-12 col-lg-6">
                                     <!-- No Telepon -->
                                     <div class="mb-3">
                                         <label for="noTelepon" class="form-label">Nomor Telepon</label>
@@ -202,34 +202,30 @@
                                     </div>
                                     <!-- radio -->
                                     <div class="d-flex mt-4 mb-3">
-                                        <div class="p-2 flex-fill w-50">
-
+                                        <div class="p-2 flex-fill w-50 d-flex justify-content-end">
                                             <div class="form-check">
                                                 <input class="form-check-input" type="radio" name="status_nikah"
                                                     id="sudah" value="1">
-                                                <label class="form-check-label fw-bold fs-5" for="sudah">
+                                                <label class="form-check-label " for="sudah">
                                                     Sudah Menikah
                                                 </label>
                                             </div>
-
                                         </div>
-                                        <div class="p-2 flex-fill w-50">
-
+                                        <div class="p-2 flex-fill w-50 d-flex justify-content-start">
                                             <div class="form-check">
-                                                <input class="form-check-input fw-bold fs-5" type="radio" name="status_nikah"
+                                                <input class="form-check-input " type="radio" name="status_nikah"
                                                     id="belum" value="0" checked>
                                                 <label class="form-check-label " for="belum">
                                                     Belum Menikah
                                                 </label>
                                             </div>
-
                                         </div>
                                     </div>
                                     <div class="pasangan d-none">
                                         <div class="mb-3">
                                             <label for="namaLengkapPasangan" class="form-label">Nama Lengkap
                                                 Pasangan</label>
-                                            <input type="text" class="form-control fw-bold fs-5" id="namaLengkapPasangan"
+                                            <input type="text" class="form-control" id="namaLengkapPasangan"
                                                 name="nama_lengkap_pasangan"
                                                 placeholder="Masukan Nama Lengkap Pasangan Anda" required>
                                         </div>
@@ -285,16 +281,16 @@
                                                 placeholder="Masukan Pengeluaran Anda Setiap Bulannya">
                                         </div>
                                     </div>
-                                    <h4 cla>Gambar KTP</h4>
+                                <h5>Gambar KTP</h5>
                                 <input type="file" name="ktp" class="dropify" required />
                                 <br>
-                                <h4>Gambar Slip Gaji</h4>
+                                <h5>Gambar Slip Gaji</h5>
                                 <input type="file" name="slip" class="dropify" required />
                                 <br>
-                                <h4>Pas Foto</h4>
+                                <h5>Pas Foto</h5>
                                 <input type="file" name="pasFoto" class="dropify" required />
                                 <br>
-                                <h4>Gambar Rekening Koran</h4>
+                                <h5>Gambar Rekening Koran</h5>
                                 <input type="file" name="rekKoran" class="dropify" required />
 
                                 <br>
