@@ -53,12 +53,16 @@
     .wrapperTable .table .bodyTable td p{
         font-size: 14px;
     }
-
+.wrapperPersonal{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
     .wrapperPersonal .contentPersonal{
         padding: 2rem .5rem 0 .5rem;
     }
     .wrapperPersonal .contentPersonal .profil{
-        max-width: 120px;
+        max-width: 50%;
         max-height: 120px;
     }
     .wrapperPersonal .contentPersonal .text-1{
@@ -68,7 +72,9 @@
         font-size: 18px;
     }
     .wrapperPersonal .contentWallet{
-        padding: 2rem .5rem 1.5rem .5rem;
+        
+        width: 100%;
+        margin: 0 auto;
     }
     .wrapperPersonal .contentWallet .textt-1{
         font-size: 16px;
@@ -77,7 +83,7 @@
         font-size: 16px;
     }
     .wrapperKPR .cardKPR{
-        max-width: 550px;
+        max-width: 100%;
     }
     .wrapperKPR .cardKPR .card-body .card-title{
         font-size: 16px;
@@ -99,7 +105,13 @@
         font-size: 14px;
     }
 }
-
+@media screen and (max-width:738px){
+.wrapperPersonal .contentWallet{
+        padding: 2rem .5rem 1.5rem .5rem;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
 @media screen and (max-width:1080px){
     .wrapperKPR .angsuran{
         height: 280px;

@@ -29,7 +29,7 @@
         
         <div class="container">
             <div class="row">
-              <div class="col-12 col-md-4">
+              <div class="col-12 col-md-12 col-lg-4">
                 <div class="wrapperPersonal d-flex flex-column justify-content-center">
                     <div class="contentPersonal">
                         <center>
@@ -40,21 +40,21 @@
                         <p class="text-center text-1">114141</p>
                         
                     </div>
-                    <div class="contentWallet">
+                    <div class="contentWallet ">
                         <p style="color: #777;" class="textt-1">Saldo Iuran TPP</p>
-                        <div class="d-flex align-items-center justify-content-between">
-                            <p class="textt-2">Rp <span>500.000</span> </p>
-                            <ion-icon id="eyes" name="eye-outline" style="width: 32px; height: 24px;"></ion-icon>
+                        <div class="d-flex align-items-center">
+                            <p class="text-2">Rp <span>500.000</span> </p>
+                            <ion-icon class="ms-auto" id="eyes" name="eye-outline" style="width: 32px; height: 24px;"></ion-icon>
                         </div>
                     </div>
                 </div>
                 
               </div>
-              <div class="col-12 col-md-8">
+              <div class="col-12 col-md-12 col-lg-8">
                 
                 <h3>Riwayat Iuran TPP</h3>
 
-                <div class="wrapperTable mt-3">
+                <div class="wrapperTable mt-3 table-responsive">
 
                     <table id="tableUser" class="table" style="width:100%">
         
@@ -117,7 +117,7 @@
                 
                 </div>
 
-                <h3 class="mt-4 mt-lg-5">eKPR</h3>
+                <h3 class="mt-4 mt-lg-5">E-KPR</h3>
                 
                 <div class="alert" style="background-color: #3C543C; color: white;" role="alert">
                   <center>
@@ -126,7 +126,7 @@
                   <a href="" class="btn btn-light mt-2">Ajukan KPR</a>
                   </center>
                 </div>
-
+                 
                 <div class="wrapperKPR mt-3">
 
                     <div class="card cardKPR mb-3">
@@ -183,7 +183,7 @@
                     </div>
 
                     <div class="row">
-                      <div class="col-12 col-md-6">
+                      <div class="col-lg-6 col-md-12">
 
                         <div class="angsuran px-2 card shadow-sm p-1 p-lg-2">
                           <h5 class="pt-3" style="font-size: 16px;">Jumlah Angsuran Bulan</h5>
@@ -212,14 +212,14 @@
                               </div>
                             
                             </div>
-                            <div class="p-2 flex-fill" style="width: 60%;">
-                              <canvas id="bulan" width="20"></canvas>
+                            <div class="p-2 flex-fill" style="width: 40%;">
+                              <canvas id="bulan" width="20" style="width: 200px; max-height: 100%;min-height: 100px; object-fit: cover;"></canvas>
                             </div>
                           </div>
                         </div>
 
                       </div>
-                      <div class="col-12 col-md-6">
+                      <div class="col-lg-6 col-md-12">
                         
                         <div class="angsuran px-2 card shadow-sm p-1 p-lg-2">
 
@@ -249,8 +249,8 @@
                               </div>
                             
                             </div>
-                            <div class="p-2 flex-fill" style="width: 60%;">
-                              <canvas id="uang" width="20"></canvas>
+                            <div class="p-2 flex-fill" style="width: 40%;">
+                              <canvas id="uang" width="20" style="width: 200px; max-height: 100%;min-height: 100px; object-fit: cover;"></canvas>
                             </div>
                           </div>
                  
@@ -261,10 +261,10 @@
   
                 </div>
                 
-                <h3 class="mt-4 mt-lg-5">eBALTAB</h3>
+                <h3 class="mt-4 mt-lg-5">E-BALTAB</h3>
 
                 <div class="wrapperBaltab">
-                  <div class="wrapperTable mt-3">
+                  <div class="wrapperTable mt-3 table-responsive">
 
                     <table id="tableUser" class="table" style="width:100%">
         
@@ -291,6 +291,14 @@
                   </table>
                 
                 </div>
+                </div>
+                <h3 class="mt-4 mt-lg-5">E-BALTAB</h3>
+                
+                <div class="alert" style="background-color: #3C543C; color: white; ;" role="alert">
+                  <center>
+                  <h5 class="alert-heading">Maaf anda belum mengajukan BALTAB</h5>
+                  <p>Silahkan Hubungi Admin untuk pengajuan BALTAB </p>
+                  </center>
                 </div>
               </div>
             </div>
