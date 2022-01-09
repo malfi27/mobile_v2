@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>eTPPAD</title>
     <!--Bootstrap Assets-->
-    <link rel="stylesheet" href="./assets/vendors/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/vendors/bootstrap/css/bootstrap.min.css"
+    />
 
     <!--Component CSS-->
     <link rel="stylesheet" href="./assets/css/component/navbar.css" />
@@ -14,292 +17,417 @@
     <link rel="stylesheet" href="./assets/css/component/cards.css" />
     <link rel="stylesheet" href="./assets//css/dashboard_kpr.css" />
 
-     <!--Data Table-->
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.2/css/dataTables.bootstrap5.min.css" />
-    <link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.2.0/css/fixedHeader.dataTables.min.css" />
+    <!--Data Table-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.11.2/css/dataTables.bootstrap5.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/fixedheader/3.2.0/css/fixedHeader.dataTables.min.css"
+    />
     <!--Styling Pages-->
-    <link rel="stylesheet" href="./assets/css/dashboardUser.css">
-
-</head>
-<body>
-  
-
+    <link rel="stylesheet" href="./assets/css/dashboardUser.css" />
+  </head>
+  <body>
     <!-- Main Content -->
     <div id="mainContent">
-        
-        <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-12 col-lg-4">
-                <div class="wrapperPersonal d-flex flex-column justify-content-center">
-                    <div class="contentPersonal">
-                        <center>
-                        <img src="./assets/images/defaultProfile.png" style="max-width: 160; max-height: 160px; border-radius: 50%;" class="profil">
-                        </center>
-                        <p class="text-center mt-3 text-1">Selamat Pagi,</p>
-                        <p class="text-center text-2"><span>Jenderal</span> Andika Perkasa</p>
-                        <p class="text-center text-1">114141</p>
-                        
-                    </div>
-                    <div class="contentWallet ">
-                        <p style="color: #777;" class="textt-1">Saldo Iuran TPP</p>
-                        <div class="d-flex align-items-center">
-                            <p class="text-2">Rp <span>500.000</span> </p>
-                            <ion-icon class="ms-auto" id="eyes" name="eye-outline" style="width: 32px; height: 24px;"></ion-icon>
-                        </div>
-                    </div>
-                </div>
-                
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-12 col-lg-4">
+            <div
+              class="wrapperPersonal d-flex flex-column justify-content-center"
+            >
+              <div class="contentPersonal">
+                <center>
+                  <img
+                    src="./assets/images/defaultProfile.png"
+                    style="
+                      max-width: 160;
+                      max-height: 160px;
+                      border-radius: 50%;
+                    "
+                    class="profil"
+                  />
+                </center>
+                <p class="text-center mt-3 text-1">Selamat Pagi,</p>
+                <p class="text-center text-2">
+                  <span>Jenderal</span> Andika Perkasa
+                </p>
+                <p class="text-center text-1">114141</p>
               </div>
-              <div class="col-12 col-md-12 col-lg-8">
-                
-                <h3>Riwayat Iuran TPP</h3>
-
-                <div class="wrapperTable mt-3 table-responsive">
-
-                    <table id="tableUser" class="table" style="width:100%">
-        
-                      <thead class="headTable">
-                          <tr>
-                            <th class="table-text">Tanggal</th>
-                            <th class="table-text">Norek / Status</th>
-                            <th class="table-text">Potongan Iuran</th>
-                            <th class="table-text">Total</th>
-                          </tr>
-                      </thead>
-                      <tbody class="bodyTable">
-        
-        
-                          <tr class="biru">
-                            <td>
-                              <p>1</p>
-                            </td>
-                            <td>
-                              <p> <span>137832461</span> / <span>Berhasil</span></p>
-                            </td>
-                            <td>
-                              <p>Rp 150.000</p>
-                            </td>
-                            <td>
-                              <p>RP 500.000</p>
-                            </td>
-                          </tr>
-                          <tr class="">
-                            <td>
-                              <p>1</p>
-                            </td>
-                            <td>
-                              <p> <span>137832461</span> / <span>Berhasil</span></p>
-                            </td>
-                            <td>
-                              <p>Rp 150.000</p>
-                            </td>
-                            <td>
-                              <p>RP 500.000</p>
-                            </td>
-                          </tr>
-                          <tr class="biru">
-                            <td>
-                              <p>1</p>
-                            </td>
-                            <td>
-                              <p> <span>137832461</span> / <span>Berhasil</span></p>
-                            </td>
-                            <td>
-                              <p>Rp 150.000</p>
-                            </td>
-                            <td>
-                              <p>RP 500.000</p>
-                            </td>
-                          </tr>
-        
-                      </tbody>
-                  </table>
-                
-                </div>
-
-                <h3 class="mt-4 mt-lg-5">E-KPR</h3>
-                
-                <div class="alert" style="background-color: #3C543C; color: white;" role="alert">
-                  <center>
-                  <h5 class="alert-heading">Maaf anda tidak mempunyai KPR !</h5>
-                  <p>Silahkan mengajukan KPR, klik tombol 'Ajukan KPR'. </p>
-                  <a href="" class="btn btn-light mt-2">Ajukan KPR</a>
-                  </center>
-                </div>
-                 
-                <div class="wrapperKPR mt-3">
-
-                    <div class="card cardKPR mb-3">
-                        <div class="row g-0">
-                          <div class="col-md-4">
-                            <img src="../dist/assets/images/Madani1 1.png" class="img-fluid rounded-start" alt="...">
-                          </div>
-                          <div class="col-md-8">
-                            <div class="card-body" style="padding: 1rem 1rem .5rem 1rem !important;">
-                              <h5 class="card-title"><span style="color: #E90000;"> Tipe 36</span> UTAMA GARDEN BINTARO</h5>
-                              <p class="card-text">Jl. Jombang Astek, Jombang, 15414, Banten </p>
-                              <p class="card-text mt-2">Oleh : <span>Sari Utama Propertindo</span></p>
-                              <div class="fasilitas d-flex">
-                                  <p class="kanan">LT : 72m</p>
-                                  <p class="kanan">LB : 36m</p>
-                                  <div class="kanan">
-                                    <i>
-                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M21.454 10.6777H21.1424C20.8224 10.6777 20.5254 10.7781 20.2812 10.949V10.2422C20.2812 9.43528 19.6248 8.77885 18.8179 8.77885H16.1086C15.9306 8.77885 15.7863 8.92314 15.7863 9.10111C15.7863 9.27909 15.9306 9.42338 16.1086 9.42338H18.8178C19.2693 9.42338 19.6366 9.79067 19.6366 10.2422V12.5311H8.05316V10.2422C8.05316 9.79067 8.42046 9.42338 8.87197 9.42338H14.6046C14.7826 9.42338 14.9269 9.27909 14.9269 9.10111C14.9269 8.92314 14.7826 8.77885 14.6046 8.77885H5.13176C5.39047 8.41675 5.49162 7.94611 5.36774 7.48364C5.32168 7.31172 5.14486 7.20971 4.97303 7.25573C4.80111 7.3018 4.69911 7.47853 4.74512 7.65044C4.87304 8.12774 4.58876 8.62012 4.11146 8.748C3.63391 8.876 3.14179 8.59159 3.01391 8.11433L2.39422 5.80158C2.2663 5.32429 2.55058 4.83191 3.02792 4.70403C3.50634 4.5759 3.9973 4.85924 4.12543 5.33769L4.35269 6.18585C4.39875 6.35777 4.57561 6.45978 4.7474 6.41376C4.91932 6.3677 5.02133 6.19097 4.97531 6.01905L4.74805 5.17089C4.52766 4.34847 3.68375 3.86103 2.86112 4.08146C2.67966 4.1301 2.51182 4.20964 2.36341 4.31564V4.15906C2.36341 3.32882 1.68794 2.65335 0.857699 2.65335H0.546133C0.244965 2.65331 0 2.89832 0 3.1994V18.8006C0 19.1017 0.244965 19.3466 0.546047 19.3466H1.81728C2.11836 19.3466 2.36332 19.1017 2.36332 18.8006V15.8291H2.72821C2.90619 15.8291 3.05048 15.6848 3.05048 15.5068C3.05048 15.3288 2.90619 15.1845 2.72821 15.1845H2.36332V13.1756H19.6365V15.1845H4.23221C4.05423 15.1845 3.90994 15.3288 3.90994 15.5068C3.90994 15.6848 4.05423 15.8291 4.23221 15.8291H19.6366V18.8006C19.6366 19.1017 19.8816 19.3466 20.1827 19.3466H21.4539C21.755 19.3466 22 19.1017 22 18.8006V11.2238C22 10.9227 21.755 10.6777 21.454 10.6777V10.6777ZM7.1674 9.42338H7.6597C7.50127 9.65721 7.40863 9.93909 7.40863 10.2422V12.5311H6.34863V10.2422C6.34863 9.79067 6.71593 9.42338 7.1674 9.42338V9.42338ZM2.39134 8.28118C2.45042 8.50166 2.55475 8.69819 2.69161 8.86345C2.57464 8.90517 2.46452 8.96142 2.36337 9.02996V8.17685L2.39134 8.28118ZM1.71884 18.7021H0.644531V3.29784H0.857656C1.3325 3.29784 1.71884 3.68417 1.71884 4.15902V18.7021ZM2.36337 10.2422C2.36337 9.79067 2.73066 9.42338 3.18218 9.42338H5.95517C5.7967 9.65721 5.7041 9.93905 5.7041 10.2422V12.5311H2.36337V10.2422ZM21.3555 18.7021H20.2812V12.1834C20.2812 11.7086 20.6675 11.3223 21.1423 11.3223H21.3555V18.7021Z" fill="black"/>
-                                            </svg>                                            
-                                    </i>3
-                                  </div>
-                                  <div class="kanan">
-                                      <i>
-                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <g clip-path="url(#clip0_1808_370)">
-                                            <path d="M3.48361 0C4.09113 0 4.58361 0.492479 4.58361 1.1V1.46667H12.6503C13.6623 1.46786 14.4824 2.288 14.4836 3.3V5.13333H15.2169C15.8245 5.13333 16.3169 5.62581 16.3169 6.23333V7.4965C17.9141 8.48095 18.8858 10.2238 18.8836 12.1V12.5341C19.3215 12.689 19.615 13.1022 19.6169 13.5667V14.3C19.6169 14.5025 19.4528 14.6667 19.2503 14.6667H7.51694C7.31445 14.6667 7.15028 14.5025 7.15028 14.3V13.5667C7.1522 13.1022 7.44567 12.689 7.88361 12.5341V12.1C7.88146 10.6399 8.46217 9.23941 9.49694 8.2093C9.7845 7.93201 10.1046 7.69056 10.4503 7.49027V6.23333C10.4503 5.62581 10.9428 5.13333 11.5503 5.13333H12.2836V4.03333C12.2836 3.83084 12.1194 3.66667 11.9169 3.66667H4.58361V4.4C4.58361 5.00752 4.09113 5.5 3.48361 5.5H2.38361V0H3.48361ZM7.88361 13.5667V13.9333H18.8836V13.5667C18.8836 13.3642 18.7194 13.2 18.5169 13.2H8.25028C8.04779 13.2 7.88361 13.3642 7.88361 13.5667ZM10.0136 8.72887C9.11753 9.62166 8.61484 10.8351 8.61694 12.1V12.4667H18.1503V12.1C18.1515 10.4432 17.2767 8.90927 15.8502 8.06667H10.9145C10.5865 8.24702 10.2836 8.46963 10.0136 8.72887ZM11.5503 5.86667C11.3478 5.86667 11.1836 6.03084 11.1836 6.23333V7.33333H15.5836V6.23333C15.5836 6.03084 15.4194 5.86667 15.2169 5.86667H11.5503ZM4.58361 2.93333H11.9169C12.5245 2.93333 13.0169 3.42581 13.0169 4.03333V5.13333H13.7503V3.3C13.7503 2.69248 13.2578 2.2 12.6503 2.2H4.58361V2.93333ZM3.11694 4.76667H3.48361C3.6861 4.76667 3.85028 4.60249 3.85028 4.4V1.1C3.85028 0.897508 3.6861 0.733333 3.48361 0.733333H3.11694V4.76667Z" fill="black"/>
-                                            <path d="M13.3833 15.4C13.5858 15.4 13.75 15.5642 13.75 15.7667V17.2333C13.75 17.4358 13.5858 17.6 13.3833 17.6C13.1808 17.6 13.0167 17.4358 13.0167 17.2333V15.7667C13.0167 15.5642 13.1808 15.4 13.3833 15.4Z" fill="black"/>
-                                            <path d="M13.3833 18.3334C13.5858 18.3334 13.75 18.4975 13.75 18.7V20.1667C13.75 20.3692 13.5858 20.5334 13.3833 20.5334C13.1808 20.5334 13.0167 20.3692 13.0167 20.1667V18.7C13.0167 18.4975 13.1808 18.3334 13.3833 18.3334Z" fill="black"/>
-                                            <path d="M8.98306 16.8667C9.18556 16.8667 9.34973 17.0309 9.34973 17.2334V18.7C9.34973 18.9025 9.18556 19.0667 8.98306 19.0667C8.78057 19.0667 8.61639 18.9025 8.61639 18.7V17.2334C8.61639 17.0309 8.78057 16.8667 8.98306 16.8667Z" fill="black"/>
-                                            <path d="M11.9165 16.8667C12.119 16.8667 12.2832 17.0309 12.2832 17.2334V18.7C12.2832 18.9025 12.119 19.0667 11.9165 19.0667C11.714 19.0667 11.5499 18.9025 11.5499 18.7V17.2334C11.5499 17.0309 11.714 16.8667 11.9165 16.8667Z" fill="black"/>
-                                            <path d="M14.8501 16.8667C15.0526 16.8667 15.2168 17.0309 15.2168 17.2334V18.7C15.2168 18.9025 15.0526 19.0667 14.8501 19.0667C14.6476 19.0667 14.4835 18.9025 14.4835 18.7V17.2334C14.4835 17.0309 14.6476 16.8667 14.8501 16.8667Z" fill="black"/>
-                                            <path d="M17.7836 16.8667C17.9861 16.8667 18.1503 17.0309 18.1503 17.2334V18.7C18.1503 18.9025 17.9861 19.0667 17.7836 19.0667C17.5811 19.0667 17.4169 18.9025 17.4169 18.7V17.2334C17.4169 17.0309 17.5811 16.8667 17.7836 16.8667Z" fill="black"/>
-                                            <path d="M16.3168 15.4C16.5193 15.4 16.6835 15.5642 16.6835 15.7667V17.2333C16.6835 17.4358 16.5193 17.6 16.3168 17.6C16.1143 17.6 15.9501 17.4358 15.9501 17.2333V15.7667C15.9501 15.5642 16.1143 15.4 16.3168 15.4Z" fill="black"/>
-                                            <path d="M10.4499 15.4C10.6524 15.4 10.8165 15.5642 10.8165 15.7667V17.2333C10.8165 17.4358 10.6524 17.6 10.4499 17.6C10.2474 17.6 10.0832 17.4358 10.0832 17.2333V15.7667C10.0832 15.5642 10.2474 15.4 10.4499 15.4Z" fill="black"/>
-                                            <path d="M10.4499 18.3334C10.6524 18.3334 10.8165 18.4975 10.8165 18.7V20.1667C10.8165 20.3692 10.6524 20.5334 10.4499 20.5334C10.2474 20.5334 10.0832 20.3692 10.0832 20.1667V18.7C10.0832 18.4975 10.2474 18.3334 10.4499 18.3334Z" fill="black"/>
-                                            <path d="M16.3168 18.3334C16.5193 18.3334 16.6835 18.4975 16.6835 18.7V20.1667C16.6835 20.3692 16.5193 20.5334 16.3168 20.5334C16.1143 20.5334 15.9501 20.3692 15.9501 20.1667V18.7C15.9501 18.4975 16.1143 18.3334 16.3168 18.3334Z" fill="black"/>
-                                            <path d="M14.8501 19.8C15.0526 19.8 15.2168 19.9642 15.2168 20.1667V21.6334C15.2168 21.8359 15.0526 22 14.8501 22C14.6476 22 14.4835 21.8359 14.4835 21.6334V20.1667C14.4835 19.9642 14.6476 19.8 14.8501 19.8Z" fill="black"/>
-                                            <path d="M11.9165 19.8C12.119 19.8 12.2832 19.9642 12.2832 20.1667V21.6334C12.2832 21.8359 12.119 22 11.9165 22C11.714 22 11.5499 21.8359 11.5499 21.6334V20.1667C11.5499 19.9642 11.714 19.8 11.9165 19.8Z" fill="black"/>
-                                            </g>
-                                            <defs>
-                                            <clipPath id="clip0_1808_370">
-                                            <rect width="22" height="22" fill="white" transform="matrix(-1 0 0 1 22 0)"/>
-                                            </clipPath>
-                                            </defs>
-                                            </svg>
-                                            
-                                      </i>3
-                                  </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                      <div class="col-lg-6 col-md-12">
-
-                        <div class="angsuran px-2 card shadow-sm p-1 p-lg-2">
-                          <h5 class="pt-3" style="font-size: 16px;">Jumlah Angsuran Bulan</h5>
-                          
-                          <div class="d-flex ">
-                            <div class="p-2 flex-fill" style="width: 40%;">
-
-                              <div class="d-flex">
-                                <i>
-                                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="6" cy="6" r="6" fill="#3C543C"/>
-                                    </svg>
-                                                                              
-                                </i>
-                                <p class="ms-1">Sudah Dibayar <br><span id="" class=" ">55 Bulan</span></p>
-                              </div>
-                              
-                              <div class="d-flex mt-2">
-                                <i>
-                                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="6" cy="6" r="6" fill="#BBBBBB"/>
-                                    </svg>                                              
-                                                                              
-                                </i>
-                                <p class="ms-1">Belum Dibayar <br><span id="" class=" ">45 Bulan</span></p>
-                              </div>
-                            
-                            </div>
-                            <div class="p-2 flex-fill" style="width: 40%;">
-                              <canvas id="bulan" width="20" style="width: 200px; max-height: 100%;min-height: 100px; object-fit: cover;"></canvas>
-                            </div>
-                          </div>
-                        </div>
-
-                      </div>
-                      <div class="col-lg-6 col-md-12">
-                        
-                        <div class="angsuran px-2 card shadow-sm p-1 p-lg-2">
-
-                          <h5 class="pt-3" style="font-size: 16px;">Jumlah Angsuran uang</h5>
-
-                          <div class="d-flex ">
-                            <div class="p-2 flex-fill" style="width: 40%;">
-
-                              <div class="d-flex">
-                                <i>
-                                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="6" cy="6" r="6" fill="#284E78"/>
-                                    </svg>
-                                                                              
-                                </i>
-                                <p class="ms-1">Sudah Dibayar <br><span id="" class=" ">Rp 100.000.000</span></p>
-                              </div>
-                              
-                              <div class="d-flex mt-2">
-                                <i>
-                                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="6" cy="6" r="6" fill="#BBBBBB"/>
-                                    </svg>                                              
-                                                                              
-                                </i>
-                                <p class="ms-1">Belum Dibayar <br><span id="" class=" ">Rp 100.000.000</span></p>
-                              </div>
-                            
-                            </div>
-                            <div class="p-2 flex-fill" style="width: 40%;">
-                              <canvas id="uang" width="20" style="width: 200px; max-height: 100%;min-height: 100px; object-fit: cover;"></canvas>
-                            </div>
-                          </div>
-                 
-                        </div>
-
-                      </div>
-                    </div>
-  
-                </div>
-                
-                <h3 class="mt-4 mt-lg-5">E-BALTAB</h3>
-
-                <div class="wrapperBaltab">
-                  <div class="wrapperTable mt-3 table-responsive">
-
-                    <table id="tableUser" class="table" style="width:100%">
-        
-                      <thead class="headTable">
-                          <tr>
-                            <th class="table-text">Keterangan</th>
-                            <th class="table-text">Periode</th>
-                            <th class="table-text">Jumlah Bulan</th>
-                            <th class="table-text">Potongan</th>
-                            <th class="table-text">Total</th>
-                          </tr>
-                      </thead>
-                      <tbody class="bodyTable">
-        
-        
-                          <tr class="biru">
-                            <td><p>Pama</p></td>
-                            <td><p>Feb '14 s.d Mar '11</p></td>
-                            <td><p>100 X</p></td>
-                            <td><p>Rp 150.000</p></td>
-                            <td><p>Rp 2.150.000</p></td>
-                          </tr>
-                      </tbody>
-                  </table>
-                
-                </div>
+              <div class="contentWallet">
+                <p style="color: #777" class="textt-1">Saldo Iuran TPP</p>
+                <div class="d-flex align-items-center">
+                  <p class="text-2 hash">Rp <span>500.000</span></p>
+                  <p class="text-2 hash" style="display: none;">Rp <span class="fw-bold">********</span></p>
+                  <ion-icon
+                    class="ms-auto"
+                    id="toggle"
+                    name="eye-outline"
+                    style="width: 32px; height: 24px"
+                  ></ion-icon>
                 </div>
               </div>
             </div>
           </div>
+          <div class="col-12 col-md-12 col-lg-8">
+            <h3>Riwayat Iuran TPP</h3>
 
+            <div class="wrapperTable mt-3 table-responsive">
+              <table id="tableUser" class="table" style="width: 100%">
+                <thead class="headTable">
+                  <tr>
+                    <th class="table-text">Tanggal</th>
+                    <th class="table-text">Norek / Status</th>
+                    <th class="table-text">Potongan Iuran</th>
+                    <th class="table-text">Total</th>
+                  </tr>
+                </thead>
+                <tbody class="bodyTable">
+                  <tr class="biru">
+                    <td>
+                      <p>1</p>
+                    </td>
+                    <td>
+                      <p><span>137832461</span> / <span>Berhasil</span></p>
+                    </td>
+                    <td>
+                      <p>Rp 150.000</p>
+                    </td>
+                    <td>
+                      <p>RP 500.000</p>
+                    </td>
+                  </tr>
+                  <tr class="">
+                    <td>
+                      <p>1</p>
+                    </td>
+                    <td>
+                      <p><span>137832461</span> / <span>Berhasil</span></p>
+                    </td>
+                    <td>
+                      <p>Rp 150.000</p>
+                    </td>
+                    <td>
+                      <p>RP 500.000</p>
+                    </td>
+                  </tr>
+                  <tr class="biru">
+                    <td>
+                      <p>1</p>
+                    </td>
+                    <td>
+                      <p><span>137832461</span> / <span>Berhasil</span></p>
+                    </td>
+                    <td>
+                      <p>Rp 150.000</p>
+                    </td>
+                    <td>
+                      <p>RP 500.000</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3 class="mt-4 mt-lg-5">E-KPR</h3>
+
+            <div
+              class="alert"
+              style="background-color: #3c543c; color: white"
+              role="alert"
+            >
+              <center>
+                <h5 class="alert-heading">Maaf anda tidak mempunyai KPR !</h5>
+                <p>Silahkan mengajukan KPR, klik tombol 'Ajukan KPR'.</p>
+                <a href="" class="btn btn-light mt-2">Ajukan KPR</a>
+              </center>
+            </div>
+
+            <div class="wrapperKPR mt-3">
+              <div class="card cardKPR mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img
+                      src="../dist/assets/images/Madani1 1.png"
+                      class="img-fluid rounded-start"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div
+                      class="card-body"
+                      style="padding: 1rem 1rem 0.5rem 1rem !important"
+                    >
+                      <h5 class="card-title">
+                        <span style="color: #e90000"> Tipe 36</span> UTAMA
+                        GARDEN BINTARO
+                      </h5>
+                      <p class="card-text">
+                        Jl. Jombang Astek, Jombang, 15414, Banten
+                      </p>
+                      <p class="card-text mt-2">
+                        Oleh : <span>Sari Utama Propertindo</span>
+                      </p>
+                      <div class="fasilitas d-flex">
+                        <p class="kanan">LT : 72m</p>
+                        <p class="kanan">LB : 36m</p>
+                        <div class="kanan">
+                          <i>
+                            <svg
+                              width="22"
+                              height="22"
+                              viewBox="0 0 22 22"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M21.454 10.6777H21.1424C20.8224 10.6777 20.5254 10.7781 20.2812 10.949V10.2422C20.2812 9.43528 19.6248 8.77885 18.8179 8.77885H16.1086C15.9306 8.77885 15.7863 8.92314 15.7863 9.10111C15.7863 9.27909 15.9306 9.42338 16.1086 9.42338H18.8178C19.2693 9.42338 19.6366 9.79067 19.6366 10.2422V12.5311H8.05316V10.2422C8.05316 9.79067 8.42046 9.42338 8.87197 9.42338H14.6046C14.7826 9.42338 14.9269 9.27909 14.9269 9.10111C14.9269 8.92314 14.7826 8.77885 14.6046 8.77885H5.13176C5.39047 8.41675 5.49162 7.94611 5.36774 7.48364C5.32168 7.31172 5.14486 7.20971 4.97303 7.25573C4.80111 7.3018 4.69911 7.47853 4.74512 7.65044C4.87304 8.12774 4.58876 8.62012 4.11146 8.748C3.63391 8.876 3.14179 8.59159 3.01391 8.11433L2.39422 5.80158C2.2663 5.32429 2.55058 4.83191 3.02792 4.70403C3.50634 4.5759 3.9973 4.85924 4.12543 5.33769L4.35269 6.18585C4.39875 6.35777 4.57561 6.45978 4.7474 6.41376C4.91932 6.3677 5.02133 6.19097 4.97531 6.01905L4.74805 5.17089C4.52766 4.34847 3.68375 3.86103 2.86112 4.08146C2.67966 4.1301 2.51182 4.20964 2.36341 4.31564V4.15906C2.36341 3.32882 1.68794 2.65335 0.857699 2.65335H0.546133C0.244965 2.65331 0 2.89832 0 3.1994V18.8006C0 19.1017 0.244965 19.3466 0.546047 19.3466H1.81728C2.11836 19.3466 2.36332 19.1017 2.36332 18.8006V15.8291H2.72821C2.90619 15.8291 3.05048 15.6848 3.05048 15.5068C3.05048 15.3288 2.90619 15.1845 2.72821 15.1845H2.36332V13.1756H19.6365V15.1845H4.23221C4.05423 15.1845 3.90994 15.3288 3.90994 15.5068C3.90994 15.6848 4.05423 15.8291 4.23221 15.8291H19.6366V18.8006C19.6366 19.1017 19.8816 19.3466 20.1827 19.3466H21.4539C21.755 19.3466 22 19.1017 22 18.8006V11.2238C22 10.9227 21.755 10.6777 21.454 10.6777V10.6777ZM7.1674 9.42338H7.6597C7.50127 9.65721 7.40863 9.93909 7.40863 10.2422V12.5311H6.34863V10.2422C6.34863 9.79067 6.71593 9.42338 7.1674 9.42338V9.42338ZM2.39134 8.28118C2.45042 8.50166 2.55475 8.69819 2.69161 8.86345C2.57464 8.90517 2.46452 8.96142 2.36337 9.02996V8.17685L2.39134 8.28118ZM1.71884 18.7021H0.644531V3.29784H0.857656C1.3325 3.29784 1.71884 3.68417 1.71884 4.15902V18.7021ZM2.36337 10.2422C2.36337 9.79067 2.73066 9.42338 3.18218 9.42338H5.95517C5.7967 9.65721 5.7041 9.93905 5.7041 10.2422V12.5311H2.36337V10.2422ZM21.3555 18.7021H20.2812V12.1834C20.2812 11.7086 20.6675 11.3223 21.1423 11.3223H21.3555V18.7021Z"
+                                fill="black"
+                              />
+                            </svg> </i
+                          >3
+                        </div>
+                        <div class="kanan">
+                          <i>
+                            <svg
+                              width="22"
+                              height="22"
+                              viewBox="0 0 22 22"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g clip-path="url(#clip0_1808_370)">
+                                <path
+                                  d="M3.48361 0C4.09113 0 4.58361 0.492479 4.58361 1.1V1.46667H12.6503C13.6623 1.46786 14.4824 2.288 14.4836 3.3V5.13333H15.2169C15.8245 5.13333 16.3169 5.62581 16.3169 6.23333V7.4965C17.9141 8.48095 18.8858 10.2238 18.8836 12.1V12.5341C19.3215 12.689 19.615 13.1022 19.6169 13.5667V14.3C19.6169 14.5025 19.4528 14.6667 19.2503 14.6667H7.51694C7.31445 14.6667 7.15028 14.5025 7.15028 14.3V13.5667C7.1522 13.1022 7.44567 12.689 7.88361 12.5341V12.1C7.88146 10.6399 8.46217 9.23941 9.49694 8.2093C9.7845 7.93201 10.1046 7.69056 10.4503 7.49027V6.23333C10.4503 5.62581 10.9428 5.13333 11.5503 5.13333H12.2836V4.03333C12.2836 3.83084 12.1194 3.66667 11.9169 3.66667H4.58361V4.4C4.58361 5.00752 4.09113 5.5 3.48361 5.5H2.38361V0H3.48361ZM7.88361 13.5667V13.9333H18.8836V13.5667C18.8836 13.3642 18.7194 13.2 18.5169 13.2H8.25028C8.04779 13.2 7.88361 13.3642 7.88361 13.5667ZM10.0136 8.72887C9.11753 9.62166 8.61484 10.8351 8.61694 12.1V12.4667H18.1503V12.1C18.1515 10.4432 17.2767 8.90927 15.8502 8.06667H10.9145C10.5865 8.24702 10.2836 8.46963 10.0136 8.72887ZM11.5503 5.86667C11.3478 5.86667 11.1836 6.03084 11.1836 6.23333V7.33333H15.5836V6.23333C15.5836 6.03084 15.4194 5.86667 15.2169 5.86667H11.5503ZM4.58361 2.93333H11.9169C12.5245 2.93333 13.0169 3.42581 13.0169 4.03333V5.13333H13.7503V3.3C13.7503 2.69248 13.2578 2.2 12.6503 2.2H4.58361V2.93333ZM3.11694 4.76667H3.48361C3.6861 4.76667 3.85028 4.60249 3.85028 4.4V1.1C3.85028 0.897508 3.6861 0.733333 3.48361 0.733333H3.11694V4.76667Z"
+                                  fill="black"
+                                />
+                                <path
+                                  d="M13.3833 15.4C13.5858 15.4 13.75 15.5642 13.75 15.7667V17.2333C13.75 17.4358 13.5858 17.6 13.3833 17.6C13.1808 17.6 13.0167 17.4358 13.0167 17.2333V15.7667C13.0167 15.5642 13.1808 15.4 13.3833 15.4Z"
+                                  fill="black"
+                                />
+                                <path
+                                  d="M13.3833 18.3334C13.5858 18.3334 13.75 18.4975 13.75 18.7V20.1667C13.75 20.3692 13.5858 20.5334 13.3833 20.5334C13.1808 20.5334 13.0167 20.3692 13.0167 20.1667V18.7C13.0167 18.4975 13.1808 18.3334 13.3833 18.3334Z"
+                                  fill="black"
+                                />
+                                <path
+                                  d="M8.98306 16.8667C9.18556 16.8667 9.34973 17.0309 9.34973 17.2334V18.7C9.34973 18.9025 9.18556 19.0667 8.98306 19.0667C8.78057 19.0667 8.61639 18.9025 8.61639 18.7V17.2334C8.61639 17.0309 8.78057 16.8667 8.98306 16.8667Z"
+                                  fill="black"
+                                />
+                                <path
+                                  d="M11.9165 16.8667C12.119 16.8667 12.2832 17.0309 12.2832 17.2334V18.7C12.2832 18.9025 12.119 19.0667 11.9165 19.0667C11.714 19.0667 11.5499 18.9025 11.5499 18.7V17.2334C11.5499 17.0309 11.714 16.8667 11.9165 16.8667Z"
+                                  fill="black"
+                                />
+                                <path
+                                  d="M14.8501 16.8667C15.0526 16.8667 15.2168 17.0309 15.2168 17.2334V18.7C15.2168 18.9025 15.0526 19.0667 14.8501 19.0667C14.6476 19.0667 14.4835 18.9025 14.4835 18.7V17.2334C14.4835 17.0309 14.6476 16.8667 14.8501 16.8667Z"
+                                  fill="black"
+                                />
+                                <path
+                                  d="M17.7836 16.8667C17.9861 16.8667 18.1503 17.0309 18.1503 17.2334V18.7C18.1503 18.9025 17.9861 19.0667 17.7836 19.0667C17.5811 19.0667 17.4169 18.9025 17.4169 18.7V17.2334C17.4169 17.0309 17.5811 16.8667 17.7836 16.8667Z"
+                                  fill="black"
+                                />
+                                <path
+                                  d="M16.3168 15.4C16.5193 15.4 16.6835 15.5642 16.6835 15.7667V17.2333C16.6835 17.4358 16.5193 17.6 16.3168 17.6C16.1143 17.6 15.9501 17.4358 15.9501 17.2333V15.7667C15.9501 15.5642 16.1143 15.4 16.3168 15.4Z"
+                                  fill="black"
+                                />
+                                <path
+                                  d="M10.4499 15.4C10.6524 15.4 10.8165 15.5642 10.8165 15.7667V17.2333C10.8165 17.4358 10.6524 17.6 10.4499 17.6C10.2474 17.6 10.0832 17.4358 10.0832 17.2333V15.7667C10.0832 15.5642 10.2474 15.4 10.4499 15.4Z"
+                                  fill="black"
+                                />
+                                <path
+                                  d="M10.4499 18.3334C10.6524 18.3334 10.8165 18.4975 10.8165 18.7V20.1667C10.8165 20.3692 10.6524 20.5334 10.4499 20.5334C10.2474 20.5334 10.0832 20.3692 10.0832 20.1667V18.7C10.0832 18.4975 10.2474 18.3334 10.4499 18.3334Z"
+                                  fill="black"
+                                />
+                                <path
+                                  d="M16.3168 18.3334C16.5193 18.3334 16.6835 18.4975 16.6835 18.7V20.1667C16.6835 20.3692 16.5193 20.5334 16.3168 20.5334C16.1143 20.5334 15.9501 20.3692 15.9501 20.1667V18.7C15.9501 18.4975 16.1143 18.3334 16.3168 18.3334Z"
+                                  fill="black"
+                                />
+                                <path
+                                  d="M14.8501 19.8C15.0526 19.8 15.2168 19.9642 15.2168 20.1667V21.6334C15.2168 21.8359 15.0526 22 14.8501 22C14.6476 22 14.4835 21.8359 14.4835 21.6334V20.1667C14.4835 19.9642 14.6476 19.8 14.8501 19.8Z"
+                                  fill="black"
+                                />
+                                <path
+                                  d="M11.9165 19.8C12.119 19.8 12.2832 19.9642 12.2832 20.1667V21.6334C12.2832 21.8359 12.119 22 11.9165 22C11.714 22 11.5499 21.8359 11.5499 21.6334V20.1667C11.5499 19.9642 11.714 19.8 11.9165 19.8Z"
+                                  fill="black"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1808_370">
+                                  <rect
+                                    width="22"
+                                    height="22"
+                                    fill="white"
+                                    transform="matrix(-1 0 0 1 22 0)"
+                                  />
+                                </clipPath>
+                              </defs>
+                            </svg> </i
+                          >3
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-6 col-md-12">
+                  <div class="angsuran px-2 card shadow-sm p-1 p-lg-2">
+                    <h5 class="pt-3" style="font-size: 16px">
+                      Jumlah Angsuran Bulan
+                    </h5>
+
+                    <div class="d-flex">
+                      <div class="p-2 flex-fill" style="width: 40%">
+                        <div class="d-flex">
+                          <i>
+                            <svg
+                              width="12"
+                              height="12"
+                              viewBox="0 0 12 12"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <circle cx="6" cy="6" r="6" fill="#3C543C" />
+                            </svg>
+                          </i>
+                          <p class="ms-1">
+                            Sudah Dibayar <br /><span id="" class=" "
+                              >55 Bulan</span
+                            >
+                          </p>
+                        </div>
+
+                        <div class="d-flex mt-2">
+                          <i>
+                            <svg
+                              width="12"
+                              height="12"
+                              viewBox="0 0 12 12"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <circle cx="6" cy="6" r="6" fill="#BBBBBB" />
+                            </svg>
+                          </i>
+                          <p class="ms-1">
+                            Belum Dibayar <br /><span id="" class=" "
+                              >45 Bulan</span
+                            >
+                          </p>
+                        </div>
+                      </div>
+                      <div class="p-2 flex-fill" style="width: 40%">
+                        <canvas
+                          id="bulan"
+                          width="20"
+                          style="
+                            width: 200px;
+                            max-height: 100%;
+                            min-height: 100px;
+                            object-fit: cover;
+                          "
+                        ></canvas>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                  <div class="angsuran px-2 card shadow-sm p-1 p-lg-2">
+                    <h5 class="pt-3" style="font-size: 16px">
+                      Jumlah Angsuran uang
+                    </h5>
+
+                    <div class="d-flex">
+                      <div class="p-2 flex-fill" style="width: 40%">
+                        <div class="d-flex">
+                          <i>
+                            <svg
+                              width="12"
+                              height="12"
+                              viewBox="0 0 12 12"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <circle cx="6" cy="6" r="6" fill="#284E78" />
+                            </svg>
+                          </i>
+                          <p class="ms-1">
+                            Sudah Dibayar <br /><span id="" class=" "
+                              >Rp 100.000.000</span
+                            >
+                          </p>
+                        </div>
+
+                        <div class="d-flex mt-2">
+                          <i>
+                            <svg
+                              width="12"
+                              height="12"
+                              viewBox="0 0 12 12"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <circle cx="6" cy="6" r="6" fill="#BBBBBB" />
+                            </svg>
+                          </i>
+                          <p class="ms-1">
+                            Belum Dibayar <br /><span id="" class=" "
+                              >Rp 100.000.000</span
+                            >
+                          </p>
+                        </div>
+                      </div>
+                      <div class="p-2 flex-fill" style="width: 40%">
+                        <canvas
+                          id="uang"
+                          width="20"
+                          style="
+                            width: 200px;
+                            max-height: 100%;
+                            min-height: 100px;
+                            object-fit: cover;
+                          "
+                        ></canvas>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h3 class="mt-4 mt-lg-5">E-BALTAB</h3>
+
+            <div class="wrapperBaltab">
+              <div class="wrapperTable mt-3 table-responsive">
+                <table id="tableUser" class="table" style="width: 100%">
+                  <thead class="headTable">
+                    <tr>
+                      <th class="table-text">Keterangan</th>
+                      <th class="table-text">Periode</th>
+                      <th class="table-text">Jumlah Bulan</th>
+                      <th class="table-text">Potongan</th>
+                      <th class="table-text">Total</th>
+                    </tr>
+                  </thead>
+                  <tbody class="bodyTable">
+                    <tr class="biru">
+                      <td><p>Pama</p></td>
+                      <td><p>Feb '14 s.d Mar '11</p></td>
+                      <td><p>100 X</p></td>
+                      <td><p>Rp 150.000</p></td>
+                      <td><p>Rp 2.150.000</p></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- End Main Content -->
-
-
 
     <!--Jquery Assets-->
     <script src="./assets/vendors/jquery/jquery.min.js"></script>
@@ -308,64 +436,66 @@
     <!--Chart JS-->
     <script src="./assets/vendors/chartjs/Chart.js"></script>
     <!--Ionicon-->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
     <!-- Table Js -->
     <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
 
     <script>
-        const bulan = {
-          datasets: [{
-            label: 'uhuy',
-            data: [55,45],
-            backgroundColor: [
-            '#3C543C','#BBBBBB'
-            ],
-            hoverOffset: 4
-          }]
-        };
-  
-        const configBulan = {
-          type: 'doughnut',
-          data: bulan,
-          options : {
-            legend: {
-            display: false
-            },
-          }
-        };
-        var chartBulan = new Chart(
-        document.getElementById('bulan'),
-        configBulan
-        );
-  
-  
-  
-        const uang = {
-          datasets: [{
-            label: 'uhuy',
-            data: [55,45],
-            backgroundColor: [
-            '#284E78','#BBBBBB'
-            ],
-            hoverOffset: 4
-          }]
-        };
-  
-        const configUang = {
-          type: 'doughnut',
-          data: uang,
-          options : {
-            legend: {
-            display: false
-            },
-          }
-        };
-        var chartUang = new Chart(
-        document.getElementById('uang'),
-        configUang
-        );
-      </script>
-    
-</body>
+      // eye
+      $("#toggle").click(function () {
+        $(".hash").toggle();
+      });
+      // eye
+      const bulan = {
+        datasets: [
+          {
+            label: "uhuy",
+            data: [55, 45],
+            backgroundColor: ["#3C543C", "#BBBBBB"],
+            hoverOffset: 4,
+          },
+        ],
+      };
+
+      const configBulan = {
+        type: "doughnut",
+        data: bulan,
+        options: {
+          legend: {
+            display: false,
+          },
+        },
+      };
+      var chartBulan = new Chart(document.getElementById("bulan"), configBulan);
+
+      const uang = {
+        datasets: [
+          {
+            label: "uhuy",
+            data: [55, 45],
+            backgroundColor: ["#284E78", "#BBBBBB"],
+            hoverOffset: 4,
+          },
+        ],
+      };
+
+      const configUang = {
+        type: "doughnut",
+        data: uang,
+        options: {
+          legend: {
+            display: false,
+          },
+        },
+      };
+      var chartUang = new Chart(document.getElementById("uang"), configUang);
+    </script>
+  </body>
 </html>
