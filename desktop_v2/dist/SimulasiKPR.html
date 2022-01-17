@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.2.0/css/fixedHeader.dataTables.min.css" />
 
     <!--Styling Pages-->
-    <link rel="stylesheet" href="./assets/css/SimulasiKPR.css">
+    <link rel="stylesheet" href="./assets/css/SimulasiKPR.css" />
 </head>
 
 <body>
@@ -155,48 +155,101 @@
         <!--End Menu Admin-->
     </div>
 
-
-    
     <div class="container mt-5 mb-5">
-      <h4>Simulasi KPR</h4>
-        <div class=" btn-group w-25">
-            <button class="text-start btn btn-secondary dropdown-toggle bg-transparent text-dark fw-bold" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                Kpr Syariah
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <li><a class="dropdown-item" href="#">KPR Konvensional</a></li>
-            </ul>
+        <h4>Simulasi KPR</h4>
+        <div class="select-kpr">
+            <select class="form-select w-25" aria-label="Default select example">
+                <option selected>Pilih Jenis KPR</option>
+                <option value="1">KPR Konvensional</option>
+                <option value="2">KPR Syariah</option>
+                
+            </select>
+        </div>
+        <div class="konvesional-wrapper mt-5">
+            <h4>Konvensional</h4>
+            <hr>
+            <form action="">
+                <div class="row">
+                    <div class="col-md-4 jenis-subsidi mt-4">
+                        <label for="">Pilih Subsidi</label>
+                        <select class="form-select " aria-label="Default select example">
+                            <option selected>Pilih Subsidi</option>
+                            <option value="1">Subsidi</option>
+                            <option value="2">Non Subsidi</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4 harga-beli mt-4">
+                        <label for="">Harga Beli(Rp)</label>
+                        <input type="number " class="form-control" placeholder="Masukan harga yang ingin disimulasikan">
+                    </div>
+                    <div class="col-md-4 uang-muka mt-4">
+                        <label for="">Uang Muka(Rp)</label>
+                        <input type="number " class="form-control"
+                            placeholder="Uang Muka diambil 15% dari harga properti">
+                    </div>
+                    <div class="col-md-4 lama-pinjaman mt-4">
+                        <label for="">Lama Pinjaman (Tahun)</label>
+                        <input class="form-control" type="number" placeholder="Masukan harga yang ingin disimulasikan">
+                    </div>
+                    <div class="col-md-4 kategori-kpr mt-4">
+                        <label for="">Kategori KPR</label>
+                        <select class="form-select " aria-label="Default select example">
+                            <option selected>Pilih Kategori</option>
+                            <option value="1">KPR BTN TNI AD - Realisasi Baru (5,25%)</option>
+                            <option value="2">KPR BTN TNI AD - Take Over(6%)</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4 masa-kredit mt-4">
+                        <label for="">Masa Kredit fix (Tahun)</label>
+                        <input class="form-control" type="number" placeholder="Maksimal 15Tahun">
+                    </div>
+                    <div class="col-12 suku-bunga mt-4">
+                        <label for="">Suku Bunga (floating)</label>
+                        <input class="form-control" type="number" placeholder="Masukan suku bunga">
+                    </div>
+                </div>
+                <button class="btn-primary btn container-fluid mt-5 hitung">Hitung</button>
+            </form>
+        </div>
+
+        <!-- <div class=" btn-group w-25">
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
         </div>
         <div class="konvesional-wrapper mt-5">
             <h4>Konvensional</h4>
             <hr>
             <div class="row">
                 <div class="col-md-4 col-sm-12">
-                        <form>
-                            <label class="mb-3" for="JmlhPinjaman">Jumlah Pinjaman</label>
-                            <input type="text" id="JmlPinjaman" name="JumlahPinjaman">
+                    <form>
+                        <label class="mb-3" for="JmlhPinjaman">Jumlah Pinjaman</label>
+                        <input type="text" id="JmlPinjaman" name="JumlahPinjaman">
                     </form>
                 </div>
-                 <div class="col-md-4 col-sm-12">
-                        <form>
-                            <label class="mb-3" for="LmAngsuran">Lama Angsuran (Bulanan)</label>
-                            <input type="text" id="LmAngsuran" name="LmAngsuran">
+                <div class="col-md-4 col-sm-12">
+                    <form>
+                        <label class="mb-3" for="LmAngsuran">Lama Angsuran (Bulanan)</label>
+                        <input type="text" id="LmAngsuran" name="LmAngsuran">
                     </form>
                 </div>
-                 <div class="col-md-4 col-sm-12">
-                        <form>
-                            <label class="mb-3" for="Bunga">Bunga</label>
-                            <input type="date" id="Bunga" name="Bunga">
+                <div class="col-md-4 col-sm-12">
+                    <form>
+                        <label class="mb-3" for="Bunga">Bunga</label>
+                        <input type="date" id="Bunga" name="Bunga">
                     </form>
                 </div>
             </div>
             <form class="mt-5">
-                 <label class="mb-3" for="fname">Bunga</label>
+                <label class="mb-3" for="fname">Bunga</label>
                 <input type="date" id="fname" name="fname">
             </form>
-            
+
             <button class="hitung mb-5 btn btn-primary mt-5 text-start">Hitung</button>
-        </div>
+        </div> -->
     </div>
     <footer>
         <p>Copyright 2021 © DITKUAD</p>
