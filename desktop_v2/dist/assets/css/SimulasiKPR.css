@@ -13,6 +13,24 @@ input{
    
 }
 .hitung{
-    background-color: #198754;
+    background-color: #3C543C;
+    color: #fff;
+    padding: .5rem 1rem;
+}
+.hitung:hover {
+    color: rgb(240, 230, 230);
+    background-color: #2b442b;
+}
+
+.form-control,.form-select {
+    border: 1px solid #ced4da !important;
+    border-radius: 6px;
+}
+.form-control:focus,.form-select:focus{
+    box-shadow: none !important;
+    border: 1px solid #3C543C !important;
+}
+label {
+    margin-bottom: .3rem;
 }
 
